@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LRDesignSystem_Example' do
+  pod 'LRDesignSystem', :path => '../'
+
+  target 'LRDesignSystem_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
