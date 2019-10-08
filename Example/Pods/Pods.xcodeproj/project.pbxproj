@@ -64,7 +64,6 @@
 		AD767269234CDCB300AE5620 /* Overline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD767219234CDCB300AE5620 /* Overline.swift */; };
 		AD76726A234CDCB300AE5620 /* Overline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD76721A234CDCB300AE5620 /* Overline.xib */; };
 		AD76726B234CDCB300AE5620 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76721C234CDCB300AE5620 /* SpinnerView.swift */; };
-		AD76726C234CDCB300AE5620 /* MainAuthenticationScreen copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76721E234CDCB300AE5620 /* MainAuthenticationScreen copy.swift */; };
 		AD76726D234CDCB300AE5620 /* Page2Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76721F234CDCB300AE5620 /* Page2Authentication.swift */; };
 		AD76726E234CDCB300AE5620 /* Page1Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD767220234CDCB300AE5620 /* Page1Authentication.swift */; };
 		AD76726F234CDCB300AE5620 /* AuthenticationScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD767221234CDCB300AE5620 /* AuthenticationScreen.xib */; };
@@ -185,7 +184,6 @@
 		AD767219234CDCB300AE5620 /* Overline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overline.swift; sourceTree = "<group>"; };
 		AD76721A234CDCB300AE5620 /* Overline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Overline.xib; sourceTree = "<group>"; };
 		AD76721C234CDCB300AE5620 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
-		AD76721E234CDCB300AE5620 /* MainAuthenticationScreen copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainAuthenticationScreen copy.swift"; sourceTree = "<group>"; };
 		AD76721F234CDCB300AE5620 /* Page2Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2Authentication.swift; sourceTree = "<group>"; };
 		AD767220234CDCB300AE5620 /* Page1Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1Authentication.swift; sourceTree = "<group>"; };
 		AD767221234CDCB300AE5620 /* AuthenticationScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationScreen.xib; sourceTree = "<group>"; };
@@ -444,7 +442,6 @@
 		AD76721D234CDCB300AE5620 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				AD76721E234CDCB300AE5620 /* MainAuthenticationScreen copy.swift */,
 				AD76721F234CDCB300AE5620 /* Page2Authentication.swift */,
 				AD767220234CDCB300AE5620 /* Page1Authentication.swift */,
 				AD767221234CDCB300AE5620 /* AuthenticationScreen.xib */,
@@ -774,7 +771,6 @@
 				AD767261234CDCB300AE5620 /* SHeadline.swift in Sources */,
 				AD767264234CDCB300AE5620 /* LHeadline.swift in Sources */,
 				AD767240234CDCB300AE5620 /* PrimaryButton.swift in Sources */,
-				AD76726C234CDCB300AE5620 /* MainAuthenticationScreen copy.swift in Sources */,
 				AD767268234CDCB300AE5620 /* RHeadline.swift in Sources */,
 				AD76725F234CDCB300AE5620 /* Label.swift in Sources */,
 				AD767243234CDCB300AE5620 /* BaseButton.swift in Sources */,
