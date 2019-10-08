@@ -14,81 +14,7 @@
 		6C2935F792E9812675E721B8FCCBE9D1 /* LRDesignSystem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52090F9B51D37B7C7421C1C7B7F871D1 /* LRDesignSystem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A30D9625F69317B0D56A2E8CF96F31AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A4AF7FCAF21D254273EE47CD03217C9F /* Pods-LRDesignSystem_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C175B9D6560646B6DC58866D075FA854 /* Pods-LRDesignSystem_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD893691234CBEAE00B339EE /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893639234CBEAD00B339EE /* LargeDisplayCard.swift */; };
-		AD893692234CBEAE00B339EE /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89363A234CBEAD00B339EE /* SegmentedProgressBar.swift */; };
-		AD893693234CBEAE00B339EE /* BaseButtonIssue.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89363C234CBEAD00B339EE /* BaseButtonIssue.xib */; };
-		AD893694234CBEAE00B339EE /* PrimaryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89363D234CBEAD00B339EE /* PrimaryButton.xib */; };
-		AD893695234CBEAE00B339EE /* SimpleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89363E234CBEAD00B339EE /* SimpleLoadingView.swift */; };
-		AD893696234CBEAE00B339EE /* TextButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89363F234CBEAD00B339EE /* TextButton.xib */; };
-		AD893697234CBEAE00B339EE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893640234CBEAD00B339EE /* PrimaryButton.swift */; };
-		AD893698234CBEAE00B339EE /* BaseButtonIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893641234CBEAD00B339EE /* BaseButtonIssue.swift */; };
-		AD893699234CBEAE00B339EE /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893642234CBEAD00B339EE /* TextButton.swift */; };
-		AD89369A234CBEAE00B339EE /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893643234CBEAD00B339EE /* BaseButton.swift */; };
-		AD89369B234CBEAE00B339EE /* MarkOffcPro-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893645234CBEAD00B339EE /* MarkOffcPro-BookItalic.ttf */; };
-		AD89369C234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893646234CBEAD00B339EE /* MarkOffcPro-Light.ttf */; };
-		AD89369D234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893647234CBEAD00B339EE /* Lato-LightItalic.ttf */; };
-		AD89369E234CBEAE00B339EE /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893648234CBEAD00B339EE /* Lato-Thin.ttf */; };
-		AD89369F234CBEAE00B339EE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893649234CBEAD00B339EE /* Lato-Bold.ttf */; };
-		AD8936A0234CBEAE00B339EE /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364A234CBEAD00B339EE /* Lato-Black.ttf */; };
-		AD8936A1234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364B234CBEAD00B339EE /* MarkOffcPro-Bold.ttf */; };
-		AD8936A2234CBEAE00B339EE /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364C234CBEAD00B339EE /* MarkOffcPro-Book.ttf */; };
-		AD8936A3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364D234CBEAD00B339EE /* Lato-RegularItalic.ttf */; };
-		AD8936A4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364E234CBEAD00B339EE /* Lato-Regular.ttf */; };
-		AD8936A5234CBEAE00B339EE /* MarkOffcPro-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364F234CBEAD00B339EE /* MarkOffcPro-Heavy.ttf */; };
-		AD8936A6234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893650234CBEAD00B339EE /* Lato-BlackItalic.ttf */; };
-		AD8936A7234CBEAE00B339EE /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893651234CBEAD00B339EE /* MarkOffcPro-HeavyItalic.ttf */; };
-		AD8936A8234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893652234CBEAD00B339EE /* MarkOffcPro-BoldItalic.ttf */; };
-		AD8936A9234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893653234CBEAD00B339EE /* MarkOffcPro-LightItalic.ttf */; };
-		AD8936AA234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893654234CBEAD00B339EE /* MarkOffcPro-CondHeavy.ttf */; };
-		AD8936AB234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893655234CBEAD00B339EE /* Lato-BoldItalic.ttf */; };
-		AD8936AC234CBEAE00B339EE /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893656234CBEAD00B339EE /* Lato-Light.ttf */; };
-		AD8936AD234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893657234CBEAD00B339EE /* Lato-ThinItalic.ttf */; };
-		AD8936AE234CBEAE00B339EE /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89365A234CBEAD00B339EE /* Caption.swift */; };
-		AD8936AF234CBEAE00B339EE /* Caption.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89365B234CBEAD00B339EE /* Caption.xib */; };
-		AD8936B0234CBEAE00B339EE /* LBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89365D234CBEAD00B339EE /* LBody.xib */; };
-		AD8936B1234CBEAE00B339EE /* LBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89365E234CBEAD00B339EE /* LBody.swift */; };
-		AD8936B2234CBEAE00B339EE /* RBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89365F234CBEAD00B339EE /* RBody.swift */; };
-		AD8936B3234CBEAE00B339EE /* SBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893660234CBEAD00B339EE /* SBody.xib */; };
-		AD8936B4234CBEAE00B339EE /* SBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893661234CBEAD00B339EE /* SBody.swift */; };
-		AD8936B5234CBEAE00B339EE /* RBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893662234CBEAD00B339EE /* RBody.xib */; };
-		AD8936B6234CBEAE00B339EE /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893664234CBEAD00B339EE /* Label.swift */; };
-		AD8936B7234CBEAE00B339EE /* Label.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893665234CBEAD00B339EE /* Label.xib */; };
-		AD8936B8234CBEAE00B339EE /* SHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893667234CBEAD00B339EE /* SHeadline.swift */; };
-		AD8936B9234CBEAE00B339EE /* LHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893668234CBEAD00B339EE /* LHeadline.xib */; };
-		AD8936BA234CBEAE00B339EE /* SHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893669234CBEAD00B339EE /* SHeadline.xib */; };
-		AD8936BB234CBEAE00B339EE /* LHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89366A234CBEAD00B339EE /* LHeadline.swift */; };
-		AD8936BC234CBEAE00B339EE /* XLHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89366B234CBEAD00B339EE /* XLHeadline.xib */; };
-		AD8936BD234CBEAE00B339EE /* XLHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89366C234CBEAE00B339EE /* XLHeadline.swift */; };
-		AD8936BE234CBEAE00B339EE /* RHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89366D234CBEAE00B339EE /* RHeadline.xib */; };
-		AD8936BF234CBEAE00B339EE /* RHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89366E234CBEAE00B339EE /* RHeadline.swift */; };
-		AD8936C0234CBEAE00B339EE /* Overline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893670234CBEAE00B339EE /* Overline.swift */; };
-		AD8936C1234CBEAE00B339EE /* Overline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893671234CBEAE00B339EE /* Overline.xib */; };
-		AD8936C2234CBEAE00B339EE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893673234CBEAE00B339EE /* SpinnerView.swift */; };
-		AD8936C4234CBEAE00B339EE /* Page2Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893676234CBEAE00B339EE /* Page2Authentication.swift */; };
-		AD8936C5234CBEAE00B339EE /* Page1Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893677234CBEAE00B339EE /* Page1Authentication.swift */; };
-		AD8936C6234CBEAE00B339EE /* AuthenticationScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */; };
-		AD8936C7234CBEAE00B339EE /* Page1Authentication.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893679234CBEAE00B339EE /* Page1Authentication.xib */; };
-		AD8936C8234CBEAE00B339EE /* Page2Authentication.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89367A234CBEAE00B339EE /* Page2Authentication.xib */; };
-		AD8936C9234CBEAE00B339EE /* NIbLodeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89367B234CBEAE00B339EE /* NIbLodeable.swift */; };
-		AD8936CA234CBEAE00B339EE /* LargeDisplayCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89367C234CBEAE00B339EE /* LargeDisplayCard.xib */; };
-		AD8936CB234CBEAE00B339EE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89367D234CBEAE00B339EE /* ColorExtension.swift */; };
-		AD8936CC234CBEAE00B339EE /* TypeOfAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89367E234CBEAE00B339EE /* TypeOfAlignment.swift */; };
-		AD8936CD234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893680234CBEAE00B339EE /* MarkOffcPro-Light.ttf */; };
-		AD8936CE234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893681234CBEAE00B339EE /* Lato-LightItalic.ttf */; };
-		AD8936CF234CBEAE00B339EE /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893682234CBEAE00B339EE /* Lato-Thin.ttf */; };
-		AD8936D0234CBEAE00B339EE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893683234CBEAE00B339EE /* Lato-Bold.ttf */; };
-		AD8936D1234CBEAE00B339EE /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893684234CBEAE00B339EE /* Lato-Black.ttf */; };
-		AD8936D2234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893685234CBEAE00B339EE /* MarkOffcPro-Bold.ttf */; };
-		AD8936D3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893686234CBEAE00B339EE /* Lato-RegularItalic.ttf */; };
-		AD8936D4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893687234CBEAE00B339EE /* Lato-Regular.ttf */; };
-		AD8936D5234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893688234CBEAE00B339EE /* Lato-BlackItalic.ttf */; };
-		AD8936D6234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893689234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf */; };
-		AD8936D7234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368A234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf */; };
-		AD8936D8234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368B234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf */; };
-		AD8936D9234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368C234CBEAE00B339EE /* Lato-BoldItalic.ttf */; };
-		AD8936DA234CBEAE00B339EE /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368D234CBEAE00B339EE /* Lato-Light.ttf */; };
-		AD8936DB234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368E234CBEAE00B339EE /* Lato-ThinItalic.ttf */; };
-		AD8936DC234CBEAE00B339EE /* FieldTextBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893690234CBEAE00B339EE /* FieldTextBase.swift */; };
+		AD7671DD234CD68100AE5620 /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671DC234CD68100AE5620 /* LargeDisplayCard.swift */; };
 		C950AA97F53C3815DC9CEA8DF57DCAC2 /* Pods-LRDesignSystem_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C10C06EB8C623CB5A0B2DD76184E7 /* Pods-LRDesignSystem_Example-dummy.m */; };
 		D14E62F6A65220640C1CDF0AD8D286CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		E046EA659E38B0AAEABC30292CB6F0D6 /* Pods-LRDesignSystem_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B4430C6927C93B3B3863A2AC99B573F /* Pods-LRDesignSystem_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -134,81 +60,7 @@
 		9E8884543E16C258A1A32A048CBCB44C /* LRDesignSystem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LRDesignSystem-dummy.m"; sourceTree = "<group>"; };
 		A269189E5BFC97A412B3D350C773360D /* Pods-LRDesignSystem_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A8E2933360C517F35A6FC06CE1A68071 /* Pods-LRDesignSystem_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LRDesignSystem_Tests-dummy.m"; sourceTree = "<group>"; };
-		AD893639234CBEAD00B339EE /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeDisplayCard.swift; sourceTree = "<group>"; };
-		AD89363A234CBEAD00B339EE /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
-		AD89363C234CBEAD00B339EE /* BaseButtonIssue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseButtonIssue.xib; sourceTree = "<group>"; };
-		AD89363D234CBEAD00B339EE /* PrimaryButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrimaryButton.xib; sourceTree = "<group>"; };
-		AD89363E234CBEAD00B339EE /* SimpleLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLoadingView.swift; sourceTree = "<group>"; };
-		AD89363F234CBEAD00B339EE /* TextButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextButton.xib; sourceTree = "<group>"; };
-		AD893640234CBEAD00B339EE /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
-		AD893641234CBEAD00B339EE /* BaseButtonIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButtonIssue.swift; sourceTree = "<group>"; };
-		AD893642234CBEAD00B339EE /* TextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
-		AD893643234CBEAD00B339EE /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
-		AD893645234CBEAD00B339EE /* MarkOffcPro-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BookItalic.ttf"; sourceTree = "<group>"; };
-		AD893646234CBEAD00B339EE /* MarkOffcPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Light.ttf"; sourceTree = "<group>"; };
-		AD893647234CBEAD00B339EE /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
-		AD893648234CBEAD00B339EE /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
-		AD893649234CBEAD00B339EE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
-		AD89364A234CBEAD00B339EE /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
-		AD89364B234CBEAD00B339EE /* MarkOffcPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Bold.ttf"; sourceTree = "<group>"; };
-		AD89364C234CBEAD00B339EE /* MarkOffcPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Book.ttf"; sourceTree = "<group>"; };
-		AD89364D234CBEAD00B339EE /* Lato-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-RegularItalic.ttf"; sourceTree = "<group>"; };
-		AD89364E234CBEAD00B339EE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
-		AD89364F234CBEAD00B339EE /* MarkOffcPro-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Heavy.ttf"; sourceTree = "<group>"; };
-		AD893650234CBEAD00B339EE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
-		AD893651234CBEAD00B339EE /* MarkOffcPro-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-HeavyItalic.ttf"; sourceTree = "<group>"; };
-		AD893652234CBEAD00B339EE /* MarkOffcPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BoldItalic.ttf"; sourceTree = "<group>"; };
-		AD893653234CBEAD00B339EE /* MarkOffcPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-LightItalic.ttf"; sourceTree = "<group>"; };
-		AD893654234CBEAD00B339EE /* MarkOffcPro-CondHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-CondHeavy.ttf"; sourceTree = "<group>"; };
-		AD893655234CBEAD00B339EE /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
-		AD893656234CBEAD00B339EE /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
-		AD893657234CBEAD00B339EE /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
-		AD89365A234CBEAD00B339EE /* Caption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
-		AD89365B234CBEAD00B339EE /* Caption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Caption.xib; sourceTree = "<group>"; };
-		AD89365D234CBEAD00B339EE /* LBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBody.xib; sourceTree = "<group>"; };
-		AD89365E234CBEAD00B339EE /* LBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBody.swift; sourceTree = "<group>"; };
-		AD89365F234CBEAD00B339EE /* RBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBody.swift; sourceTree = "<group>"; };
-		AD893660234CBEAD00B339EE /* SBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBody.xib; sourceTree = "<group>"; };
-		AD893661234CBEAD00B339EE /* SBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBody.swift; sourceTree = "<group>"; };
-		AD893662234CBEAD00B339EE /* RBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBody.xib; sourceTree = "<group>"; };
-		AD893664234CBEAD00B339EE /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		AD893665234CBEAD00B339EE /* Label.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Label.xib; sourceTree = "<group>"; };
-		AD893667234CBEAD00B339EE /* SHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHeadline.swift; sourceTree = "<group>"; };
-		AD893668234CBEAD00B339EE /* LHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHeadline.xib; sourceTree = "<group>"; };
-		AD893669234CBEAD00B339EE /* SHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHeadline.xib; sourceTree = "<group>"; };
-		AD89366A234CBEAD00B339EE /* LHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHeadline.swift; sourceTree = "<group>"; };
-		AD89366B234CBEAD00B339EE /* XLHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLHeadline.xib; sourceTree = "<group>"; };
-		AD89366C234CBEAE00B339EE /* XLHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLHeadline.swift; sourceTree = "<group>"; };
-		AD89366D234CBEAE00B339EE /* RHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RHeadline.xib; sourceTree = "<group>"; };
-		AD89366E234CBEAE00B339EE /* RHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHeadline.swift; sourceTree = "<group>"; };
-		AD893670234CBEAE00B339EE /* Overline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overline.swift; sourceTree = "<group>"; };
-		AD893671234CBEAE00B339EE /* Overline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Overline.xib; sourceTree = "<group>"; };
-		AD893673234CBEAE00B339EE /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
-		AD893676234CBEAE00B339EE /* Page2Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2Authentication.swift; sourceTree = "<group>"; };
-		AD893677234CBEAE00B339EE /* Page1Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1Authentication.swift; sourceTree = "<group>"; };
-		AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationScreen.xib; sourceTree = "<group>"; };
-		AD893679234CBEAE00B339EE /* Page1Authentication.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page1Authentication.xib; sourceTree = "<group>"; };
-		AD89367A234CBEAE00B339EE /* Page2Authentication.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page2Authentication.xib; sourceTree = "<group>"; };
-		AD89367B234CBEAE00B339EE /* NIbLodeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIbLodeable.swift; sourceTree = "<group>"; };
-		AD89367C234CBEAE00B339EE /* LargeDisplayCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeDisplayCard.xib; sourceTree = "<group>"; };
-		AD89367D234CBEAE00B339EE /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		AD89367E234CBEAE00B339EE /* TypeOfAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfAlignment.swift; sourceTree = "<group>"; };
-		AD893680234CBEAE00B339EE /* MarkOffcPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Light.ttf"; sourceTree = "<group>"; };
-		AD893681234CBEAE00B339EE /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
-		AD893682234CBEAE00B339EE /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
-		AD893683234CBEAE00B339EE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
-		AD893684234CBEAE00B339EE /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
-		AD893685234CBEAE00B339EE /* MarkOffcPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Bold.ttf"; sourceTree = "<group>"; };
-		AD893686234CBEAE00B339EE /* Lato-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-RegularItalic.ttf"; sourceTree = "<group>"; };
-		AD893687234CBEAE00B339EE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
-		AD893688234CBEAE00B339EE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
-		AD893689234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BoldItalic.ttf"; sourceTree = "<group>"; };
-		AD89368A234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-LightItalic.ttf"; sourceTree = "<group>"; };
-		AD89368B234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-CondHeavy.ttf"; sourceTree = "<group>"; };
-		AD89368C234CBEAE00B339EE /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
-		AD89368D234CBEAE00B339EE /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
-		AD89368E234CBEAE00B339EE /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
-		AD893690234CBEAE00B339EE /* FieldTextBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldTextBase.swift; sourceTree = "<group>"; };
+		AD7671DC234CD68100AE5620 /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeDisplayCard.swift; sourceTree = "<group>"; };
 		B0909696744A8E8CBC827A9FA7C167CF /* LRDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LRDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2653123548D74D931329755BC13F397 /* Pods-LRDesignSystem_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LRDesignSystem_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B197D8EDD69A2630EAA90D562C157C /* Pods-LRDesignSystem_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -302,185 +154,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		AD893638234CBEAD00B339EE /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				AD893639234CBEAD00B339EE /* LargeDisplayCard.swift */,
-				AD89363A234CBEAD00B339EE /* SegmentedProgressBar.swift */,
-				AD89363B234CBEAD00B339EE /* Buttons */,
-				AD893644234CBEAD00B339EE /* OpenType TTF Pro */,
-				AD893658234CBEAD00B339EE /* Labels */,
-				AD893672234CBEAE00B339EE /* Spinner */,
-				AD893674234CBEAE00B339EE /* Screens */,
-				AD89367B234CBEAE00B339EE /* NIbLodeable.swift */,
-				AD89367C234CBEAE00B339EE /* LargeDisplayCard.xib */,
-				AD89367D234CBEAE00B339EE /* ColorExtension.swift */,
-				AD89367E234CBEAE00B339EE /* TypeOfAlignment.swift */,
-				AD89367F234CBEAE00B339EE /* Fonts */,
-				AD89368F234CBEAE00B339EE /* FieldText */,
-			);
-			name = UI;
-			path = LRDesignSystem/Classes/UI;
-			sourceTree = "<group>";
-		};
-		AD89363B234CBEAD00B339EE /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				AD89363C234CBEAD00B339EE /* BaseButtonIssue.xib */,
-				AD89363D234CBEAD00B339EE /* PrimaryButton.xib */,
-				AD89363E234CBEAD00B339EE /* SimpleLoadingView.swift */,
-				AD89363F234CBEAD00B339EE /* TextButton.xib */,
-				AD893640234CBEAD00B339EE /* PrimaryButton.swift */,
-				AD893641234CBEAD00B339EE /* BaseButtonIssue.swift */,
-				AD893642234CBEAD00B339EE /* TextButton.swift */,
-				AD893643234CBEAD00B339EE /* BaseButton.swift */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		AD893644234CBEAD00B339EE /* OpenType TTF Pro */ = {
-			isa = PBXGroup;
-			children = (
-				AD893645234CBEAD00B339EE /* MarkOffcPro-BookItalic.ttf */,
-				AD893646234CBEAD00B339EE /* MarkOffcPro-Light.ttf */,
-				AD893647234CBEAD00B339EE /* Lato-LightItalic.ttf */,
-				AD893648234CBEAD00B339EE /* Lato-Thin.ttf */,
-				AD893649234CBEAD00B339EE /* Lato-Bold.ttf */,
-				AD89364A234CBEAD00B339EE /* Lato-Black.ttf */,
-				AD89364B234CBEAD00B339EE /* MarkOffcPro-Bold.ttf */,
-				AD89364C234CBEAD00B339EE /* MarkOffcPro-Book.ttf */,
-				AD89364D234CBEAD00B339EE /* Lato-RegularItalic.ttf */,
-				AD89364E234CBEAD00B339EE /* Lato-Regular.ttf */,
-				AD89364F234CBEAD00B339EE /* MarkOffcPro-Heavy.ttf */,
-				AD893650234CBEAD00B339EE /* Lato-BlackItalic.ttf */,
-				AD893651234CBEAD00B339EE /* MarkOffcPro-HeavyItalic.ttf */,
-				AD893652234CBEAD00B339EE /* MarkOffcPro-BoldItalic.ttf */,
-				AD893653234CBEAD00B339EE /* MarkOffcPro-LightItalic.ttf */,
-				AD893654234CBEAD00B339EE /* MarkOffcPro-CondHeavy.ttf */,
-				AD893655234CBEAD00B339EE /* Lato-BoldItalic.ttf */,
-				AD893656234CBEAD00B339EE /* Lato-Light.ttf */,
-				AD893657234CBEAD00B339EE /* Lato-ThinItalic.ttf */,
-			);
-			path = "OpenType TTF Pro";
-			sourceTree = "<group>";
-		};
-		AD893658234CBEAD00B339EE /* Labels */ = {
-			isa = PBXGroup;
-			children = (
-				AD893659234CBEAD00B339EE /* Caption */,
-				AD89365C234CBEAD00B339EE /* BodyLabel */,
-				AD893663234CBEAD00B339EE /* Label */,
-				AD893666234CBEAD00B339EE /* HeadlineLabel */,
-				AD89366F234CBEAE00B339EE /* Overline */,
-			);
-			path = Labels;
-			sourceTree = "<group>";
-		};
-		AD893659234CBEAD00B339EE /* Caption */ = {
-			isa = PBXGroup;
-			children = (
-				AD89365A234CBEAD00B339EE /* Caption.swift */,
-				AD89365B234CBEAD00B339EE /* Caption.xib */,
-			);
-			path = Caption;
-			sourceTree = "<group>";
-		};
-		AD89365C234CBEAD00B339EE /* BodyLabel */ = {
-			isa = PBXGroup;
-			children = (
-				AD89365D234CBEAD00B339EE /* LBody.xib */,
-				AD89365E234CBEAD00B339EE /* LBody.swift */,
-				AD89365F234CBEAD00B339EE /* RBody.swift */,
-				AD893660234CBEAD00B339EE /* SBody.xib */,
-				AD893661234CBEAD00B339EE /* SBody.swift */,
-				AD893662234CBEAD00B339EE /* RBody.xib */,
-			);
-			path = BodyLabel;
-			sourceTree = "<group>";
-		};
-		AD893663234CBEAD00B339EE /* Label */ = {
-			isa = PBXGroup;
-			children = (
-				AD893664234CBEAD00B339EE /* Label.swift */,
-				AD893665234CBEAD00B339EE /* Label.xib */,
-			);
-			path = Label;
-			sourceTree = "<group>";
-		};
-		AD893666234CBEAD00B339EE /* HeadlineLabel */ = {
-			isa = PBXGroup;
-			children = (
-				AD893667234CBEAD00B339EE /* SHeadline.swift */,
-				AD893668234CBEAD00B339EE /* LHeadline.xib */,
-				AD893669234CBEAD00B339EE /* SHeadline.xib */,
-				AD89366A234CBEAD00B339EE /* LHeadline.swift */,
-				AD89366B234CBEAD00B339EE /* XLHeadline.xib */,
-				AD89366C234CBEAE00B339EE /* XLHeadline.swift */,
-				AD89366D234CBEAE00B339EE /* RHeadline.xib */,
-				AD89366E234CBEAE00B339EE /* RHeadline.swift */,
-			);
-			path = HeadlineLabel;
-			sourceTree = "<group>";
-		};
-		AD89366F234CBEAE00B339EE /* Overline */ = {
-			isa = PBXGroup;
-			children = (
-				AD893670234CBEAE00B339EE /* Overline.swift */,
-				AD893671234CBEAE00B339EE /* Overline.xib */,
-			);
-			path = Overline;
-			sourceTree = "<group>";
-		};
-		AD893672234CBEAE00B339EE /* Spinner */ = {
-			isa = PBXGroup;
-			children = (
-				AD893673234CBEAE00B339EE /* SpinnerView.swift */,
-			);
-			path = Spinner;
-			sourceTree = "<group>";
-		};
-		AD893674234CBEAE00B339EE /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				AD893676234CBEAE00B339EE /* Page2Authentication.swift */,
-				AD893677234CBEAE00B339EE /* Page1Authentication.swift */,
-				AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */,
-				AD893679234CBEAE00B339EE /* Page1Authentication.xib */,
-				AD89367A234CBEAE00B339EE /* Page2Authentication.xib */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		AD89367F234CBEAE00B339EE /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				AD893680234CBEAE00B339EE /* MarkOffcPro-Light.ttf */,
-				AD893681234CBEAE00B339EE /* Lato-LightItalic.ttf */,
-				AD893682234CBEAE00B339EE /* Lato-Thin.ttf */,
-				AD893683234CBEAE00B339EE /* Lato-Bold.ttf */,
-				AD893684234CBEAE00B339EE /* Lato-Black.ttf */,
-				AD893685234CBEAE00B339EE /* MarkOffcPro-Bold.ttf */,
-				AD893686234CBEAE00B339EE /* Lato-RegularItalic.ttf */,
-				AD893687234CBEAE00B339EE /* Lato-Regular.ttf */,
-				AD893688234CBEAE00B339EE /* Lato-BlackItalic.ttf */,
-				AD893689234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf */,
-				AD89368A234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf */,
-				AD89368B234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf */,
-				AD89368C234CBEAE00B339EE /* Lato-BoldItalic.ttf */,
-				AD89368D234CBEAE00B339EE /* Lato-Light.ttf */,
-				AD89368E234CBEAE00B339EE /* Lato-ThinItalic.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		AD89368F234CBEAE00B339EE /* FieldText */ = {
-			isa = PBXGroup;
-			children = (
-				AD893690234CBEAE00B339EE /* FieldTextBase.swift */,
-			);
-			path = FieldText;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -525,8 +198,8 @@
 		DFD617A5B06028DB1A215443F2F5FFF6 /* LRDesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				AD893638234CBEAD00B339EE /* UI */,
 				5F34671FEDBABDD8AD468380CCCD0793 /* TestDesignableView.swift */,
+				AD7671DC234CD68100AE5620 /* LargeDisplayCard.swift */,
 				1D9B03448542B800FBC02D80DD6C2D0F /* Pod */,
 				C12E6F139D2ACF96C6A8AA6A9CCDFB87 /* Support Files */,
 			);
@@ -677,57 +350,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8936B7234CBEAE00B339EE /* Label.xib in Resources */,
-				AD8936C1234CBEAE00B339EE /* Overline.xib in Resources */,
-				AD893696234CBEAE00B339EE /* TextButton.xib in Resources */,
-				AD8936A7234CBEAE00B339EE /* MarkOffcPro-HeavyItalic.ttf in Resources */,
-				AD8936BC234CBEAE00B339EE /* XLHeadline.xib in Resources */,
-				AD8936DA234CBEAE00B339EE /* Lato-Light.ttf in Resources */,
-				AD8936A0234CBEAE00B339EE /* Lato-Black.ttf in Resources */,
-				AD8936C7234CBEAE00B339EE /* Page1Authentication.xib in Resources */,
-				AD8936B9234CBEAE00B339EE /* LHeadline.xib in Resources */,
-				AD8936A6234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */,
-				AD8936B0234CBEAE00B339EE /* LBody.xib in Resources */,
-				AD8936D6234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */,
-				AD8936D1234CBEAE00B339EE /* Lato-Black.ttf in Resources */,
-				AD89369D234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */,
-				AD8936BA234CBEAE00B339EE /* SHeadline.xib in Resources */,
-				AD8936A5234CBEAE00B339EE /* MarkOffcPro-Heavy.ttf in Resources */,
-				AD8936DB234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */,
-				AD8936AC234CBEAE00B339EE /* Lato-Light.ttf in Resources */,
-				AD8936D7234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */,
-				AD8936C6234CBEAE00B339EE /* AuthenticationScreen.xib in Resources */,
-				AD8936CE234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */,
-				AD8936AD234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */,
-				AD8936AF234CBEAE00B339EE /* Caption.xib in Resources */,
-				AD8936A3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */,
-				AD89369E234CBEAE00B339EE /* Lato-Thin.ttf in Resources */,
-				AD8936B5234CBEAE00B339EE /* RBody.xib in Resources */,
-				AD89369C234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */,
-				AD893694234CBEAE00B339EE /* PrimaryButton.xib in Resources */,
-				AD8936A9234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */,
-				AD8936C8234CBEAE00B339EE /* Page2Authentication.xib in Resources */,
-				AD8936CF234CBEAE00B339EE /* Lato-Thin.ttf in Resources */,
-				AD8936A8234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */,
-				AD8936AA234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */,
-				AD89369B234CBEAE00B339EE /* MarkOffcPro-BookItalic.ttf in Resources */,
-				AD8936CD234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */,
-				AD8936D9234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */,
-				AD893693234CBEAE00B339EE /* BaseButtonIssue.xib in Resources */,
-				AD8936D5234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */,
-				AD8936D0234CBEAE00B339EE /* Lato-Bold.ttf in Resources */,
-				AD8936A2234CBEAE00B339EE /* MarkOffcPro-Book.ttf in Resources */,
-				AD8936A4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */,
-				AD8936A1234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */,
-				AD8936D2234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */,
-				AD8936B3234CBEAE00B339EE /* SBody.xib in Resources */,
-				AD8936CA234CBEAE00B339EE /* LargeDisplayCard.xib in Resources */,
-				AD89369F234CBEAE00B339EE /* Lato-Bold.ttf in Resources */,
-				AD8936BE234CBEAE00B339EE /* RHeadline.xib in Resources */,
-				AD8936AB234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */,
-				AD8936D8234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */,
-				AD8936D3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */,
-				AD8936D4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,32 +383,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD8936DC234CBEAE00B339EE /* FieldTextBase.swift in Sources */,
-				AD8936BB234CBEAE00B339EE /* LHeadline.swift in Sources */,
-				AD893697234CBEAE00B339EE /* PrimaryButton.swift in Sources */,
-				AD893691234CBEAE00B339EE /* LargeDisplayCard.swift in Sources */,
-				AD893695234CBEAE00B339EE /* SimpleLoadingView.swift in Sources */,
-				AD8936CB234CBEAE00B339EE /* ColorExtension.swift in Sources */,
-				AD8936BF234CBEAE00B339EE /* RHeadline.swift in Sources */,
-				AD8936B4234CBEAE00B339EE /* SBody.swift in Sources */,
-				AD8936C5234CBEAE00B339EE /* Page1Authentication.swift in Sources */,
-				AD8936C2234CBEAE00B339EE /* SpinnerView.swift in Sources */,
-				AD8936C0234CBEAE00B339EE /* Overline.swift in Sources */,
-				AD8936C4234CBEAE00B339EE /* Page2Authentication.swift in Sources */,
-				AD8936CC234CBEAE00B339EE /* TypeOfAlignment.swift in Sources */,
-				AD8936B8234CBEAE00B339EE /* SHeadline.swift in Sources */,
+				AD7671DD234CD68100AE5620 /* LargeDisplayCard.swift in Sources */,
 				667FE032D993A5AE6170C75299099B10 /* LRDesignSystem-dummy.m in Sources */,
-				AD8936BD234CBEAE00B339EE /* XLHeadline.swift in Sources */,
-				AD8936AE234CBEAE00B339EE /* Caption.swift in Sources */,
-				AD89369A234CBEAE00B339EE /* BaseButton.swift in Sources */,
-				AD893699234CBEAE00B339EE /* TextButton.swift in Sources */,
 				0CD63E752E602062FD5A7D3F3B39530D /* TestDesignableView.swift in Sources */,
-				AD8936B1234CBEAE00B339EE /* LBody.swift in Sources */,
-				AD893692234CBEAE00B339EE /* SegmentedProgressBar.swift in Sources */,
-				AD8936B2234CBEAE00B339EE /* RBody.swift in Sources */,
-				AD8936C9234CBEAE00B339EE /* NIbLodeable.swift in Sources */,
-				AD8936B6234CBEAE00B339EE /* Label.swift in Sources */,
-				AD893698234CBEAE00B339EE /* BaseButtonIssue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
