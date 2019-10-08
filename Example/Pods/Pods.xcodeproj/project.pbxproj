@@ -14,7 +14,7 @@
 		6C2935F792E9812675E721B8FCCBE9D1 /* LRDesignSystem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52090F9B51D37B7C7421C1C7B7F871D1 /* LRDesignSystem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A30D9625F69317B0D56A2E8CF96F31AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A4AF7FCAF21D254273EE47CD03217C9F /* Pods-LRDesignSystem_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C175B9D6560646B6DC58866D075FA854 /* Pods-LRDesignSystem_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD7671DD234CD68100AE5620 /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671DC234CD68100AE5620 /* LargeDisplayCard.swift */; };
+		AD7671DF234CD85D00AE5620 /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671DE234CD85D00AE5620 /* LargeDisplayCard.swift */; };
 		C950AA97F53C3815DC9CEA8DF57DCAC2 /* Pods-LRDesignSystem_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C10C06EB8C623CB5A0B2DD76184E7 /* Pods-LRDesignSystem_Example-dummy.m */; };
 		D14E62F6A65220640C1CDF0AD8D286CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		E046EA659E38B0AAEABC30292CB6F0D6 /* Pods-LRDesignSystem_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B4430C6927C93B3B3863A2AC99B573F /* Pods-LRDesignSystem_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,7 +60,7 @@
 		9E8884543E16C258A1A32A048CBCB44C /* LRDesignSystem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LRDesignSystem-dummy.m"; sourceTree = "<group>"; };
 		A269189E5BFC97A412B3D350C773360D /* Pods-LRDesignSystem_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A8E2933360C517F35A6FC06CE1A68071 /* Pods-LRDesignSystem_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LRDesignSystem_Tests-dummy.m"; sourceTree = "<group>"; };
-		AD7671DC234CD68100AE5620 /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeDisplayCard.swift; sourceTree = "<group>"; };
+		AD7671DE234CD85D00AE5620 /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LargeDisplayCard.swift; path = LRDesignSystem/Classes/LargeDisplayCard.swift; sourceTree = "<group>"; };
 		B0909696744A8E8CBC827A9FA7C167CF /* LRDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LRDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2653123548D74D931329755BC13F397 /* Pods-LRDesignSystem_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LRDesignSystem_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B197D8EDD69A2630EAA90D562C157C /* Pods-LRDesignSystem_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -198,8 +198,8 @@
 		DFD617A5B06028DB1A215443F2F5FFF6 /* LRDesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				AD7671DE234CD85D00AE5620 /* LargeDisplayCard.swift */,
 				5F34671FEDBABDD8AD468380CCCD0793 /* TestDesignableView.swift */,
-				AD7671DC234CD68100AE5620 /* LargeDisplayCard.swift */,
 				1D9B03448542B800FBC02D80DD6C2D0F /* Pod */,
 				C12E6F139D2ACF96C6A8AA6A9CCDFB87 /* Support Files */,
 			);
@@ -383,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7671DD234CD68100AE5620 /* LargeDisplayCard.swift in Sources */,
+				AD7671DF234CD85D00AE5620 /* LargeDisplayCard.swift in Sources */,
 				667FE032D993A5AE6170C75299099B10 /* LRDesignSystem-dummy.m in Sources */,
 				0CD63E752E602062FD5A7D3F3B39530D /* TestDesignableView.swift in Sources */,
 			);
