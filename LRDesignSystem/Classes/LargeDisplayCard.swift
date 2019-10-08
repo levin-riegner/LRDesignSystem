@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+@IBDesignable
+class LargeDisplayCard: UIView {
+    override func draw(_ rect: CGRect) {
+        backgroundColor = .green
+    }
+}
