@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.2.10'
-  s.summary          = '0.2.10'
+  s.version          = '0.2.11'
+  s.summary          = '0.2.11'
 
   s.swift_version    = '5.0'
   
