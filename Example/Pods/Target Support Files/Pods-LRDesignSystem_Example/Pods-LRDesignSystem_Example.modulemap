@@ -1,0 +1,6 @@
+framework module Pods_LRDesignSystem_Example {
+  umbrella header "Pods-LRDesignSystem_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

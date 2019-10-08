@@ -1,0 +1,22 @@
+{
+  "name": "LRDesignSystem",
+  "version": "0.1.0",
+  "summary": "A short description of LRDesignSystem.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Oxean2014/LRDesignSystem",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Oxean2014": "ileider@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Oxean2014/LRDesignSystem.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LRDesignSystem/Classes/**/*"
+}

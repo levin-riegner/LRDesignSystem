@@ -1,0 +1,1177 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A91AE2B95D87198B6320214452ED91 /* Pods-LRDesignSystem_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E2933360C517F35A6FC06CE1A68071 /* Pods-LRDesignSystem_Tests-dummy.m */; };
+		0CD63E752E602062FD5A7D3F3B39530D /* TestDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F34671FEDBABDD8AD468380CCCD0793 /* TestDesignableView.swift */; };
+		667FE032D993A5AE6170C75299099B10 /* LRDesignSystem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8884543E16C258A1A32A048CBCB44C /* LRDesignSystem-dummy.m */; };
+		66D40E927908E45CEC0D01187E2C7B9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6C2935F792E9812675E721B8FCCBE9D1 /* LRDesignSystem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52090F9B51D37B7C7421C1C7B7F871D1 /* LRDesignSystem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A30D9625F69317B0D56A2E8CF96F31AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A4AF7FCAF21D254273EE47CD03217C9F /* Pods-LRDesignSystem_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C175B9D6560646B6DC58866D075FA854 /* Pods-LRDesignSystem_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD893691234CBEAE00B339EE /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893639234CBEAD00B339EE /* LargeDisplayCard.swift */; };
+		AD893692234CBEAE00B339EE /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89363A234CBEAD00B339EE /* SegmentedProgressBar.swift */; };
+		AD893693234CBEAE00B339EE /* BaseButtonIssue.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89363C234CBEAD00B339EE /* BaseButtonIssue.xib */; };
+		AD893694234CBEAE00B339EE /* PrimaryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89363D234CBEAD00B339EE /* PrimaryButton.xib */; };
+		AD893695234CBEAE00B339EE /* SimpleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89363E234CBEAD00B339EE /* SimpleLoadingView.swift */; };
+		AD893696234CBEAE00B339EE /* TextButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89363F234CBEAD00B339EE /* TextButton.xib */; };
+		AD893697234CBEAE00B339EE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893640234CBEAD00B339EE /* PrimaryButton.swift */; };
+		AD893698234CBEAE00B339EE /* BaseButtonIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893641234CBEAD00B339EE /* BaseButtonIssue.swift */; };
+		AD893699234CBEAE00B339EE /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893642234CBEAD00B339EE /* TextButton.swift */; };
+		AD89369A234CBEAE00B339EE /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893643234CBEAD00B339EE /* BaseButton.swift */; };
+		AD89369B234CBEAE00B339EE /* MarkOffcPro-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893645234CBEAD00B339EE /* MarkOffcPro-BookItalic.ttf */; };
+		AD89369C234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893646234CBEAD00B339EE /* MarkOffcPro-Light.ttf */; };
+		AD89369D234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893647234CBEAD00B339EE /* Lato-LightItalic.ttf */; };
+		AD89369E234CBEAE00B339EE /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893648234CBEAD00B339EE /* Lato-Thin.ttf */; };
+		AD89369F234CBEAE00B339EE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893649234CBEAD00B339EE /* Lato-Bold.ttf */; };
+		AD8936A0234CBEAE00B339EE /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364A234CBEAD00B339EE /* Lato-Black.ttf */; };
+		AD8936A1234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364B234CBEAD00B339EE /* MarkOffcPro-Bold.ttf */; };
+		AD8936A2234CBEAE00B339EE /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364C234CBEAD00B339EE /* MarkOffcPro-Book.ttf */; };
+		AD8936A3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364D234CBEAD00B339EE /* Lato-RegularItalic.ttf */; };
+		AD8936A4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364E234CBEAD00B339EE /* Lato-Regular.ttf */; };
+		AD8936A5234CBEAE00B339EE /* MarkOffcPro-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89364F234CBEAD00B339EE /* MarkOffcPro-Heavy.ttf */; };
+		AD8936A6234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893650234CBEAD00B339EE /* Lato-BlackItalic.ttf */; };
+		AD8936A7234CBEAE00B339EE /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893651234CBEAD00B339EE /* MarkOffcPro-HeavyItalic.ttf */; };
+		AD8936A8234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893652234CBEAD00B339EE /* MarkOffcPro-BoldItalic.ttf */; };
+		AD8936A9234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893653234CBEAD00B339EE /* MarkOffcPro-LightItalic.ttf */; };
+		AD8936AA234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893654234CBEAD00B339EE /* MarkOffcPro-CondHeavy.ttf */; };
+		AD8936AB234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893655234CBEAD00B339EE /* Lato-BoldItalic.ttf */; };
+		AD8936AC234CBEAE00B339EE /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893656234CBEAD00B339EE /* Lato-Light.ttf */; };
+		AD8936AD234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893657234CBEAD00B339EE /* Lato-ThinItalic.ttf */; };
+		AD8936AE234CBEAE00B339EE /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89365A234CBEAD00B339EE /* Caption.swift */; };
+		AD8936AF234CBEAE00B339EE /* Caption.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89365B234CBEAD00B339EE /* Caption.xib */; };
+		AD8936B0234CBEAE00B339EE /* LBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89365D234CBEAD00B339EE /* LBody.xib */; };
+		AD8936B1234CBEAE00B339EE /* LBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89365E234CBEAD00B339EE /* LBody.swift */; };
+		AD8936B2234CBEAE00B339EE /* RBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89365F234CBEAD00B339EE /* RBody.swift */; };
+		AD8936B3234CBEAE00B339EE /* SBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893660234CBEAD00B339EE /* SBody.xib */; };
+		AD8936B4234CBEAE00B339EE /* SBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893661234CBEAD00B339EE /* SBody.swift */; };
+		AD8936B5234CBEAE00B339EE /* RBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893662234CBEAD00B339EE /* RBody.xib */; };
+		AD8936B6234CBEAE00B339EE /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893664234CBEAD00B339EE /* Label.swift */; };
+		AD8936B7234CBEAE00B339EE /* Label.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893665234CBEAD00B339EE /* Label.xib */; };
+		AD8936B8234CBEAE00B339EE /* SHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893667234CBEAD00B339EE /* SHeadline.swift */; };
+		AD8936B9234CBEAE00B339EE /* LHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893668234CBEAD00B339EE /* LHeadline.xib */; };
+		AD8936BA234CBEAE00B339EE /* SHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893669234CBEAD00B339EE /* SHeadline.xib */; };
+		AD8936BB234CBEAE00B339EE /* LHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89366A234CBEAD00B339EE /* LHeadline.swift */; };
+		AD8936BC234CBEAE00B339EE /* XLHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89366B234CBEAD00B339EE /* XLHeadline.xib */; };
+		AD8936BD234CBEAE00B339EE /* XLHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89366C234CBEAE00B339EE /* XLHeadline.swift */; };
+		AD8936BE234CBEAE00B339EE /* RHeadline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89366D234CBEAE00B339EE /* RHeadline.xib */; };
+		AD8936BF234CBEAE00B339EE /* RHeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89366E234CBEAE00B339EE /* RHeadline.swift */; };
+		AD8936C0234CBEAE00B339EE /* Overline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893670234CBEAE00B339EE /* Overline.swift */; };
+		AD8936C1234CBEAE00B339EE /* Overline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893671234CBEAE00B339EE /* Overline.xib */; };
+		AD8936C2234CBEAE00B339EE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893673234CBEAE00B339EE /* SpinnerView.swift */; };
+		AD8936C3234CBEAE00B339EE /* MainAuthenticationScreen copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893675234CBEAE00B339EE /* MainAuthenticationScreen copy.swift */; };
+		AD8936C4234CBEAE00B339EE /* Page2Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893676234CBEAE00B339EE /* Page2Authentication.swift */; };
+		AD8936C5234CBEAE00B339EE /* Page1Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893677234CBEAE00B339EE /* Page1Authentication.swift */; };
+		AD8936C6234CBEAE00B339EE /* AuthenticationScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */; };
+		AD8936C7234CBEAE00B339EE /* Page1Authentication.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893679234CBEAE00B339EE /* Page1Authentication.xib */; };
+		AD8936C8234CBEAE00B339EE /* Page2Authentication.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89367A234CBEAE00B339EE /* Page2Authentication.xib */; };
+		AD8936C9234CBEAE00B339EE /* NIbLodeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89367B234CBEAE00B339EE /* NIbLodeable.swift */; };
+		AD8936CA234CBEAE00B339EE /* LargeDisplayCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD89367C234CBEAE00B339EE /* LargeDisplayCard.xib */; };
+		AD8936CB234CBEAE00B339EE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89367D234CBEAE00B339EE /* ColorExtension.swift */; };
+		AD8936CC234CBEAE00B339EE /* TypeOfAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89367E234CBEAE00B339EE /* TypeOfAlignment.swift */; };
+		AD8936CD234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893680234CBEAE00B339EE /* MarkOffcPro-Light.ttf */; };
+		AD8936CE234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893681234CBEAE00B339EE /* Lato-LightItalic.ttf */; };
+		AD8936CF234CBEAE00B339EE /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893682234CBEAE00B339EE /* Lato-Thin.ttf */; };
+		AD8936D0234CBEAE00B339EE /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893683234CBEAE00B339EE /* Lato-Bold.ttf */; };
+		AD8936D1234CBEAE00B339EE /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893684234CBEAE00B339EE /* Lato-Black.ttf */; };
+		AD8936D2234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893685234CBEAE00B339EE /* MarkOffcPro-Bold.ttf */; };
+		AD8936D3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893686234CBEAE00B339EE /* Lato-RegularItalic.ttf */; };
+		AD8936D4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893687234CBEAE00B339EE /* Lato-Regular.ttf */; };
+		AD8936D5234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893688234CBEAE00B339EE /* Lato-BlackItalic.ttf */; };
+		AD8936D6234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD893689234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf */; };
+		AD8936D7234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368A234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf */; };
+		AD8936D8234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368B234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf */; };
+		AD8936D9234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368C234CBEAE00B339EE /* Lato-BoldItalic.ttf */; };
+		AD8936DA234CBEAE00B339EE /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368D234CBEAE00B339EE /* Lato-Light.ttf */; };
+		AD8936DB234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD89368E234CBEAE00B339EE /* Lato-ThinItalic.ttf */; };
+		AD8936DC234CBEAE00B339EE /* FieldTextBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893690234CBEAE00B339EE /* FieldTextBase.swift */; };
+		C950AA97F53C3815DC9CEA8DF57DCAC2 /* Pods-LRDesignSystem_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0C10C06EB8C623CB5A0B2DD76184E7 /* Pods-LRDesignSystem_Example-dummy.m */; };
+		D14E62F6A65220640C1CDF0AD8D286CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E046EA659E38B0AAEABC30292CB6F0D6 /* Pods-LRDesignSystem_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B4430C6927C93B3B3863A2AC99B573F /* Pods-LRDesignSystem_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E0B78F91CA6D1BBC1195032D9D41735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BEB03BF023BC08D157FE7848C025EA4;
+			remoteInfo = LRDesignSystem;
+		};
+		4AF1DDDF950C1C88725CCCD8142DFAB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60D63C8C5B949513E7C4CD814F1006FB;
+			remoteInfo = "Pods-LRDesignSystem_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B4430C6927C93B3B3863A2AC99B573F /* Pods-LRDesignSystem_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LRDesignSystem_Tests-umbrella.h"; sourceTree = "<group>"; };
+		19F5850681A26EF309F3ED3B8EDDBB06 /* Pods_LRDesignSystem_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRDesignSystem_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2883634F71C557C1CCAEC6C690AC8AAE /* Pods-LRDesignSystem_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LRDesignSystem_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D0C10C06EB8C623CB5A0B2DD76184E7 /* Pods-LRDesignSystem_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LRDesignSystem_Example-dummy.m"; sourceTree = "<group>"; };
+		44CE22282B4BF4846FF08AA9F15A8B50 /* Pods-LRDesignSystem_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LRDesignSystem_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4CC6840EA2DC7FFCF96AC041A55B62F5 /* LRDesignSystem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LRDesignSystem-prefix.pch"; sourceTree = "<group>"; };
+		52090F9B51D37B7C7421C1C7B7F871D1 /* LRDesignSystem-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LRDesignSystem-umbrella.h"; sourceTree = "<group>"; };
+		56F33296F2404BD1D0920706BAC4B5E7 /* LRDesignSystem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LRDesignSystem.xcconfig; sourceTree = "<group>"; };
+		5F34671FEDBABDD8AD468380CCCD0793 /* TestDesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestDesignableView.swift; path = LRDesignSystem/Classes/TestDesignableView.swift; sourceTree = "<group>"; };
+		622EF3D6C5D4252D928436C925A24E2A /* LRDesignSystem.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LRDesignSystem.modulemap; sourceTree = "<group>"; };
+		6243D7163995796ACCB6A76EEE6AA68B /* Pods-LRDesignSystem_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LRDesignSystem_Example.modulemap"; sourceTree = "<group>"; };
+		6AF57E3A79353CCD95E18E95526D36EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6F9974B7F40C1932BF7A7C6BDCCEFC41 /* LRDesignSystem-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LRDesignSystem-Info.plist"; sourceTree = "<group>"; };
+		7CC8162208A3A94AD796F9DC53B935DC /* Pods-LRDesignSystem_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LRDesignSystem_Tests-Info.plist"; sourceTree = "<group>"; };
+		927F9A19B3612D80BA00C02828C732DE /* Pods-LRDesignSystem_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LRDesignSystem_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9284DEF901DCC73D2055F6F7A81046AE /* Pods-LRDesignSystem_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LRDesignSystem_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9D3DB8C501B81BD0033D079ECF7A50F0 /* Pods-LRDesignSystem_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LRDesignSystem_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E8884543E16C258A1A32A048CBCB44C /* LRDesignSystem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LRDesignSystem-dummy.m"; sourceTree = "<group>"; };
+		A269189E5BFC97A412B3D350C773360D /* Pods-LRDesignSystem_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A8E2933360C517F35A6FC06CE1A68071 /* Pods-LRDesignSystem_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LRDesignSystem_Tests-dummy.m"; sourceTree = "<group>"; };
+		AD893639234CBEAD00B339EE /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeDisplayCard.swift; sourceTree = "<group>"; };
+		AD89363A234CBEAD00B339EE /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
+		AD89363C234CBEAD00B339EE /* BaseButtonIssue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseButtonIssue.xib; sourceTree = "<group>"; };
+		AD89363D234CBEAD00B339EE /* PrimaryButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrimaryButton.xib; sourceTree = "<group>"; };
+		AD89363E234CBEAD00B339EE /* SimpleLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLoadingView.swift; sourceTree = "<group>"; };
+		AD89363F234CBEAD00B339EE /* TextButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextButton.xib; sourceTree = "<group>"; };
+		AD893640234CBEAD00B339EE /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		AD893641234CBEAD00B339EE /* BaseButtonIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButtonIssue.swift; sourceTree = "<group>"; };
+		AD893642234CBEAD00B339EE /* TextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
+		AD893643234CBEAD00B339EE /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		AD893645234CBEAD00B339EE /* MarkOffcPro-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BookItalic.ttf"; sourceTree = "<group>"; };
+		AD893646234CBEAD00B339EE /* MarkOffcPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Light.ttf"; sourceTree = "<group>"; };
+		AD893647234CBEAD00B339EE /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		AD893648234CBEAD00B339EE /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		AD893649234CBEAD00B339EE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		AD89364A234CBEAD00B339EE /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		AD89364B234CBEAD00B339EE /* MarkOffcPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Bold.ttf"; sourceTree = "<group>"; };
+		AD89364C234CBEAD00B339EE /* MarkOffcPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Book.ttf"; sourceTree = "<group>"; };
+		AD89364D234CBEAD00B339EE /* Lato-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-RegularItalic.ttf"; sourceTree = "<group>"; };
+		AD89364E234CBEAD00B339EE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		AD89364F234CBEAD00B339EE /* MarkOffcPro-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Heavy.ttf"; sourceTree = "<group>"; };
+		AD893650234CBEAD00B339EE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AD893651234CBEAD00B339EE /* MarkOffcPro-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		AD893652234CBEAD00B339EE /* MarkOffcPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AD893653234CBEAD00B339EE /* MarkOffcPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		AD893654234CBEAD00B339EE /* MarkOffcPro-CondHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-CondHeavy.ttf"; sourceTree = "<group>"; };
+		AD893655234CBEAD00B339EE /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AD893656234CBEAD00B339EE /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		AD893657234CBEAD00B339EE /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AD89365A234CBEAD00B339EE /* Caption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
+		AD89365B234CBEAD00B339EE /* Caption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Caption.xib; sourceTree = "<group>"; };
+		AD89365D234CBEAD00B339EE /* LBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBody.xib; sourceTree = "<group>"; };
+		AD89365E234CBEAD00B339EE /* LBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBody.swift; sourceTree = "<group>"; };
+		AD89365F234CBEAD00B339EE /* RBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBody.swift; sourceTree = "<group>"; };
+		AD893660234CBEAD00B339EE /* SBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBody.xib; sourceTree = "<group>"; };
+		AD893661234CBEAD00B339EE /* SBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBody.swift; sourceTree = "<group>"; };
+		AD893662234CBEAD00B339EE /* RBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBody.xib; sourceTree = "<group>"; };
+		AD893664234CBEAD00B339EE /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		AD893665234CBEAD00B339EE /* Label.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Label.xib; sourceTree = "<group>"; };
+		AD893667234CBEAD00B339EE /* SHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHeadline.swift; sourceTree = "<group>"; };
+		AD893668234CBEAD00B339EE /* LHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHeadline.xib; sourceTree = "<group>"; };
+		AD893669234CBEAD00B339EE /* SHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHeadline.xib; sourceTree = "<group>"; };
+		AD89366A234CBEAD00B339EE /* LHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHeadline.swift; sourceTree = "<group>"; };
+		AD89366B234CBEAD00B339EE /* XLHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XLHeadline.xib; sourceTree = "<group>"; };
+		AD89366C234CBEAE00B339EE /* XLHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XLHeadline.swift; sourceTree = "<group>"; };
+		AD89366D234CBEAE00B339EE /* RHeadline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RHeadline.xib; sourceTree = "<group>"; };
+		AD89366E234CBEAE00B339EE /* RHeadline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RHeadline.swift; sourceTree = "<group>"; };
+		AD893670234CBEAE00B339EE /* Overline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overline.swift; sourceTree = "<group>"; };
+		AD893671234CBEAE00B339EE /* Overline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Overline.xib; sourceTree = "<group>"; };
+		AD893673234CBEAE00B339EE /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		AD893675234CBEAE00B339EE /* MainAuthenticationScreen copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainAuthenticationScreen copy.swift"; sourceTree = "<group>"; };
+		AD893676234CBEAE00B339EE /* Page2Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2Authentication.swift; sourceTree = "<group>"; };
+		AD893677234CBEAE00B339EE /* Page1Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1Authentication.swift; sourceTree = "<group>"; };
+		AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationScreen.xib; sourceTree = "<group>"; };
+		AD893679234CBEAE00B339EE /* Page1Authentication.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page1Authentication.xib; sourceTree = "<group>"; };
+		AD89367A234CBEAE00B339EE /* Page2Authentication.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page2Authentication.xib; sourceTree = "<group>"; };
+		AD89367B234CBEAE00B339EE /* NIbLodeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIbLodeable.swift; sourceTree = "<group>"; };
+		AD89367C234CBEAE00B339EE /* LargeDisplayCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LargeDisplayCard.xib; sourceTree = "<group>"; };
+		AD89367D234CBEAE00B339EE /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		AD89367E234CBEAE00B339EE /* TypeOfAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfAlignment.swift; sourceTree = "<group>"; };
+		AD893680234CBEAE00B339EE /* MarkOffcPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Light.ttf"; sourceTree = "<group>"; };
+		AD893681234CBEAE00B339EE /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		AD893682234CBEAE00B339EE /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		AD893683234CBEAE00B339EE /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		AD893684234CBEAE00B339EE /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		AD893685234CBEAE00B339EE /* MarkOffcPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Bold.ttf"; sourceTree = "<group>"; };
+		AD893686234CBEAE00B339EE /* Lato-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-RegularItalic.ttf"; sourceTree = "<group>"; };
+		AD893687234CBEAE00B339EE /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		AD893688234CBEAE00B339EE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AD893689234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AD89368A234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		AD89368B234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-CondHeavy.ttf"; sourceTree = "<group>"; };
+		AD89368C234CBEAE00B339EE /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AD89368D234CBEAE00B339EE /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		AD89368E234CBEAE00B339EE /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AD893690234CBEAE00B339EE /* FieldTextBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldTextBase.swift; sourceTree = "<group>"; };
+		B0909696744A8E8CBC827A9FA7C167CF /* LRDesignSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LRDesignSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2653123548D74D931329755BC13F397 /* Pods-LRDesignSystem_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LRDesignSystem_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B197D8EDD69A2630EAA90D562C157C /* Pods-LRDesignSystem_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C175B9D6560646B6DC58866D075FA854 /* Pods-LRDesignSystem_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LRDesignSystem_Example-umbrella.h"; sourceTree = "<group>"; };
+		D2E02F020B45767DE90EE1D745D5649F /* Pods_LRDesignSystem_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRDesignSystem_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4582411E3FE0F68D397A7A6A9986BF8 /* LRDesignSystem.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LRDesignSystem.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DE26DDB545482714F560798B9439C2D7 /* Pods-LRDesignSystem_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LRDesignSystem_Tests.modulemap"; sourceTree = "<group>"; };
+		E0DDE84F068D4CF99B3986F1627ED7B4 /* Pods-LRDesignSystem_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LRDesignSystem_Example-Info.plist"; sourceTree = "<group>"; };
+		F61EA111BC84B213F1AF224CA03BB032 /* Pods-LRDesignSystem_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LRDesignSystem_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FB9B0B3FF711068A2710B1673253D92C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042BCD36E8A8C5AE15333C4C805DF28B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14E62F6A65220640C1CDF0AD8D286CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18672EC53A5E7309EAD6D238257D777B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30D9625F69317B0D56A2E8CF96F31AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FDBDE611D7002001919910969A8B4C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D40E927908E45CEC0D01187E2C7B9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D9B03448542B800FBC02D80DD6C2D0F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B0B3FF711068A2710B1673253D92C /* LICENSE */,
+				D4582411E3FE0F68D397A7A6A9986BF8 /* LRDesignSystem.podspec */,
+				6AF57E3A79353CCD95E18E95526D36EE /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		499B5E14F50D658B37ED1EC1814DBB6F /* Pods-LRDesignSystem_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DE26DDB545482714F560798B9439C2D7 /* Pods-LRDesignSystem_Tests.modulemap */,
+				B4B197D8EDD69A2630EAA90D562C157C /* Pods-LRDesignSystem_Tests-acknowledgements.markdown */,
+				44CE22282B4BF4846FF08AA9F15A8B50 /* Pods-LRDesignSystem_Tests-acknowledgements.plist */,
+				A8E2933360C517F35A6FC06CE1A68071 /* Pods-LRDesignSystem_Tests-dummy.m */,
+				7CC8162208A3A94AD796F9DC53B935DC /* Pods-LRDesignSystem_Tests-Info.plist */,
+				0B4430C6927C93B3B3863A2AC99B573F /* Pods-LRDesignSystem_Tests-umbrella.h */,
+				9D3DB8C501B81BD0033D079ECF7A50F0 /* Pods-LRDesignSystem_Tests.debug.xcconfig */,
+				9284DEF901DCC73D2055F6F7A81046AE /* Pods-LRDesignSystem_Tests.release.xcconfig */,
+			);
+			name = "Pods-LRDesignSystem_Tests";
+			path = "Target Support Files/Pods-LRDesignSystem_Tests";
+			sourceTree = "<group>";
+		};
+		7748E366389F91CE26255911AAC64615 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF0AFC2AE45D65670D8812AC578F8390 /* Pods-LRDesignSystem_Example */,
+				499B5E14F50D658B37ED1EC1814DBB6F /* Pods-LRDesignSystem_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		94D60BC5ABF73ADF8BBBC99386EC564B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0909696744A8E8CBC827A9FA7C167CF /* LRDesignSystem.framework */,
+				19F5850681A26EF309F3ED3B8EDDBB06 /* Pods_LRDesignSystem_Example.framework */,
+				D2E02F020B45767DE90EE1D745D5649F /* Pods_LRDesignSystem_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E42B7114D7688B9CD755D8246867085 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFD617A5B06028DB1A215443F2F5FFF6 /* LRDesignSystem */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AD893638234CBEAD00B339EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AD893639234CBEAD00B339EE /* LargeDisplayCard.swift */,
+				AD89363A234CBEAD00B339EE /* SegmentedProgressBar.swift */,
+				AD89363B234CBEAD00B339EE /* Buttons */,
+				AD893644234CBEAD00B339EE /* OpenType TTF Pro */,
+				AD893658234CBEAD00B339EE /* Labels */,
+				AD893672234CBEAE00B339EE /* Spinner */,
+				AD893674234CBEAE00B339EE /* Screens */,
+				AD89367B234CBEAE00B339EE /* NIbLodeable.swift */,
+				AD89367C234CBEAE00B339EE /* LargeDisplayCard.xib */,
+				AD89367D234CBEAE00B339EE /* ColorExtension.swift */,
+				AD89367E234CBEAE00B339EE /* TypeOfAlignment.swift */,
+				AD89367F234CBEAE00B339EE /* Fonts */,
+				AD89368F234CBEAE00B339EE /* FieldText */,
+			);
+			name = UI;
+			path = LRDesignSystem/Classes/UI;
+			sourceTree = "<group>";
+		};
+		AD89363B234CBEAD00B339EE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AD89363C234CBEAD00B339EE /* BaseButtonIssue.xib */,
+				AD89363D234CBEAD00B339EE /* PrimaryButton.xib */,
+				AD89363E234CBEAD00B339EE /* SimpleLoadingView.swift */,
+				AD89363F234CBEAD00B339EE /* TextButton.xib */,
+				AD893640234CBEAD00B339EE /* PrimaryButton.swift */,
+				AD893641234CBEAD00B339EE /* BaseButtonIssue.swift */,
+				AD893642234CBEAD00B339EE /* TextButton.swift */,
+				AD893643234CBEAD00B339EE /* BaseButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		AD893644234CBEAD00B339EE /* OpenType TTF Pro */ = {
+			isa = PBXGroup;
+			children = (
+				AD893645234CBEAD00B339EE /* MarkOffcPro-BookItalic.ttf */,
+				AD893646234CBEAD00B339EE /* MarkOffcPro-Light.ttf */,
+				AD893647234CBEAD00B339EE /* Lato-LightItalic.ttf */,
+				AD893648234CBEAD00B339EE /* Lato-Thin.ttf */,
+				AD893649234CBEAD00B339EE /* Lato-Bold.ttf */,
+				AD89364A234CBEAD00B339EE /* Lato-Black.ttf */,
+				AD89364B234CBEAD00B339EE /* MarkOffcPro-Bold.ttf */,
+				AD89364C234CBEAD00B339EE /* MarkOffcPro-Book.ttf */,
+				AD89364D234CBEAD00B339EE /* Lato-RegularItalic.ttf */,
+				AD89364E234CBEAD00B339EE /* Lato-Regular.ttf */,
+				AD89364F234CBEAD00B339EE /* MarkOffcPro-Heavy.ttf */,
+				AD893650234CBEAD00B339EE /* Lato-BlackItalic.ttf */,
+				AD893651234CBEAD00B339EE /* MarkOffcPro-HeavyItalic.ttf */,
+				AD893652234CBEAD00B339EE /* MarkOffcPro-BoldItalic.ttf */,
+				AD893653234CBEAD00B339EE /* MarkOffcPro-LightItalic.ttf */,
+				AD893654234CBEAD00B339EE /* MarkOffcPro-CondHeavy.ttf */,
+				AD893655234CBEAD00B339EE /* Lato-BoldItalic.ttf */,
+				AD893656234CBEAD00B339EE /* Lato-Light.ttf */,
+				AD893657234CBEAD00B339EE /* Lato-ThinItalic.ttf */,
+			);
+			path = "OpenType TTF Pro";
+			sourceTree = "<group>";
+		};
+		AD893658234CBEAD00B339EE /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				AD893659234CBEAD00B339EE /* Caption */,
+				AD89365C234CBEAD00B339EE /* BodyLabel */,
+				AD893663234CBEAD00B339EE /* Label */,
+				AD893666234CBEAD00B339EE /* HeadlineLabel */,
+				AD89366F234CBEAE00B339EE /* Overline */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		AD893659234CBEAD00B339EE /* Caption */ = {
+			isa = PBXGroup;
+			children = (
+				AD89365A234CBEAD00B339EE /* Caption.swift */,
+				AD89365B234CBEAD00B339EE /* Caption.xib */,
+			);
+			path = Caption;
+			sourceTree = "<group>";
+		};
+		AD89365C234CBEAD00B339EE /* BodyLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AD89365D234CBEAD00B339EE /* LBody.xib */,
+				AD89365E234CBEAD00B339EE /* LBody.swift */,
+				AD89365F234CBEAD00B339EE /* RBody.swift */,
+				AD893660234CBEAD00B339EE /* SBody.xib */,
+				AD893661234CBEAD00B339EE /* SBody.swift */,
+				AD893662234CBEAD00B339EE /* RBody.xib */,
+			);
+			path = BodyLabel;
+			sourceTree = "<group>";
+		};
+		AD893663234CBEAD00B339EE /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				AD893664234CBEAD00B339EE /* Label.swift */,
+				AD893665234CBEAD00B339EE /* Label.xib */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		AD893666234CBEAD00B339EE /* HeadlineLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AD893667234CBEAD00B339EE /* SHeadline.swift */,
+				AD893668234CBEAD00B339EE /* LHeadline.xib */,
+				AD893669234CBEAD00B339EE /* SHeadline.xib */,
+				AD89366A234CBEAD00B339EE /* LHeadline.swift */,
+				AD89366B234CBEAD00B339EE /* XLHeadline.xib */,
+				AD89366C234CBEAE00B339EE /* XLHeadline.swift */,
+				AD89366D234CBEAE00B339EE /* RHeadline.xib */,
+				AD89366E234CBEAE00B339EE /* RHeadline.swift */,
+			);
+			path = HeadlineLabel;
+			sourceTree = "<group>";
+		};
+		AD89366F234CBEAE00B339EE /* Overline */ = {
+			isa = PBXGroup;
+			children = (
+				AD893670234CBEAE00B339EE /* Overline.swift */,
+				AD893671234CBEAE00B339EE /* Overline.xib */,
+			);
+			path = Overline;
+			sourceTree = "<group>";
+		};
+		AD893672234CBEAE00B339EE /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				AD893673234CBEAE00B339EE /* SpinnerView.swift */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		AD893674234CBEAE00B339EE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AD893675234CBEAE00B339EE /* MainAuthenticationScreen copy.swift */,
+				AD893676234CBEAE00B339EE /* Page2Authentication.swift */,
+				AD893677234CBEAE00B339EE /* Page1Authentication.swift */,
+				AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */,
+				AD893679234CBEAE00B339EE /* Page1Authentication.xib */,
+				AD89367A234CBEAE00B339EE /* Page2Authentication.xib */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AD89367F234CBEAE00B339EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD893680234CBEAE00B339EE /* MarkOffcPro-Light.ttf */,
+				AD893681234CBEAE00B339EE /* Lato-LightItalic.ttf */,
+				AD893682234CBEAE00B339EE /* Lato-Thin.ttf */,
+				AD893683234CBEAE00B339EE /* Lato-Bold.ttf */,
+				AD893684234CBEAE00B339EE /* Lato-Black.ttf */,
+				AD893685234CBEAE00B339EE /* MarkOffcPro-Bold.ttf */,
+				AD893686234CBEAE00B339EE /* Lato-RegularItalic.ttf */,
+				AD893687234CBEAE00B339EE /* Lato-Regular.ttf */,
+				AD893688234CBEAE00B339EE /* Lato-BlackItalic.ttf */,
+				AD893689234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf */,
+				AD89368A234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf */,
+				AD89368B234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf */,
+				AD89368C234CBEAE00B339EE /* Lato-BoldItalic.ttf */,
+				AD89368D234CBEAE00B339EE /* Lato-Light.ttf */,
+				AD89368E234CBEAE00B339EE /* Lato-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AD89368F234CBEAE00B339EE /* FieldText */ = {
+			isa = PBXGroup;
+			children = (
+				AD893690234CBEAE00B339EE /* FieldTextBase.swift */,
+			);
+			path = FieldText;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C12E6F139D2ACF96C6A8AA6A9CCDFB87 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				622EF3D6C5D4252D928436C925A24E2A /* LRDesignSystem.modulemap */,
+				56F33296F2404BD1D0920706BAC4B5E7 /* LRDesignSystem.xcconfig */,
+				9E8884543E16C258A1A32A048CBCB44C /* LRDesignSystem-dummy.m */,
+				6F9974B7F40C1932BF7A7C6BDCCEFC41 /* LRDesignSystem-Info.plist */,
+				4CC6840EA2DC7FFCF96AC041A55B62F5 /* LRDesignSystem-prefix.pch */,
+				52090F9B51D37B7C7421C1C7B7F871D1 /* LRDesignSystem-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LRDesignSystem";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9E42B7114D7688B9CD755D8246867085 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				94D60BC5ABF73ADF8BBBC99386EC564B /* Products */,
+				7748E366389F91CE26255911AAC64615 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD617A5B06028DB1A215443F2F5FFF6 /* LRDesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				AD893638234CBEAD00B339EE /* UI */,
+				5F34671FEDBABDD8AD468380CCCD0793 /* TestDesignableView.swift */,
+				1D9B03448542B800FBC02D80DD6C2D0F /* Pod */,
+				C12E6F139D2ACF96C6A8AA6A9CCDFB87 /* Support Files */,
+			);
+			name = LRDesignSystem;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FF0AFC2AE45D65670D8812AC578F8390 /* Pods-LRDesignSystem_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6243D7163995796ACCB6A76EEE6AA68B /* Pods-LRDesignSystem_Example.modulemap */,
+				A269189E5BFC97A412B3D350C773360D /* Pods-LRDesignSystem_Example-acknowledgements.markdown */,
+				2883634F71C557C1CCAEC6C690AC8AAE /* Pods-LRDesignSystem_Example-acknowledgements.plist */,
+				3D0C10C06EB8C623CB5A0B2DD76184E7 /* Pods-LRDesignSystem_Example-dummy.m */,
+				F61EA111BC84B213F1AF224CA03BB032 /* Pods-LRDesignSystem_Example-frameworks.sh */,
+				E0DDE84F068D4CF99B3986F1627ED7B4 /* Pods-LRDesignSystem_Example-Info.plist */,
+				C175B9D6560646B6DC58866D075FA854 /* Pods-LRDesignSystem_Example-umbrella.h */,
+				B2653123548D74D931329755BC13F397 /* Pods-LRDesignSystem_Example.debug.xcconfig */,
+				927F9A19B3612D80BA00C02828C732DE /* Pods-LRDesignSystem_Example.release.xcconfig */,
+			);
+			name = "Pods-LRDesignSystem_Example";
+			path = "Target Support Files/Pods-LRDesignSystem_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19F09E34E6276B93516E1F9437E107A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E046EA659E38B0AAEABC30292CB6F0D6 /* Pods-LRDesignSystem_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646DDC8DE58D9315D0577A44E04051DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AF7FCAF21D254273EE47CD03217C9F /* Pods-LRDesignSystem_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960203DB1C042A802B9FD22C24E55D1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C2935F792E9812675E721B8FCCBE9D1 /* LRDesignSystem-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BEB03BF023BC08D157FE7848C025EA4 /* LRDesignSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB320D7092DB094DB296F91628740F5 /* Build configuration list for PBXNativeTarget "LRDesignSystem" */;
+			buildPhases = (
+				960203DB1C042A802B9FD22C24E55D1D /* Headers */,
+				F1AFB1F7420596BDEA2A0E1AC5C6B56D /* Sources */,
+				18672EC53A5E7309EAD6D238257D777B /* Frameworks */,
+				498C42D4DB718B74A5ECEC2642837B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LRDesignSystem;
+			productName = LRDesignSystem;
+			productReference = B0909696744A8E8CBC827A9FA7C167CF /* LRDesignSystem.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43714556A19E1427AC97D38452F3F2F8 /* Pods-LRDesignSystem_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 366F0A38FACE694E975A99E167217FD7 /* Build configuration list for PBXNativeTarget "Pods-LRDesignSystem_Tests" */;
+			buildPhases = (
+				19F09E34E6276B93516E1F9437E107A1 /* Headers */,
+				77B4FB21EB673B92083AAB4D6F096D46 /* Sources */,
+				042BCD36E8A8C5AE15333C4C805DF28B /* Frameworks */,
+				1365CF3E0AD88DA50505AECBBF316C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C66997205B8D0FE4EE872F8F3E9F8AE3 /* PBXTargetDependency */,
+			);
+			name = "Pods-LRDesignSystem_Tests";
+			productName = "Pods-LRDesignSystem_Tests";
+			productReference = D2E02F020B45767DE90EE1D745D5649F /* Pods_LRDesignSystem_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60D63C8C5B949513E7C4CD814F1006FB /* Pods-LRDesignSystem_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E5F0E5446996C3ADEFA40EB98C0001 /* Build configuration list for PBXNativeTarget "Pods-LRDesignSystem_Example" */;
+			buildPhases = (
+				646DDC8DE58D9315D0577A44E04051DE /* Headers */,
+				A2BC8F2329AB9EE1108BE273E8CB0394 /* Sources */,
+				5FDBDE611D7002001919910969A8B4C9 /* Frameworks */,
+				D4431D6D8EF225E0275931D274E453D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AA0EB12DB0D2C05A87926A815460ABA /* PBXTargetDependency */,
+			);
+			name = "Pods-LRDesignSystem_Example";
+			productName = "Pods-LRDesignSystem_Example";
+			productReference = 19F5850681A26EF309F3ED3B8EDDBB06 /* Pods_LRDesignSystem_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 94D60BC5ABF73ADF8BBBC99386EC564B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BEB03BF023BC08D157FE7848C025EA4 /* LRDesignSystem */,
+				60D63C8C5B949513E7C4CD814F1006FB /* Pods-LRDesignSystem_Example */,
+				43714556A19E1427AC97D38452F3F2F8 /* Pods-LRDesignSystem_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1365CF3E0AD88DA50505AECBBF316C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498C42D4DB718B74A5ECEC2642837B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8936B7234CBEAE00B339EE /* Label.xib in Resources */,
+				AD8936C1234CBEAE00B339EE /* Overline.xib in Resources */,
+				AD893696234CBEAE00B339EE /* TextButton.xib in Resources */,
+				AD8936A7234CBEAE00B339EE /* MarkOffcPro-HeavyItalic.ttf in Resources */,
+				AD8936BC234CBEAE00B339EE /* XLHeadline.xib in Resources */,
+				AD8936DA234CBEAE00B339EE /* Lato-Light.ttf in Resources */,
+				AD8936A0234CBEAE00B339EE /* Lato-Black.ttf in Resources */,
+				AD8936C7234CBEAE00B339EE /* Page1Authentication.xib in Resources */,
+				AD8936B9234CBEAE00B339EE /* LHeadline.xib in Resources */,
+				AD8936A6234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */,
+				AD8936B0234CBEAE00B339EE /* LBody.xib in Resources */,
+				AD8936D6234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */,
+				AD8936D1234CBEAE00B339EE /* Lato-Black.ttf in Resources */,
+				AD89369D234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */,
+				AD8936BA234CBEAE00B339EE /* SHeadline.xib in Resources */,
+				AD8936A5234CBEAE00B339EE /* MarkOffcPro-Heavy.ttf in Resources */,
+				AD8936DB234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */,
+				AD8936AC234CBEAE00B339EE /* Lato-Light.ttf in Resources */,
+				AD8936D7234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */,
+				AD8936C6234CBEAE00B339EE /* AuthenticationScreen.xib in Resources */,
+				AD8936CE234CBEAE00B339EE /* Lato-LightItalic.ttf in Resources */,
+				AD8936AD234CBEAE00B339EE /* Lato-ThinItalic.ttf in Resources */,
+				AD8936AF234CBEAE00B339EE /* Caption.xib in Resources */,
+				AD8936A3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */,
+				AD89369E234CBEAE00B339EE /* Lato-Thin.ttf in Resources */,
+				AD8936B5234CBEAE00B339EE /* RBody.xib in Resources */,
+				AD89369C234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */,
+				AD893694234CBEAE00B339EE /* PrimaryButton.xib in Resources */,
+				AD8936A9234CBEAE00B339EE /* MarkOffcPro-LightItalic.ttf in Resources */,
+				AD8936C8234CBEAE00B339EE /* Page2Authentication.xib in Resources */,
+				AD8936CF234CBEAE00B339EE /* Lato-Thin.ttf in Resources */,
+				AD8936A8234CBEAE00B339EE /* MarkOffcPro-BoldItalic.ttf in Resources */,
+				AD8936AA234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */,
+				AD89369B234CBEAE00B339EE /* MarkOffcPro-BookItalic.ttf in Resources */,
+				AD8936CD234CBEAE00B339EE /* MarkOffcPro-Light.ttf in Resources */,
+				AD8936D9234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */,
+				AD893693234CBEAE00B339EE /* BaseButtonIssue.xib in Resources */,
+				AD8936D5234CBEAE00B339EE /* Lato-BlackItalic.ttf in Resources */,
+				AD8936D0234CBEAE00B339EE /* Lato-Bold.ttf in Resources */,
+				AD8936A2234CBEAE00B339EE /* MarkOffcPro-Book.ttf in Resources */,
+				AD8936A4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */,
+				AD8936A1234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */,
+				AD8936D2234CBEAE00B339EE /* MarkOffcPro-Bold.ttf in Resources */,
+				AD8936B3234CBEAE00B339EE /* SBody.xib in Resources */,
+				AD8936CA234CBEAE00B339EE /* LargeDisplayCard.xib in Resources */,
+				AD89369F234CBEAE00B339EE /* Lato-Bold.ttf in Resources */,
+				AD8936BE234CBEAE00B339EE /* RHeadline.xib in Resources */,
+				AD8936AB234CBEAE00B339EE /* Lato-BoldItalic.ttf in Resources */,
+				AD8936D8234CBEAE00B339EE /* MarkOffcPro-CondHeavy.ttf in Resources */,
+				AD8936D3234CBEAE00B339EE /* Lato-RegularItalic.ttf in Resources */,
+				AD8936D4234CBEAE00B339EE /* Lato-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4431D6D8EF225E0275931D274E453D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77B4FB21EB673B92083AAB4D6F096D46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A91AE2B95D87198B6320214452ED91 /* Pods-LRDesignSystem_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BC8F2329AB9EE1108BE273E8CB0394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C950AA97F53C3815DC9CEA8DF57DCAC2 /* Pods-LRDesignSystem_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1AFB1F7420596BDEA2A0E1AC5C6B56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8936DC234CBEAE00B339EE /* FieldTextBase.swift in Sources */,
+				AD8936BB234CBEAE00B339EE /* LHeadline.swift in Sources */,
+				AD893697234CBEAE00B339EE /* PrimaryButton.swift in Sources */,
+				AD893691234CBEAE00B339EE /* LargeDisplayCard.swift in Sources */,
+				AD893695234CBEAE00B339EE /* SimpleLoadingView.swift in Sources */,
+				AD8936CB234CBEAE00B339EE /* ColorExtension.swift in Sources */,
+				AD8936BF234CBEAE00B339EE /* RHeadline.swift in Sources */,
+				AD8936B4234CBEAE00B339EE /* SBody.swift in Sources */,
+				AD8936C5234CBEAE00B339EE /* Page1Authentication.swift in Sources */,
+				AD8936C2234CBEAE00B339EE /* SpinnerView.swift in Sources */,
+				AD8936C3234CBEAE00B339EE /* MainAuthenticationScreen copy.swift in Sources */,
+				AD8936C0234CBEAE00B339EE /* Overline.swift in Sources */,
+				AD8936C4234CBEAE00B339EE /* Page2Authentication.swift in Sources */,
+				AD8936CC234CBEAE00B339EE /* TypeOfAlignment.swift in Sources */,
+				AD8936B8234CBEAE00B339EE /* SHeadline.swift in Sources */,
+				667FE032D993A5AE6170C75299099B10 /* LRDesignSystem-dummy.m in Sources */,
+				AD8936BD234CBEAE00B339EE /* XLHeadline.swift in Sources */,
+				AD8936AE234CBEAE00B339EE /* Caption.swift in Sources */,
+				AD89369A234CBEAE00B339EE /* BaseButton.swift in Sources */,
+				AD893699234CBEAE00B339EE /* TextButton.swift in Sources */,
+				0CD63E752E602062FD5A7D3F3B39530D /* TestDesignableView.swift in Sources */,
+				AD8936B1234CBEAE00B339EE /* LBody.swift in Sources */,
+				AD893692234CBEAE00B339EE /* SegmentedProgressBar.swift in Sources */,
+				AD8936B2234CBEAE00B339EE /* RBody.swift in Sources */,
+				AD8936C9234CBEAE00B339EE /* NIbLodeable.swift in Sources */,
+				AD8936B6234CBEAE00B339EE /* Label.swift in Sources */,
+				AD893698234CBEAE00B339EE /* BaseButtonIssue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AA0EB12DB0D2C05A87926A815460ABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LRDesignSystem;
+			target = 1BEB03BF023BC08D157FE7848C025EA4 /* LRDesignSystem */;
+			targetProxy = 3E0B78F91CA6D1BBC1195032D9D41735 /* PBXContainerItemProxy */;
+		};
+		C66997205B8D0FE4EE872F8F3E9F8AE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LRDesignSystem_Example";
+			target = 60D63C8C5B949513E7C4CD814F1006FB /* Pods-LRDesignSystem_Example */;
+			targetProxy = 4AF1DDDF950C1C88725CCCD8142DFAB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C7893DFDF099EB44F57C0728E182476 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F33296F2404BD1D0920706BAC4B5E7 /* LRDesignSystem.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LRDesignSystem/LRDesignSystem-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem.modulemap";
+				PRODUCT_MODULE_NAME = LRDesignSystem;
+				PRODUCT_NAME = LRDesignSystem;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68A19CD55B1676C6EF5608237964D629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9284DEF901DCC73D2055F6F7A81046AE /* Pods-LRDesignSystem_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LRDesignSystem_Tests/Pods-LRDesignSystem_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LRDesignSystem_Tests/Pods-LRDesignSystem_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F6ECCEB1A5E1C5D81F823A3ECEFB454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927F9A19B3612D80BA00C02828C732DE /* Pods-LRDesignSystem_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LRDesignSystem_Example/Pods-LRDesignSystem_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LRDesignSystem_Example/Pods-LRDesignSystem_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4FB4DB3E597F875B8906CE32F8C224F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F33296F2404BD1D0920706BAC4B5E7 /* LRDesignSystem.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LRDesignSystem/LRDesignSystem-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem.modulemap";
+				PRODUCT_MODULE_NAME = LRDesignSystem;
+				PRODUCT_NAME = LRDesignSystem;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D21066B599B624C2256A454E5B1C119D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2653123548D74D931329755BC13F397 /* Pods-LRDesignSystem_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LRDesignSystem_Example/Pods-LRDesignSystem_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LRDesignSystem_Example/Pods-LRDesignSystem_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6CAB604DCBCA378FD85854EEBB98702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3DB8C501B81BD0033D079ECF7A50F0 /* Pods-LRDesignSystem_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LRDesignSystem_Tests/Pods-LRDesignSystem_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LRDesignSystem_Tests/Pods-LRDesignSystem_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		366F0A38FACE694E975A99E167217FD7 /* Build configuration list for PBXNativeTarget "Pods-LRDesignSystem_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6CAB604DCBCA378FD85854EEBB98702 /* Debug */,
+				68A19CD55B1676C6EF5608237964D629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB320D7092DB094DB296F91628740F5 /* Build configuration list for PBXNativeTarget "LRDesignSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7893DFDF099EB44F57C0728E182476 /* Debug */,
+				A4FB4DB3E597F875B8906CE32F8C224F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E5F0E5446996C3ADEFA40EB98C0001 /* Build configuration list for PBXNativeTarget "Pods-LRDesignSystem_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21066B599B624C2256A454E5B1C119D /* Debug */,
+				7F6ECCEB1A5E1C5D81F823A3ECEFB454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
