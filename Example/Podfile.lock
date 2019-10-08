@@ -1,0 +1,16 @@
+PODS:
+  - LRDesignSystem (0.1.0)
+
+DEPENDENCIES:
+  - LRDesignSystem (from `../`)
+
+EXTERNAL SOURCES:
+  LRDesignSystem:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LRDesignSystem: 1d2eb03df3afc0ce5a4004e791a76709999f93b8
+
+PODFILE CHECKSUM: 52d6517b48f7a14eda5cf910700677bea706df57
+
+COCOAPODS: 1.7.4
