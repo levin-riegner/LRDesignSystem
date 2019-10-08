@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '**/*'
+  s.source_files = '**/*.swift'
   
   # s.resource_bundles = {
   #   'LRDesignSystem' => ['LRDesignSystem/Assets/*.png']
