@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarkOffcPro-Bold.ttf">
+            <string>MarkOffcPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XLHeadline" customModule="GlobalCitizenComponents" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="QVe-AZ-W6M" id="Gde-uh-Wrk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XL Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVe-AZ-W6M">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="32"/>
+                    <fontDescription key="fontDescription" name="MarkOffcPro-Bold" family="Mark Offc Pro" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QVe-AZ-W6M" secondAttribute="trailing" id="WCB-4c-PkI"/>
+                <constraint firstItem="QVe-AZ-W6M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fxy-78-5Cl"/>
+                <constraint firstItem="QVe-AZ-W6M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xbW-GH-R7L"/>
+                <constraint firstAttribute="bottom" secondItem="QVe-AZ-W6M" secondAttribute="bottom" id="xj5-05-N3s"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="47.826086956521742" y="32.8125"/>
+        </view>
+    </objects>
+</document>

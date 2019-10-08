@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="Ueq-GU-tVz">
+            <view key="view" contentMode="scaleToFill" id="CXS-mZ-cqQ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jt4-Wr-jW4" customClass="Page1Authentication" customModule="GlobalCitizenComponents" customModuleProvider="target">
+                        <rect key="frame" x="16" y="44" width="382" height="639"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rfd-tq-Kq6"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="center"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="4S5-ye-m3b">
+                        <rect key="frame" x="179.5" y="691" width="55" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="aeQ-JT-jf8"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        <color key="currentPageIndicatorTintColor" red="0.18431372549019609" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vOl-vg-ner">
+                        <rect key="frame" x="16" y="730" width="382" height="54"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="yzs-An-grD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5x-qh-ZPI" customClass="TextButton" customModule="GlobalCitizenComponents" customModuleProvider="target">
+                        <rect key="frame" x="16" y="792" width="382" height="54"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="kCf-nY-D0K"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="dGm-zB-nnr" firstAttribute="bottom" secondItem="b5x-qh-ZPI" secondAttribute="bottom" constant="16" id="D25-Aq-cIL"/>
+                    <constraint firstItem="4S5-ye-m3b" firstAttribute="centerX" secondItem="dGm-zB-nnr" secondAttribute="centerX" id="NaT-lU-oWU"/>
+                    <constraint firstItem="vOl-vg-ner" firstAttribute="top" secondItem="4S5-ye-m3b" secondAttribute="bottom" constant="32" id="STu-Nu-tUG"/>
+                    <constraint firstItem="4S5-ye-m3b" firstAttribute="top" secondItem="Jt4-Wr-jW4" secondAttribute="bottom" constant="8" id="cPx-0Q-07b"/>
+                    <constraint firstItem="dGm-zB-nnr" firstAttribute="trailing" secondItem="b5x-qh-ZPI" secondAttribute="trailing" constant="16" id="eh6-bc-0p6"/>
+                    <constraint firstItem="Jt4-Wr-jW4" firstAttribute="top" secondItem="dGm-zB-nnr" secondAttribute="top" id="j1B-WQ-nBe"/>
+                    <constraint firstItem="b5x-qh-ZPI" firstAttribute="leading" secondItem="dGm-zB-nnr" secondAttribute="leading" constant="16" id="kr7-b6-rxO"/>
+                    <constraint firstItem="dGm-zB-nnr" firstAttribute="trailing" secondItem="Jt4-Wr-jW4" secondAttribute="trailing" constant="16" id="saG-cB-3nE"/>
+                    <constraint firstItem="Jt4-Wr-jW4" firstAttribute="leading" secondItem="dGm-zB-nnr" secondAttribute="leading" constant="16" id="swf-JK-ihe"/>
+                    <constraint firstItem="b5x-qh-ZPI" firstAttribute="top" secondItem="vOl-vg-ner" secondAttribute="bottom" constant="8" id="wsY-RU-Ilw"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="dGm-zB-nnr"/>
+            </view>
+        </viewController>
+    </objects>
+</document>
