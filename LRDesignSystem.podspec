@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.2.01'
-  s.summary          = '0.2.01'
+  s.version          = '0.2.2'
+  s.summary          = '0.2.2'
 
   s.swift_version    = '5.0'
   
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'LRDesignSystem/Classes/UI/**/*.swift'
+  s.source_files = 'LRDesignSystem/Classes/*.swift'
   
   # s.resource_bundles = {
   #   'LRDesignSystem' => ['LRDesignSystem/Assets/*.png']
