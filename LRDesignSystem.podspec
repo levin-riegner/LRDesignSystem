@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.1.8'
-  s.summary          = '3 Test.'
+  s.version          = '0.1.9'
+  s.summary          = '0.1.9'
 
   s.swift_version    = '5.0'
   
@@ -19,9 +19,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Description'
 
   s.homepage         = 'https://github.com/levin-riegner/LRDesignSystem'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -32,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LRDesignSystem/Classes/**/*'
+  s.source_files = 'LRDesignSystem/Classes/*'
   
   # s.resource_bundles = {
   #   'LRDesignSystem' => ['LRDesignSystem/Assets/*.png']
