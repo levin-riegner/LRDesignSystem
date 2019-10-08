@@ -64,7 +64,6 @@
 		AD8936C0234CBEAE00B339EE /* Overline.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893670234CBEAE00B339EE /* Overline.swift */; };
 		AD8936C1234CBEAE00B339EE /* Overline.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893671234CBEAE00B339EE /* Overline.xib */; };
 		AD8936C2234CBEAE00B339EE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893673234CBEAE00B339EE /* SpinnerView.swift */; };
-		AD8936C3234CBEAE00B339EE /* MainAuthenticationScreen copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893675234CBEAE00B339EE /* MainAuthenticationScreen copy.swift */; };
 		AD8936C4234CBEAE00B339EE /* Page2Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893676234CBEAE00B339EE /* Page2Authentication.swift */; };
 		AD8936C5234CBEAE00B339EE /* Page1Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD893677234CBEAE00B339EE /* Page1Authentication.swift */; };
 		AD8936C6234CBEAE00B339EE /* AuthenticationScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */; };
@@ -185,7 +184,6 @@
 		AD893670234CBEAE00B339EE /* Overline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overline.swift; sourceTree = "<group>"; };
 		AD893671234CBEAE00B339EE /* Overline.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Overline.xib; sourceTree = "<group>"; };
 		AD893673234CBEAE00B339EE /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
-		AD893675234CBEAE00B339EE /* MainAuthenticationScreen copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainAuthenticationScreen copy.swift"; sourceTree = "<group>"; };
 		AD893676234CBEAE00B339EE /* Page2Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2Authentication.swift; sourceTree = "<group>"; };
 		AD893677234CBEAE00B339EE /* Page1Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1Authentication.swift; sourceTree = "<group>"; };
 		AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationScreen.xib; sourceTree = "<group>"; };
@@ -444,7 +442,6 @@
 		AD893674234CBEAE00B339EE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				AD893675234CBEAE00B339EE /* MainAuthenticationScreen copy.swift */,
 				AD893676234CBEAE00B339EE /* Page2Authentication.swift */,
 				AD893677234CBEAE00B339EE /* Page1Authentication.swift */,
 				AD893678234CBEAE00B339EE /* AuthenticationScreen.xib */,
@@ -774,7 +771,6 @@
 				AD8936B4234CBEAE00B339EE /* SBody.swift in Sources */,
 				AD8936C5234CBEAE00B339EE /* Page1Authentication.swift in Sources */,
 				AD8936C2234CBEAE00B339EE /* SpinnerView.swift in Sources */,
-				AD8936C3234CBEAE00B339EE /* MainAuthenticationScreen copy.swift in Sources */,
 				AD8936C0234CBEAE00B339EE /* Overline.swift in Sources */,
 				AD8936C4234CBEAE00B339EE /* Page2Authentication.swift in Sources */,
 				AD8936CC234CBEAE00B339EE /* TypeOfAlignment.swift in Sources */,
