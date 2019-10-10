@@ -213,14 +213,14 @@ import UIKit
     //Bring all lines to the front
     func showLines() {
         for line in lines {
-            bringSubview(toFront: line)
+            bringSubviewToFront(line)
         }
     }
     
     //Bring all segments to the front
     func showSegments() {
         for segment in segments {
-            bringSubview(toFront: segment)
+            bringSubviewToFront(segment)
         }
     }
 }
