@@ -6,7 +6,7 @@
 //  Copyright (c) 2016 Ruva. All rights reserved.
 //
 import UIKit
-internal class SimpleLoadingView: UIView {
+public class SimpleLoadingView: UIView {
     
     //MARK: - Private
     fileprivate var viewsArray:[UIView] = []

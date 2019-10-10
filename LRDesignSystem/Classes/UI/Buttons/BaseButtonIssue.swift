@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class BaseButtonIssue: UIView, NibLoadable {
+public class BaseButtonIssue: UIView, NibLoadable {
     
     @IBInspectable
     public var title: String = "" {

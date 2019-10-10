@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class Page2Authentication: UIView, NibLoadable {
+public class Page2Authentication: UIView, NibLoadable {
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: SHeadline!

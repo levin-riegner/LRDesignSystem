@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class XLHeadline: UIView, NibLoadable {
+public class XLHeadline: UIView, NibLoadable {
     
     @IBOutlet weak var label: UILabel!
     

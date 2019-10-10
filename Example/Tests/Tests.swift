@@ -1,5 +1,4 @@
 import XCTest
-import LRDesignSystem
 
 class Tests: XCTestCase {
     

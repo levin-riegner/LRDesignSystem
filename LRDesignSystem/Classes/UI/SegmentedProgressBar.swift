@@ -6,7 +6,7 @@
 //  Copyright © 2017 Balin Sinnott. All rights reserved.
 //
 import UIKit
-@IBDesignable class SegmentedProgressBar: UIView {
+@IBDesignable public class SegmentedProgressBar: UIView {
     
     enum Direction {
         case start
@@ -121,7 +121,7 @@ import UIKit
         }
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         segments = []
         lines = []
         drawProgressBar()
@@ -213,14 +213,14 @@ import UIKit
     //Bring all lines to the front
     func showLines() {
         for line in lines {
-            bringSubviewToFront(line)
+            bringSubview(toFront: line)
         }
     }
     
     //Bring all segments to the front
     func showSegments() {
         for segment in segments {
-            bringSubviewToFront(segment)
+            bringSubview(toFront: segment)
         }
     }
 }

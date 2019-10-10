@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class PrimaryButton: BaseButton, NibLoadable {
+public class PrimaryButton: BaseButton, NibLoadable {
     
     @IBOutlet weak var button: UIButton!
     

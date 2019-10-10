@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class RBody: UIView, NibLoadable {
+public class RBody: UIView, NibLoadable {
     
     @IBOutlet weak var label: UILabel!
     

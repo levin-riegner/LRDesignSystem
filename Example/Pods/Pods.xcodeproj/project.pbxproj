@@ -24,25 +24,6 @@
 		AD767241234CDCB300AE5620 /* BaseButtonIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671EA234CDCB300AE5620 /* BaseButtonIssue.swift */; };
 		AD767242234CDCB300AE5620 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671EB234CDCB300AE5620 /* TextButton.swift */; };
 		AD767243234CDCB300AE5620 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671EC234CDCB300AE5620 /* BaseButton.swift */; };
-		AD767244234CDCB300AE5620 /* MarkOffcPro-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671EE234CDCB300AE5620 /* MarkOffcPro-BookItalic.ttf */; };
-		AD767245234CDCB300AE5620 /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671EF234CDCB300AE5620 /* MarkOffcPro-Light.ttf */; };
-		AD767246234CDCB300AE5620 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F0234CDCB300AE5620 /* Lato-LightItalic.ttf */; };
-		AD767247234CDCB300AE5620 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F1234CDCB300AE5620 /* Lato-Thin.ttf */; };
-		AD767248234CDCB300AE5620 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F2234CDCB300AE5620 /* Lato-Bold.ttf */; };
-		AD767249234CDCB300AE5620 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F3234CDCB300AE5620 /* Lato-Black.ttf */; };
-		AD76724A234CDCB300AE5620 /* MarkOffcPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F4234CDCB300AE5620 /* MarkOffcPro-Bold.ttf */; };
-		AD76724B234CDCB300AE5620 /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F5234CDCB300AE5620 /* MarkOffcPro-Book.ttf */; };
-		AD76724C234CDCB300AE5620 /* Lato-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F6234CDCB300AE5620 /* Lato-RegularItalic.ttf */; };
-		AD76724D234CDCB300AE5620 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F7234CDCB300AE5620 /* Lato-Regular.ttf */; };
-		AD76724E234CDCB300AE5620 /* MarkOffcPro-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F8234CDCB300AE5620 /* MarkOffcPro-Heavy.ttf */; };
-		AD76724F234CDCB300AE5620 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671F9234CDCB300AE5620 /* Lato-BlackItalic.ttf */; };
-		AD767250234CDCB300AE5620 /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671FA234CDCB300AE5620 /* MarkOffcPro-HeavyItalic.ttf */; };
-		AD767251234CDCB300AE5620 /* MarkOffcPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671FB234CDCB300AE5620 /* MarkOffcPro-BoldItalic.ttf */; };
-		AD767252234CDCB300AE5620 /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671FC234CDCB300AE5620 /* MarkOffcPro-LightItalic.ttf */; };
-		AD767253234CDCB300AE5620 /* MarkOffcPro-CondHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671FD234CDCB300AE5620 /* MarkOffcPro-CondHeavy.ttf */; };
-		AD767254234CDCB300AE5620 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671FE234CDCB300AE5620 /* Lato-BoldItalic.ttf */; };
-		AD767255234CDCB300AE5620 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7671FF234CDCB300AE5620 /* Lato-Light.ttf */; };
-		AD767256234CDCB300AE5620 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD767200234CDCB300AE5620 /* Lato-ThinItalic.ttf */; };
 		AD767257234CDCB300AE5620 /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD767203234CDCB300AE5620 /* Caption.swift */; };
 		AD767258234CDCB300AE5620 /* Caption.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD767204234CDCB300AE5620 /* Caption.xib */; };
 		AD767259234CDCB300AE5620 /* LBody.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD767206234CDCB300AE5620 /* LBody.xib */; };
@@ -144,25 +125,6 @@
 		AD7671EA234CDCB300AE5620 /* BaseButtonIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButtonIssue.swift; sourceTree = "<group>"; };
 		AD7671EB234CDCB300AE5620 /* TextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		AD7671EC234CDCB300AE5620 /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
-		AD7671EE234CDCB300AE5620 /* MarkOffcPro-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BookItalic.ttf"; sourceTree = "<group>"; };
-		AD7671EF234CDCB300AE5620 /* MarkOffcPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Light.ttf"; sourceTree = "<group>"; };
-		AD7671F0234CDCB300AE5620 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
-		AD7671F1234CDCB300AE5620 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
-		AD7671F2234CDCB300AE5620 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
-		AD7671F3234CDCB300AE5620 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
-		AD7671F4234CDCB300AE5620 /* MarkOffcPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Bold.ttf"; sourceTree = "<group>"; };
-		AD7671F5234CDCB300AE5620 /* MarkOffcPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Book.ttf"; sourceTree = "<group>"; };
-		AD7671F6234CDCB300AE5620 /* Lato-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-RegularItalic.ttf"; sourceTree = "<group>"; };
-		AD7671F7234CDCB300AE5620 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
-		AD7671F8234CDCB300AE5620 /* MarkOffcPro-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Heavy.ttf"; sourceTree = "<group>"; };
-		AD7671F9234CDCB300AE5620 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
-		AD7671FA234CDCB300AE5620 /* MarkOffcPro-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-HeavyItalic.ttf"; sourceTree = "<group>"; };
-		AD7671FB234CDCB300AE5620 /* MarkOffcPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BoldItalic.ttf"; sourceTree = "<group>"; };
-		AD7671FC234CDCB300AE5620 /* MarkOffcPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-LightItalic.ttf"; sourceTree = "<group>"; };
-		AD7671FD234CDCB300AE5620 /* MarkOffcPro-CondHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-CondHeavy.ttf"; sourceTree = "<group>"; };
-		AD7671FE234CDCB300AE5620 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
-		AD7671FF234CDCB300AE5620 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
-		AD767200234CDCB300AE5620 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		AD767203234CDCB300AE5620 /* Caption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
 		AD767204234CDCB300AE5620 /* Caption.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Caption.xib; sourceTree = "<group>"; };
 		AD767206234CDCB300AE5620 /* LBody.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBody.xib; sourceTree = "<group>"; };
@@ -308,7 +270,6 @@
 				AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */,
 				AD7671E3234CDCB300AE5620 /* SegmentedProgressBar.swift */,
 				AD7671E4234CDCB300AE5620 /* Buttons */,
-				AD7671ED234CDCB300AE5620 /* OpenType TTF Pro */,
 				AD767201234CDCB300AE5620 /* Labels */,
 				AD76721B234CDCB300AE5620 /* Spinner */,
 				AD76721D234CDCB300AE5620 /* Screens */,
@@ -338,32 +299,6 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		AD7671ED234CDCB300AE5620 /* OpenType TTF Pro */ = {
-			isa = PBXGroup;
-			children = (
-				AD7671EE234CDCB300AE5620 /* MarkOffcPro-BookItalic.ttf */,
-				AD7671EF234CDCB300AE5620 /* MarkOffcPro-Light.ttf */,
-				AD7671F0234CDCB300AE5620 /* Lato-LightItalic.ttf */,
-				AD7671F1234CDCB300AE5620 /* Lato-Thin.ttf */,
-				AD7671F2234CDCB300AE5620 /* Lato-Bold.ttf */,
-				AD7671F3234CDCB300AE5620 /* Lato-Black.ttf */,
-				AD7671F4234CDCB300AE5620 /* MarkOffcPro-Bold.ttf */,
-				AD7671F5234CDCB300AE5620 /* MarkOffcPro-Book.ttf */,
-				AD7671F6234CDCB300AE5620 /* Lato-RegularItalic.ttf */,
-				AD7671F7234CDCB300AE5620 /* Lato-Regular.ttf */,
-				AD7671F8234CDCB300AE5620 /* MarkOffcPro-Heavy.ttf */,
-				AD7671F9234CDCB300AE5620 /* Lato-BlackItalic.ttf */,
-				AD7671FA234CDCB300AE5620 /* MarkOffcPro-HeavyItalic.ttf */,
-				AD7671FB234CDCB300AE5620 /* MarkOffcPro-BoldItalic.ttf */,
-				AD7671FC234CDCB300AE5620 /* MarkOffcPro-LightItalic.ttf */,
-				AD7671FD234CDCB300AE5620 /* MarkOffcPro-CondHeavy.ttf */,
-				AD7671FE234CDCB300AE5620 /* Lato-BoldItalic.ttf */,
-				AD7671FF234CDCB300AE5620 /* Lato-Light.ttf */,
-				AD767200234CDCB300AE5620 /* Lato-ThinItalic.ttf */,
-			);
-			path = "OpenType TTF Pro";
-			sourceTree = "<group>";
-		};
 		AD767201234CDCB300AE5620 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,8 +314,8 @@
 		AD767202234CDCB300AE5620 /* Caption */ = {
 			isa = PBXGroup;
 			children = (
-				AD767203234CDCB300AE5620 /* Caption.swift */,
 				AD767204234CDCB300AE5620 /* Caption.xib */,
+				AD767203234CDCB300AE5620 /* Caption.swift */,
 			);
 			path = Caption;
 			sourceTree = "<group>";
@@ -390,10 +325,10 @@
 			children = (
 				AD767206234CDCB300AE5620 /* LBody.xib */,
 				AD767207234CDCB300AE5620 /* LBody.swift */,
+				AD76720B234CDCB300AE5620 /* RBody.xib */,
 				AD767208234CDCB300AE5620 /* RBody.swift */,
 				AD767209234CDCB300AE5620 /* SBody.xib */,
 				AD76720A234CDCB300AE5620 /* SBody.swift */,
-				AD76720B234CDCB300AE5620 /* RBody.xib */,
 			);
 			path = BodyLabel;
 			sourceTree = "<group>";
@@ -401,8 +336,8 @@
 		AD76720C234CDCB300AE5620 /* Label */ = {
 			isa = PBXGroup;
 			children = (
-				AD76720D234CDCB300AE5620 /* Label.swift */,
 				AD76720E234CDCB300AE5620 /* Label.xib */,
+				AD76720D234CDCB300AE5620 /* Label.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -410,9 +345,9 @@
 		AD76720F234CDCB300AE5620 /* HeadlineLabel */ = {
 			isa = PBXGroup;
 			children = (
+				AD767212234CDCB300AE5620 /* SHeadline.xib */,
 				AD767210234CDCB300AE5620 /* SHeadline.swift */,
 				AD767211234CDCB300AE5620 /* LHeadline.xib */,
-				AD767212234CDCB300AE5620 /* SHeadline.xib */,
 				AD767213234CDCB300AE5620 /* LHeadline.swift */,
 				AD767214234CDCB300AE5620 /* XLHeadline.xib */,
 				AD767215234CDCB300AE5620 /* XLHeadline.swift */,
@@ -425,8 +360,8 @@
 		AD767218234CDCB300AE5620 /* Overline */ = {
 			isa = PBXGroup;
 			children = (
-				AD767219234CDCB300AE5620 /* Overline.swift */,
 				AD76721A234CDCB300AE5620 /* Overline.xib */,
+				AD767219234CDCB300AE5620 /* Overline.swift */,
 			);
 			path = Overline;
 			sourceTree = "<group>";
@@ -680,51 +615,32 @@
 				AD767260234CDCB300AE5620 /* Label.xib in Resources */,
 				AD76726A234CDCB300AE5620 /* Overline.xib in Resources */,
 				AD76723F234CDCB300AE5620 /* TextButton.xib in Resources */,
-				AD767250234CDCB300AE5620 /* MarkOffcPro-HeavyItalic.ttf in Resources */,
 				AD767265234CDCB300AE5620 /* XLHeadline.xib in Resources */,
 				AD767283234CDCB300AE5620 /* Lato-Light.ttf in Resources */,
-				AD767249234CDCB300AE5620 /* Lato-Black.ttf in Resources */,
 				AD767270234CDCB300AE5620 /* Page1Authentication.xib in Resources */,
 				AD767262234CDCB300AE5620 /* LHeadline.xib in Resources */,
-				AD76724F234CDCB300AE5620 /* Lato-BlackItalic.ttf in Resources */,
 				AD767259234CDCB300AE5620 /* LBody.xib in Resources */,
 				AD76727F234CDCB300AE5620 /* MarkOffcPro-BoldItalic.ttf in Resources */,
 				AD76727A234CDCB300AE5620 /* Lato-Black.ttf in Resources */,
-				AD767246234CDCB300AE5620 /* Lato-LightItalic.ttf in Resources */,
 				AD767263234CDCB300AE5620 /* SHeadline.xib in Resources */,
-				AD76724E234CDCB300AE5620 /* MarkOffcPro-Heavy.ttf in Resources */,
 				AD767284234CDCB300AE5620 /* Lato-ThinItalic.ttf in Resources */,
-				AD767255234CDCB300AE5620 /* Lato-Light.ttf in Resources */,
 				AD767280234CDCB300AE5620 /* MarkOffcPro-LightItalic.ttf in Resources */,
 				AD76726F234CDCB300AE5620 /* AuthenticationScreen.xib in Resources */,
 				AD767277234CDCB300AE5620 /* Lato-LightItalic.ttf in Resources */,
-				AD767256234CDCB300AE5620 /* Lato-ThinItalic.ttf in Resources */,
 				AD767258234CDCB300AE5620 /* Caption.xib in Resources */,
-				AD76724C234CDCB300AE5620 /* Lato-RegularItalic.ttf in Resources */,
-				AD767247234CDCB300AE5620 /* Lato-Thin.ttf in Resources */,
 				AD76725E234CDCB300AE5620 /* RBody.xib in Resources */,
-				AD767245234CDCB300AE5620 /* MarkOffcPro-Light.ttf in Resources */,
 				AD76723D234CDCB300AE5620 /* PrimaryButton.xib in Resources */,
-				AD767252234CDCB300AE5620 /* MarkOffcPro-LightItalic.ttf in Resources */,
 				AD767271234CDCB300AE5620 /* Page2Authentication.xib in Resources */,
 				AD767278234CDCB300AE5620 /* Lato-Thin.ttf in Resources */,
-				AD767251234CDCB300AE5620 /* MarkOffcPro-BoldItalic.ttf in Resources */,
-				AD767253234CDCB300AE5620 /* MarkOffcPro-CondHeavy.ttf in Resources */,
-				AD767244234CDCB300AE5620 /* MarkOffcPro-BookItalic.ttf in Resources */,
 				AD767276234CDCB300AE5620 /* MarkOffcPro-Light.ttf in Resources */,
 				AD767282234CDCB300AE5620 /* Lato-BoldItalic.ttf in Resources */,
 				AD76723C234CDCB300AE5620 /* BaseButtonIssue.xib in Resources */,
 				AD76727E234CDCB300AE5620 /* Lato-BlackItalic.ttf in Resources */,
 				AD767279234CDCB300AE5620 /* Lato-Bold.ttf in Resources */,
-				AD76724B234CDCB300AE5620 /* MarkOffcPro-Book.ttf in Resources */,
-				AD76724D234CDCB300AE5620 /* Lato-Regular.ttf in Resources */,
-				AD76724A234CDCB300AE5620 /* MarkOffcPro-Bold.ttf in Resources */,
 				AD76727B234CDCB300AE5620 /* MarkOffcPro-Bold.ttf in Resources */,
 				AD76725C234CDCB300AE5620 /* SBody.xib in Resources */,
 				AD767273234CDCB300AE5620 /* LargeDisplayCard.xib in Resources */,
-				AD767248234CDCB300AE5620 /* Lato-Bold.ttf in Resources */,
 				AD767267234CDCB300AE5620 /* RHeadline.xib in Resources */,
-				AD767254234CDCB300AE5620 /* Lato-BoldItalic.ttf in Resources */,
 				AD767281234CDCB300AE5620 /* MarkOffcPro-CondHeavy.ttf in Resources */,
 				AD76727C234CDCB300AE5620 /* Lato-RegularItalic.ttf in Resources */,
 				AD76727D234CDCB300AE5620 /* Lato-Regular.ttf in Resources */,
@@ -824,7 +740,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LRDesignSystem/LRDesignSystem-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem.modulemap";
 				PRODUCT_MODULE_NAME = LRDesignSystem;
@@ -923,7 +839,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LRDesignSystem/LRDesignSystem-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LRDesignSystem/LRDesignSystem.modulemap";
 				PRODUCT_MODULE_NAME = LRDesignSystem;

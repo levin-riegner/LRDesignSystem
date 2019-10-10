@@ -9,19 +9,19 @@
 import UIKit
 
 @IBDesignable
-class SpinnerView : UIView {
+public class SpinnerView : UIView {
     
-    override var layer: CAShapeLayer {
+    override public var layer: CAShapeLayer {
         get {
             return super.layer as! CAShapeLayer
         }
     }
     
-    override class var layerClass: AnyClass {
+    override public class var layerClass: AnyClass {
         return CAShapeLayer.self
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         layer.fillColor = nil
         layer.strokeColor = UIColor.black.cgColor
@@ -29,7 +29,7 @@ class SpinnerView : UIView {
         setPath()
     }
     
-    override func didMoveToWindow() {
+    override public func didMoveToWindow() {
         animate()
     }
     
@@ -95,7 +95,7 @@ class SpinnerView : UIView {
         let animation = CAKeyframeAnimation(keyPath: keyPath)
         animation.keyTimes = times as [NSNumber]?
         animation.values = values
-        animation.calculationMode = .linear
+        animation.calculationMode = kCAAnimationLinear
         animation.duration = duration
         animation.repeatCount = Float.infinity
         layer.add(animation, forKey: animation.keyPath)
@@ -109,7 +109,7 @@ class SpinnerView : UIView {
             UIColor(hue: CGFloat($0) / CGFloat(count), saturation: 1, brightness: 1, alpha: 1).cgColor
         }
         animation.duration = duration
-        animation.calculationMode = .linear
+        animation.calculationMode = kCAAnimationLinear
         animation.repeatCount = Float.infinity
         layer.add(animation, forKey: animation.keyPath)
     }

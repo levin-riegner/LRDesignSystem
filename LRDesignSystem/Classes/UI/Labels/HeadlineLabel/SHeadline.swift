@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class SHeadline: UIView, NibLoadable {
+public class SHeadline: UIView, NibLoadable {
     
     @IBOutlet var label: UILabel!
     
