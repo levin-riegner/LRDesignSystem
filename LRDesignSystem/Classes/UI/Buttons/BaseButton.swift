@@ -22,8 +22,8 @@ public class BaseButton: UIControl {
         case highlighted
         case loading
         case enable
-        
     }
+    
     var buttonBackgroundColor:UIColor = UIColor.primaryInactive
     var imgView: UIImageView?
     
@@ -32,11 +32,12 @@ public class BaseButton: UIControl {
     fileprivate var currentlyVisibleView:UIView?
     fileprivate var secondaryVisibleView:UIView?
     fileprivate var buttonState:ButtonState = .normal { didSet {
-        
         if oldValue != buttonState {
             print(buttonState)
-            updateUI(forState:buttonState) } } }
-    
+            updateUI(forState:buttonState)
+        }
+        }
+    }
     
     /// Font for the title label (IB does not allow UIFont to be inspected therefore font must be set programmatically)
     public var titleFont:UIFont = UIFont.systemFont(ofSize: 16) {
@@ -88,6 +89,26 @@ public class BaseButton: UIControl {
             }            //updateStyle()
         }
     }
+    
+    @IBInspectable var nextState: String = ""
+    //        {
+    //        didSet{
+    //            guard let titleLabel = currentlyVisibleView as? UILabel else { return }
+    //            switch nextState {
+    //            case "normal":
+    //                titleLabel.textAlignment = .left
+    //            case "highligted":
+    //                titleLabel.textAlignment = .right
+    //            case "loading":
+    //                titleLabel.textAlignment = .center
+    //            case "enable":
+    //                titleLabel.textAlignment = .center
+    //            default:
+    //                titleLabel.textAlignment = .left
+    //
+    //            }            //updateStyle()
+    //        }
+    //    }
     
     /// Loading indicator color
     @IBInspectable var loadingIndicatorColor:UIColor = UIColor.white {
@@ -213,7 +234,7 @@ public class BaseButton: UIControl {
         
         UIView.animate(withDuration: 0.15, animations: { [unowned self] in self.backgroundColor = self.buttonBackgroundColor })
     }
-
+    
     fileprivate func createTitleLabel(withFrame frame:CGRect) -> UILabel {
         let titleLabel = UILabel(frame:frame)
         titleLabel.text = title
@@ -268,11 +289,23 @@ extension BaseButton {
                 super.touchesEnded(touches, with: event)
                 return
         }
-        
-        //buttonState = .loading
-        self.enable()
         sendActions(for: .touchUpInside)
+        //buttonState = .loading
+        //self.enable()
+        switch nextState {
+        case "normal":
+            buttonState = .normal
+        case "highlighted":
+            buttonState = .highlighted
+        case "loading":
+            buttonState = .loading
+        case "enable":
+            buttonState = .enable
+        default:
+            buttonState = .normal
+        }
     }
+    
 }
 
 
@@ -353,7 +386,7 @@ extension BaseButton {
 
 
 extension BaseButton {
-
+    
     public func animate() -> Void {
         buttonState = .loading
     }

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Balin Sinnott. All rights reserved.
 //
 import UIKit
-@IBDesignable public class SegmentedProgressBar: UIView {
+@IBDesignable class SegmentedProgressBar: UIView {
     
     enum Direction {
         case start
