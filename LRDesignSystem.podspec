@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.3.2'
-  s.summary          = '0.3.2 test public body in SBody '
+  s.version          = '0.3.3'
+  s.summary          = '0.3.3 Added text inspectable to all the labels '
 
   s.swift_version    = '5.0'
   

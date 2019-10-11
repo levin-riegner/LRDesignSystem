@@ -16,6 +16,13 @@ public class XLHeadline: UIView, NibLoadable {
     
     var typeOfAlignment = TypeOfAlignment.left
     
+    @IBInspectable
+    public var text: String = "" {
+        didSet{
+            label.text = text
+        }
+    }
+    
     @IBInspectable private var alignment : String {
         set {
             typeOfAlignment = TypeOfAlignment(rawValue: newValue) ?? .left

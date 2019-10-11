@@ -14,6 +14,13 @@ public class SHeadline: UIView, NibLoadable {
     
     @IBOutlet var label: UILabel!
     
+    @IBInspectable
+    public var text: String = "" {
+        didSet{
+            label.text = text
+        }
+    }
+    
     var typeOfAlignment = TypeOfAlignment.left
     
     @IBInspectable private var alignment : String {

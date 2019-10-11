@@ -191,7 +191,7 @@ public class BaseButton: UIControl {
         rightLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         rightLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -24 ).isActive = true
         rightLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        secondaryVisibleView = rightLabel
+        secondaryVisibleView = rightLabel 
         rightLabel.textAlignment = .right
     }
     
