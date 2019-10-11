@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public class SBody: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak public var label: UILabel!
     
     var typeOfAlignment = TypeOfAlignment.left
     
