@@ -12,12 +12,18 @@ import UIKit
 @IBDesignable
 public class Caption: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak public var label: UILabel!
     
     @IBInspectable
     public var text: String = "" {
         didSet{
             label.text = text
+        }
+    }
+    
+    public var attributedText: NSAttributedString? {
+        didSet{
+            label.attributedText = attributedText
         }
     }
     
