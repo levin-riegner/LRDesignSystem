@@ -31,7 +31,7 @@ public class BaseButton: UIControl {
     //MARK: - Private
     fileprivate var currentlyVisibleView:UIView?
     fileprivate var secondaryVisibleView:UIView?
-    fileprivate var buttonState:ButtonState = .normal { didSet {
+    private var buttonState:ButtonState = .normal { didSet {
         if oldValue != buttonState {
             print(buttonState)
             updateUI(forState:buttonState)
@@ -51,14 +51,14 @@ public class BaseButton: UIControl {
     //MARK: - Inspectable / Designable properties
     
     /// Button title
-    @IBInspectable var title:String = NSLocalizedString("Button", comment:"Button") {
+    @IBInspectable public var title:String = NSLocalizedString("Button", comment:"Button") {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             titleLabel.text = title
         }
     }
     
-    @IBInspectable var rightText: String = "" {
+    @IBInspectable public var rightText: String = "" {
         didSet {
             guard let rightLabel = secondaryVisibleView as? UILabel else { return }
             rightLabel.text = rightText
@@ -66,14 +66,14 @@ public class BaseButton: UIControl {
     }
     
     /// Title color
-    @IBInspectable var titleColor:UIColor = UIColor.white {
+    @IBInspectable public var titleColor:UIColor = UIColor.white {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             titleLabel.textColor = titleColor
         }
     }
     
-    @IBInspectable var textAlignment: String = "" {
+    @IBInspectable public var textAlignment: String = "" {
         didSet{
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             switch textAlignment {
@@ -90,7 +90,7 @@ public class BaseButton: UIControl {
         }
     }
     
-    @IBInspectable var nextState: String = ""
+    @IBInspectable public var nextState: String = "normal"
     //        {
     //        didSet{
     //            guard let titleLabel = currentlyVisibleView as? UILabel else { return }
@@ -111,49 +111,49 @@ public class BaseButton: UIControl {
     //    }
     
     /// Loading indicator color
-    @IBInspectable var loadingIndicatorColor:UIColor = UIColor.white {
+    @IBInspectable public var loadingIndicatorColor:UIColor = UIColor.white {
         
         didSet{
             updateUI(forState: buttonState)
         }
     }
     
-    @IBInspectable var image:UIImage?{
+    @IBInspectable public var image:UIImage?{
         didSet{
             updateUI(forState: buttonState)
         }
     }
     
     /// Border width
-    @IBInspectable var borderWidth:CGFloat = 0 {
+    @IBInspectable public var borderWidth:CGFloat = 0 {
         didSet { updateStyle() }
     }
     
     /// Border color
-    @IBInspectable var borderColor:UIColor = UIColor.white {
+    @IBInspectable public var borderColor:UIColor = UIColor.white {
         didSet { updateStyle() }
     }
     
     /// Corner radius
-    @IBInspectable var cornerRadius:CGFloat = 0 {
+    @IBInspectable public var cornerRadius:CGFloat = 0 {
         didSet { updateStyle() }
     }
     
     /// Background color for normal state
-    @IBInspectable var normalBackgroundColor:UIColor = UIColor.lightGray {
+    @IBInspectable public var normalBackgroundColor:UIColor = UIColor.lightGray {
         didSet { updateStyle() }
     }
     
     /// Background color for highlighted state
-    @IBInspectable var highlightedBackgroundColor:UIColor = UIColor.darkGray {
+    @IBInspectable public var highlightedBackgroundColor:UIColor = UIColor.darkGray {
         didSet { updateStyle() }
     }
     
     /// Duration of one animation cycle
-    @IBInspectable var loadingAnimationDuration:Double = 2.0
+    @IBInspectable public var loadingAnimationDuration:Double = 2.0
     
     /// Size of the animating shape
-    @IBInspectable var loadingShapeSize:CGSize = CGSize(width: 10, height: 10)
+    @IBInspectable public var loadingShapeSize:CGSize = CGSize(width: 10, height: 10)
     
     
     //MARK: - Init
