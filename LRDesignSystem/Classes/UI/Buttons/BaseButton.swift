@@ -21,7 +21,7 @@ public class BaseButton: UIControl {
         case normal
         case highlighted
         case loading
-        case enable
+        case disable
     }
     
     var buttonBackgroundColor:UIColor = UIColor.primaryInactive
@@ -87,6 +87,22 @@ public class BaseButton: UIControl {
                 titleLabel.textAlignment = .left
                 
             }            //updateStyle()
+        }
+    }
+    @IBInspectable public var currentState: String = "normal"{
+        didSet{
+            switch currentState {
+            case "normal":
+                self.normal()
+            case "loading":
+                self.loading()
+            case "highlighted":
+                self.highlighted()
+            case "disable":
+                self.disable()
+            default:
+                self.normal()
+            }
         }
     }
     
@@ -155,7 +171,6 @@ public class BaseButton: UIControl {
     /// Size of the animating shape
     @IBInspectable public var loadingShapeSize:CGSize = CGSize(width: 10, height: 10)
     
-    
     //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -168,7 +183,6 @@ public class BaseButton: UIControl {
         setupButton()
         updateStyle()
     }
-    
     
     /**
      Setup button to initial state
@@ -224,11 +238,11 @@ public class BaseButton: UIControl {
             buttonBackgroundColor = normalBackgroundColor
             showLoadingView()
             showImage()
-        case .enable:
-            if (buttonBackgroundColor != normalBackgroundColor) {
-                buttonBackgroundColor = UIColor.primaryInactive
-                currentlyVisibleView?.isUserInteractionEnabled = false
-            }
+        case .disable:
+            //if (buttonBackgroundColor != normalBackgroundColor) {
+            buttonBackgroundColor = UIColor.primaryInactive
+            currentlyVisibleView?.isUserInteractionEnabled = false
+            // }
             showImage()
         }
         
@@ -299,8 +313,8 @@ extension BaseButton {
             buttonState = .highlighted
         case "loading":
             buttonState = .loading
-        case "enable":
-            buttonState = .enable
+        case "disable":
+            buttonState = .disable
         default:
             buttonState = .normal
         }
@@ -349,7 +363,7 @@ extension BaseButton {
     }
     
     private func showImage() -> Void {
-        if (image != nil && (self.buttonState == .normal || buttonState == .enable)) {
+        if (image != nil && (self.buttonState == .normal || buttonState == .disable)) {
             imgView = UIImageView(frame: CGRect(x: 24, y: (self.bounds.size.height/2)-12, width: 24, height: 24))
             imgView!.contentMode = .scaleAspectFit
             imgView!.image = self.image
@@ -387,15 +401,19 @@ extension BaseButton {
 
 extension BaseButton {
     
-    public func animate() -> Void {
+    public func loading() -> Void {
         buttonState = .loading
     }
     
-    public func stop() -> Void {
+    public func normal() -> Void {
         buttonState = .normal
     }
     
-    public func enable() -> Void {
-        buttonState = .enable
+    public func disable() -> Void {
+        buttonState = .disable
+    }
+    
+    public func highlighted() -> Void {
+        buttonState = .highlighted
     }
 }
