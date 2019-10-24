@@ -8,13 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.3.7'
-  s.summary          = '0.3.7 Improved BaseButton '
+  s.version          = '0.3.8'
+  s.summary          = '0.3.8 Improved BaseButton & Text Field '
 
   s.swift_version    = '5.0'
   
 # This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Think: What does it do? Wh	y did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!

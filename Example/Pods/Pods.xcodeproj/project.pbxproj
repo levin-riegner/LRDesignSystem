@@ -288,11 +288,11 @@
 			isa = PBXGroup;
 			children = (
 				AD7671E5234CDCB300AE5620 /* BaseButtonIssue.xib */,
+				AD7671EA234CDCB300AE5620 /* BaseButtonIssue.swift */,
 				AD7671E6234CDCB300AE5620 /* PrimaryButton.xib */,
 				AD7671E7234CDCB300AE5620 /* SimpleLoadingView.swift */,
 				AD7671E8234CDCB300AE5620 /* TextButton.xib */,
 				AD7671E9234CDCB300AE5620 /* PrimaryButton.swift */,
-				AD7671EA234CDCB300AE5620 /* BaseButtonIssue.swift */,
 				AD7671EB234CDCB300AE5620 /* TextButton.swift */,
 				AD7671EC234CDCB300AE5620 /* BaseButton.swift */,
 			);

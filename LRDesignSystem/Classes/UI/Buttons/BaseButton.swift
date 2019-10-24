@@ -156,12 +156,12 @@ public class BaseButton: UIControl {
     }
     
     /// Background color for normal state
-    @IBInspectable public var normalBackgroundColor:UIColor = UIColor.lightGray {
+    @IBInspectable public var normalBackgroundColor:UIColor = UIColor.primaryActive {
         didSet { updateStyle() }
     }
     
     /// Background color for highlighted state
-    @IBInspectable public var highlightedBackgroundColor:UIColor = UIColor.darkGray {
+    @IBInspectable public var highlightedBackgroundColor:UIColor = UIColor.primaryActiveAlt {
         didSet { updateStyle() }
     }
     

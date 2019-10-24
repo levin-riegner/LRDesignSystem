@@ -17,6 +17,9 @@ public extension String {
 
 public class FieldTextBase: UITextField {
     
+    
+    let imageError = UIImageView(image: #imageLiteral(resourceName: "S_Error"))
+
     //Active
     @IBInspectable
     public var hintActiveColor: UIColor? {
@@ -69,9 +72,9 @@ public class FieldTextBase: UITextField {
     fileprivate var lblFloatPlaceholder:UILabel             = UILabel()
     fileprivate var lblError:UILabel                        = UILabel()
     
-    fileprivate let paddingX:CGFloat                        = 5.0
+    fileprivate let paddingX:CGFloat                        = 15.0
     
-    fileprivate let paddingHeight:CGFloat                   = 10.0
+    fileprivate let paddingHeight:CGFloat                   = 16.0
     
     public var dtLayer:CALayer                              = CALayer()
     
@@ -109,7 +112,7 @@ public class FieldTextBase: UITextField {
     public var animateFloatPlaceholder:Bool = true
     public var hideErrorWhenEditing:Bool   = true
     
-    public var errorFont = UIFont.systemFont(ofSize: 10.0){
+    public var errorFont = UIFont.systemFont(ofSize: 14.0){
         didSet{ invalidateIntrinsicContentSize() }
     }
     
@@ -117,7 +120,7 @@ public class FieldTextBase: UITextField {
         didSet{ invalidateIntrinsicContentSize() }
     }
     
-    public var paddingYFloatLabel:CGFloat = 3.0{
+    public var paddingYFloatLabel:CGFloat = 9.0{
         didSet{ invalidateIntrinsicContentSize() }
     }
     
@@ -230,15 +233,17 @@ public class FieldTextBase: UITextField {
     public func showError(message:String? = nil) {
         if let msg = message { errorMessage = msg }
         showErrorLabel = true
+        imageError.isHidden = false
     }
     
     public func hideError()  {
         showErrorLabel = false
+        imageError.isHidden = true
     }
     
     
     fileprivate func commonInit() {
-        
+        imageError.isHidden = true
         dtborderStyle               = .rounded
         dtLayer.backgroundColor     = UIColor.white.cgColor
         
@@ -255,7 +260,7 @@ public class FieldTextBase: UITextField {
         
         lblError.frame              = CGRect.zero
         lblError.font               = errorFont
-        lblError.textColor          = UIColor.red
+        lblError.textColor          = UIColor.secondaryActive
         lblError.numberOfLines      = 0
         lblError.isHidden           = true
         
@@ -271,10 +276,11 @@ public class FieldTextBase: UITextField {
         lblError.text = errorMessage
         lblError.isHidden = false
         let boundWithPadding = CGSize(width: bounds.width - (paddingX * 2), height: bounds.height)
-        lblError.frame = CGRect(x: paddingX, y: 0, width: boundWithPadding.width, height: boundWithPadding.height)
+        lblError.frame = CGRect(x: paddingX + 6, y: 0, width: boundWithPadding.width - 15, height: boundWithPadding.height)
         lblError.sizeToFit()
         
         invalidateIntrinsicContentSize()
+
     }
     
     func setErrorLabelAlignment() {
@@ -311,6 +317,7 @@ public class FieldTextBase: UITextField {
                 newFrame.origin.x = bounds.width - paddingX - newFrame.size.width
             }
             
+            
         }
         
         lblFloatPlaceholder.frame = newFrame
@@ -320,6 +327,7 @@ public class FieldTextBase: UITextField {
         lblError.text = ""
         lblError.isHidden = true
         lblError.frame = CGRect.zero
+        imageError.isHidden = true
         invalidateIntrinsicContentSize()
     }
     
@@ -474,6 +482,10 @@ public class FieldTextBase: UITextField {
             var lblErrorFrame = lblError.frame
             lblErrorFrame.origin.y = dtLayer.frame.origin.y + dtLayer.frame.size.height + paddingYErrorLabel
             lblError.frame = lblErrorFrame
+            
+            imageError.frame = CGRect(x: dtLayer.frame.origin.x, y: dtLayer.frame.origin.y + dtLayer.frame.size.height + paddingYErrorLabel, width: 20, height: 17)
+            imageError.contentMode = .scaleAspectFit
+            addSubview(imageError)
         }
         
         let floatingLabelSize = lblFloatPlaceholder.sizeThatFits(lblFloatPlaceholder.superview!.bounds.size)
@@ -481,13 +493,15 @@ public class FieldTextBase: UITextField {
         lblFloatPlaceholder.frame = CGRect(x: x, y: lblFloatPlaceholder.frame.origin.y,
                                            width: floatingLabelSize.width,
                                            height: floatingLabelSize.height)
+
+
         
         setErrorLabelAlignment()
         setFloatLabelAlignment()
         lblFloatPlaceholder.textColor = isFirstResponder ? floatPlaceholderActiveColor : placeholderColor
         
-        dtLayer.borderColor = isFirstResponder ? borderColorOn.cgColor : borderColorOff.cgColor
-
+        dtLayer.borderColor = isFirstResponder ? borderColorOn.cgColor :
+            self.imageError.isHidden ? borderColorOff.cgColor : UIColor.secondaryActive.cgColor
         
         switch floatingDisplayStatus {
         case .never:
