@@ -14,6 +14,11 @@
 		6C2935F792E9812675E721B8FCCBE9D1 /* LRDesignSystem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52090F9B51D37B7C7421C1C7B7F871D1 /* LRDesignSystem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A30D9625F69317B0D56A2E8CF96F31AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A4AF7FCAF21D254273EE47CD03217C9F /* Pods-LRDesignSystem_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C175B9D6560646B6DC58866D075FA854 /* Pods-LRDesignSystem_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD2F11BD23733A3000B1E422 /* FontsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F11BC23733A3000B1E422 /* FontsConfiguration.swift */; };
+		AD2F11DD23733FF800B1E422 /* MarkOffcPro-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11DC23733FF800B1E422 /* MarkOffcPro-Heavy.ttf */; };
+		AD2F11E12373401A00B1E422 /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11DE2373401900B1E422 /* MarkOffcPro-Book.ttf */; };
+		AD2F11E22373401A00B1E422 /* MarkOffcPro-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11DF2373401900B1E422 /* MarkOffcPro-BookItalic.ttf */; };
+		AD2F11E32373401A00B1E422 /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11E02373401900B1E422 /* MarkOffcPro-HeavyItalic.ttf */; };
 		AD76723A234CDCB300AE5620 /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */; };
 		AD76723B234CDCB300AE5620 /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671E3234CDCB300AE5620 /* SegmentedProgressBar.swift */; };
 		AD76723C234CDCB300AE5620 /* BaseButtonIssue.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7671E5234CDCB300AE5620 /* BaseButtonIssue.xib */; };
@@ -115,6 +120,11 @@
 		9E8884543E16C258A1A32A048CBCB44C /* LRDesignSystem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LRDesignSystem-dummy.m"; sourceTree = "<group>"; };
 		A269189E5BFC97A412B3D350C773360D /* Pods-LRDesignSystem_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A8E2933360C517F35A6FC06CE1A68071 /* Pods-LRDesignSystem_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LRDesignSystem_Tests-dummy.m"; sourceTree = "<group>"; };
+		AD2F11BC23733A3000B1E422 /* FontsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsConfiguration.swift; sourceTree = "<group>"; };
+		AD2F11DC23733FF800B1E422 /* MarkOffcPro-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Heavy.ttf"; sourceTree = "<group>"; };
+		AD2F11DE2373401900B1E422 /* MarkOffcPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Book.ttf"; sourceTree = "<group>"; };
+		AD2F11DF2373401900B1E422 /* MarkOffcPro-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BookItalic.ttf"; sourceTree = "<group>"; };
+		AD2F11E02373401900B1E422 /* MarkOffcPro-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-HeavyItalic.ttf"; sourceTree = "<group>"; };
 		AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeDisplayCard.swift; sourceTree = "<group>"; };
 		AD7671E3234CDCB300AE5620 /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
 		AD7671E5234CDCB300AE5620 /* BaseButtonIssue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseButtonIssue.xib; sourceTree = "<group>"; };
@@ -302,6 +312,7 @@
 		AD767201234CDCB300AE5620 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
+				AD2F11BC23733A3000B1E422 /* FontsConfiguration.swift */,
 				AD767202234CDCB300AE5620 /* Caption */,
 				AD767205234CDCB300AE5620 /* BodyLabel */,
 				AD76720C234CDCB300AE5620 /* Label */,
@@ -389,9 +400,13 @@
 		AD767228234CDCB300AE5620 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AD2F11DE2373401900B1E422 /* MarkOffcPro-Book.ttf */,
+				AD2F11DF2373401900B1E422 /* MarkOffcPro-BookItalic.ttf */,
+				AD2F11E02373401900B1E422 /* MarkOffcPro-HeavyItalic.ttf */,
 				AD767229234CDCB300AE5620 /* MarkOffcPro-Light.ttf */,
 				AD76722A234CDCB300AE5620 /* Lato-LightItalic.ttf */,
 				AD76722B234CDCB300AE5620 /* Lato-Thin.ttf */,
+				AD2F11DC23733FF800B1E422 /* MarkOffcPro-Heavy.ttf */,
 				AD76722C234CDCB300AE5620 /* Lato-Bold.ttf */,
 				AD76722D234CDCB300AE5620 /* Lato-Black.ttf */,
 				AD76722E234CDCB300AE5620 /* MarkOffcPro-Bold.ttf */,
@@ -628,16 +643,20 @@
 				AD76726F234CDCB300AE5620 /* AuthenticationScreen.xib in Resources */,
 				AD767277234CDCB300AE5620 /* Lato-LightItalic.ttf in Resources */,
 				AD767258234CDCB300AE5620 /* Caption.xib in Resources */,
+				AD2F11E12373401A00B1E422 /* MarkOffcPro-Book.ttf in Resources */,
 				AD76725E234CDCB300AE5620 /* RBody.xib in Resources */,
 				AD76723D234CDCB300AE5620 /* PrimaryButton.xib in Resources */,
+				AD2F11E22373401A00B1E422 /* MarkOffcPro-BookItalic.ttf in Resources */,
 				AD767271234CDCB300AE5620 /* Page2Authentication.xib in Resources */,
 				AD767278234CDCB300AE5620 /* Lato-Thin.ttf in Resources */,
 				AD767276234CDCB300AE5620 /* MarkOffcPro-Light.ttf in Resources */,
 				AD767282234CDCB300AE5620 /* Lato-BoldItalic.ttf in Resources */,
 				AD76723C234CDCB300AE5620 /* BaseButtonIssue.xib in Resources */,
+				AD2F11E32373401A00B1E422 /* MarkOffcPro-HeavyItalic.ttf in Resources */,
 				AD76727E234CDCB300AE5620 /* Lato-BlackItalic.ttf in Resources */,
 				AD767279234CDCB300AE5620 /* Lato-Bold.ttf in Resources */,
 				AD76727B234CDCB300AE5620 /* MarkOffcPro-Bold.ttf in Resources */,
+				AD2F11DD23733FF800B1E422 /* MarkOffcPro-Heavy.ttf in Resources */,
 				AD76725C234CDCB300AE5620 /* SBody.xib in Resources */,
 				AD767273234CDCB300AE5620 /* LargeDisplayCard.xib in Resources */,
 				AD767267234CDCB300AE5620 /* RHeadline.xib in Resources */,
@@ -690,6 +709,7 @@
 				AD767268234CDCB300AE5620 /* RHeadline.swift in Sources */,
 				AD76725F234CDCB300AE5620 /* Label.swift in Sources */,
 				AD767243234CDCB300AE5620 /* BaseButton.swift in Sources */,
+				AD2F11BD23733A3000B1E422 /* FontsConfiguration.swift in Sources */,
 				AD767275234CDCB300AE5620 /* TypeOfAlignment.swift in Sources */,
 				AD76726B234CDCB300AE5620 /* SpinnerView.swift in Sources */,
 				AD767269234CDCB300AE5620 /* Overline.swift in Sources */,

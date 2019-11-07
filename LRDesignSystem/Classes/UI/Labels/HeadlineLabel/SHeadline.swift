@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public class SHeadline: UIView, NibLoadable {
     
-    @IBOutlet var label: UILabel!
+    @IBOutlet public var label: UILabel!
     
     @IBInspectable
     public var text: String = "" {
@@ -54,6 +54,7 @@ public class SHeadline: UIView, NibLoadable {
         case .right    :
             label.textAlignment = .right
         }
+        label.font = .headlineSmall
     }
     
 }

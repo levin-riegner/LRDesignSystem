@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public class RHeadline: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var label: UILabel!
     
     @IBInspectable
     public var text: String = "" {
@@ -43,6 +43,7 @@ public class RHeadline: UIView, NibLoadable {
         case .right    :
             label.textAlignment = .right
         }
+        label.font = .headlineRegular
     }
     
     required init?(coder aDecoder: NSCoder) {

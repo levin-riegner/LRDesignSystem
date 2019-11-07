@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public class LHeadline: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var label: UILabel!
     
     @IBInspectable
     public var text: String = "" {
@@ -54,6 +54,7 @@ public class LHeadline: UIView, NibLoadable {
         super.init(frame: frame)
         setupFromNib()
         setup()
+        label.font = .headlineLarge
     }
     
 }

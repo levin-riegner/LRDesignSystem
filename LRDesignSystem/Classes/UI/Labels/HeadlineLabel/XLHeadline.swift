@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public class XLHeadline: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var label: UILabel!
     
     var typeOfAlignment = TypeOfAlignment.left
     
@@ -43,6 +43,7 @@ public class XLHeadline: UIView, NibLoadable {
         case .right    :
             label.textAlignment = .right
         }
+        label.font = .headlineXLarge
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public class RBody: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var label: UILabel!
     
     @IBInspectable
     public var text: String = "" {
@@ -42,6 +42,7 @@ public class RBody: UIView, NibLoadable {
         super.init(frame: frame)
         setupFromNib()
         setup()
+        label.font = .bodyRegular
     }
     
     func setup() {

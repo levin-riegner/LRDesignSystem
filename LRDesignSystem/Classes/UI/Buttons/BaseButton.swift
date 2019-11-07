@@ -40,10 +40,10 @@ public class BaseButton: UIControl {
     }
     
     /// Font for the title label (IB does not allow UIFont to be inspected therefore font must be set programmatically)
-    public var titleFont:UIFont = UIFont.systemFont(ofSize: 16) {
+    public var titleFont:UIFont = .button {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
-            titleLabel.font = titleFont
+            titleLabel.font = .button
         }
     }
     
@@ -54,14 +54,16 @@ public class BaseButton: UIControl {
     @IBInspectable public var title:String = NSLocalizedString("Button", comment:"Button") {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
-            titleLabel.text = title
+            titleLabel.font = .button
+            titleLabel.attributedText = NSAttributedString(string: title, attributes: [.kern: 2])
         }
     }
     
     @IBInspectable public var rightText: String = "" {
         didSet {
             guard let rightLabel = secondaryVisibleView as? UILabel else { return }
-            rightLabel.text = rightText
+            rightLabel.font = .button
+            rightLabel.attributedText = NSAttributedString(string: rightText, attributes: [.kern: 2])
         }
     }
     
@@ -107,24 +109,7 @@ public class BaseButton: UIControl {
     }
     
     @IBInspectable public var nextState: String = "normal"
-    //        {
-    //        didSet{
-    //            guard let titleLabel = currentlyVisibleView as? UILabel else { return }
-    //            switch nextState {
-    //            case "normal":
-    //                titleLabel.textAlignment = .left
-    //            case "highligted":
-    //                titleLabel.textAlignment = .right
-    //            case "loading":
-    //                titleLabel.textAlignment = .center
-    //            case "enable":
-    //                titleLabel.textAlignment = .center
-    //            default:
-    //                titleLabel.textAlignment = .left
-    //
-    //            }            //updateStyle()
-    //        }
-    //    }
+    
     
     /// Loading indicator color
     @IBInspectable public var loadingIndicatorColor:UIColor = UIColor.white {
@@ -207,6 +192,8 @@ public class BaseButton: UIControl {
         rightLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         secondaryVisibleView = rightLabel 
         rightLabel.textAlignment = .right
+        
+
     }
     
     /**
@@ -263,7 +250,7 @@ public class BaseButton: UIControl {
             titleLabel.textAlignment = .left
         }
         titleLabel.textColor = titleColor
-        titleLabel.font = titleFont
+        //titleLabel.font = titleFont
         return titleLabel
     }
 }
@@ -303,7 +290,6 @@ extension BaseButton {
                 super.touchesEnded(touches, with: event)
                 return
         }
-        sendActions(for: .touchUpInside)
         //buttonState = .loading
         //self.enable()
         switch nextState {
@@ -318,8 +304,8 @@ extension BaseButton {
         default:
             buttonState = .normal
         }
+        sendActions(for: .touchUpInside)
     }
-    
 }
 
 

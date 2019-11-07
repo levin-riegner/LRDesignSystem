@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public class LBody: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var label: UILabel!
     
     @IBInspectable
     public var text: String = "" {
@@ -43,6 +43,7 @@ public class LBody: UIView, NibLoadable {
         case .right    :
             label.textAlignment = .right
         }
+        label.font = .bodyLarge
     }
     
     required init?(coder aDecoder: NSCoder) {

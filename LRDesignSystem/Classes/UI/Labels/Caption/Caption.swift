@@ -39,7 +39,7 @@ public class Caption: UIView, NibLoadable {
         }
     }
     
-    func setup() {
+    func setup(style: String = "GC") {
         //depending on the type
         switch typeOfAlignment {
         case .left  :
@@ -48,6 +48,12 @@ public class Caption: UIView, NibLoadable {
             label.textAlignment = .center
         case .right    :
             label.textAlignment = .right
+        }
+        switch style {
+        case "GC":
+            label.font = .caption
+        default:
+            break
         }
     }
     

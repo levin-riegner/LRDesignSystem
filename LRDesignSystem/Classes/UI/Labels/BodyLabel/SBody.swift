@@ -54,6 +54,7 @@ public class SBody: UIView, NibLoadable {
         case .right    :
             label.textAlignment = .right
         }
+        label.font = .bodySmall
     }
     
 }

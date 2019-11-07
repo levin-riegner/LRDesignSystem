@@ -12,6 +12,25 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		AD41FADE237345B900E8EF75 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACB237345B800E8EF75 /* Lato-LightItalic.ttf */; };
+		AD41FADF237345B900E8EF75 /* Lato-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACC237345B800E8EF75 /* Lato-RegularItalic.ttf */; };
+		AD41FAE0237345B900E8EF75 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACD237345B800E8EF75 /* Lato-Light.ttf */; };
+		AD41FAE1237345B900E8EF75 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACE237345B800E8EF75 /* Lato-BlackItalic.ttf */; };
+		AD41FAE2237345B900E8EF75 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACF237345B800E8EF75 /* Lato-Regular.ttf */; };
+		AD41FAE3237345B900E8EF75 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD0237345B800E8EF75 /* Lato-Black.ttf */; };
+		AD41FAE4237345B900E8EF75 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD1237345B800E8EF75 /* Lato-ThinItalic.ttf */; };
+		AD41FAE5237345B900E8EF75 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD2237345B800E8EF75 /* Lato-Thin.ttf */; };
+		AD41FAE6237345B900E8EF75 /* MarkOffcPro-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD3237345B800E8EF75 /* MarkOffcPro-BookItalic.ttf */; };
+		AD41FAE7237345B900E8EF75 /* MarkOffcPro-CondHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD4237345B800E8EF75 /* MarkOffcPro-CondHeavy.ttf */; };
+		AD41FAE8237345B900E8EF75 /* MarkOffcPro-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD5237345B800E8EF75 /* MarkOffcPro-Heavy.ttf */; };
+		AD41FAE9237345B900E8EF75 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD6237345B900E8EF75 /* Lato-Bold.ttf */; };
+		AD41FAEA237345B900E8EF75 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD7237345B900E8EF75 /* Lato-BoldItalic.ttf */; };
+		AD41FAEB237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD8237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf */; };
+		AD41FAEC237345B900E8EF75 /* MarkOffcPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD9237345B900E8EF75 /* MarkOffcPro-Bold.ttf */; };
+		AD41FAED237345B900E8EF75 /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADA237345B900E8EF75 /* MarkOffcPro-Book.ttf */; };
+		AD41FAEE237345B900E8EF75 /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADB237345B900E8EF75 /* MarkOffcPro-Light.ttf */; };
+		AD41FAEF237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADC237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf */; };
+		AD41FAF0237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADD237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf */; };
 		D3F1DB6E7FFA60DB0E67C24D /* Pods_LRDesignSystem_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +50,25 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRDesignSystem_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD41FACB237345B800E8EF75 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		AD41FACC237345B800E8EF75 /* Lato-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-RegularItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-RegularItalic.ttf"; sourceTree = "<group>"; };
+		AD41FACD237345B800E8EF75 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		AD41FACE237345B800E8EF75 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		AD41FACF237345B800E8EF75 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		AD41FAD0237345B800E8EF75 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
+		AD41FAD1237345B800E8EF75 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-ThinItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AD41FAD2237345B800E8EF75 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
+		AD41FAD3237345B800E8EF75 /* MarkOffcPro-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-BookItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-BookItalic.ttf"; sourceTree = "<group>"; };
+		AD41FAD4237345B800E8EF75 /* MarkOffcPro-CondHeavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-CondHeavy.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-CondHeavy.ttf"; sourceTree = "<group>"; };
+		AD41FAD5237345B800E8EF75 /* MarkOffcPro-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-Heavy.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-Heavy.ttf"; sourceTree = "<group>"; };
+		AD41FAD6237345B900E8EF75 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		AD41FAD7237345B900E8EF75 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AD41FAD8237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-BoldItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AD41FAD9237345B900E8EF75 /* MarkOffcPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-Bold.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-Bold.ttf"; sourceTree = "<group>"; };
+		AD41FADA237345B900E8EF75 /* MarkOffcPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-Book.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-Book.ttf"; sourceTree = "<group>"; };
+		AD41FADB237345B900E8EF75 /* MarkOffcPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-Light.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-Light.ttf"; sourceTree = "<group>"; };
+		AD41FADC237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-LightItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		AD41FADD237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MarkOffcPro-HeavyItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/MarkOffcPro-HeavyItalic.ttf"; sourceTree = "<group>"; };
 		BE553728162D17EBC6BC76D8 /* Pods-LRDesignSystem_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRDesignSystem_Example.release.xcconfig"; path = "Target Support Files/Pods-LRDesignSystem_Example/Pods-LRDesignSystem_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D1634B4499C8A895289B2DBC /* Pods-LRDesignSystem_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRDesignSystem_Tests.release.xcconfig"; path = "Target Support Files/Pods-LRDesignSystem_Tests/Pods-LRDesignSystem_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E13A3B2F7D379BAE918C05A7 /* Pods_LRDesignSystem_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRDesignSystem_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +134,25 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD41FAD0237345B800E8EF75 /* Lato-Black.ttf */,
+				AD41FACE237345B800E8EF75 /* Lato-BlackItalic.ttf */,
+				AD41FAD6237345B900E8EF75 /* Lato-Bold.ttf */,
+				AD41FAD7237345B900E8EF75 /* Lato-BoldItalic.ttf */,
+				AD41FACD237345B800E8EF75 /* Lato-Light.ttf */,
+				AD41FACB237345B800E8EF75 /* Lato-LightItalic.ttf */,
+				AD41FACF237345B800E8EF75 /* Lato-Regular.ttf */,
+				AD41FACC237345B800E8EF75 /* Lato-RegularItalic.ttf */,
+				AD41FAD2237345B800E8EF75 /* Lato-Thin.ttf */,
+				AD41FAD1237345B800E8EF75 /* Lato-ThinItalic.ttf */,
+				AD41FAD9237345B900E8EF75 /* MarkOffcPro-Bold.ttf */,
+				AD41FAD8237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf */,
+				AD41FADA237345B900E8EF75 /* MarkOffcPro-Book.ttf */,
+				AD41FAD3237345B800E8EF75 /* MarkOffcPro-BookItalic.ttf */,
+				AD41FAD4237345B800E8EF75 /* MarkOffcPro-CondHeavy.ttf */,
+				AD41FAD5237345B800E8EF75 /* MarkOffcPro-Heavy.ttf */,
+				AD41FADD237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf */,
+				AD41FADB237345B900E8EF75 /* MarkOffcPro-Light.ttf */,
+				AD41FADC237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -200,8 +257,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				AD41FAE9237345B900E8EF75 /* Lato-Bold.ttf in Resources */,
+				AD41FAE3237345B900E8EF75 /* Lato-Black.ttf in Resources */,
+				AD41FAEA237345B900E8EF75 /* Lato-BoldItalic.ttf in Resources */,
+				AD41FAEF237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				AD41FAE8237345B900E8EF75 /* MarkOffcPro-Heavy.ttf in Resources */,
+				AD41FAF0237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf in Resources */,
+				AD41FAEC237345B900E8EF75 /* MarkOffcPro-Bold.ttf in Resources */,
+				AD41FAE1237345B900E8EF75 /* Lato-BlackItalic.ttf in Resources */,
+				AD41FAE5237345B900E8EF75 /* Lato-Thin.ttf in Resources */,
+				AD41FAE2237345B900E8EF75 /* Lato-Regular.ttf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				AD41FAEB237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf in Resources */,
+				AD41FAE0237345B900E8EF75 /* Lato-Light.ttf in Resources */,
+				AD41FAE4237345B900E8EF75 /* Lato-ThinItalic.ttf in Resources */,
+				AD41FADE237345B900E8EF75 /* Lato-LightItalic.ttf in Resources */,
+				AD41FAE6237345B900E8EF75 /* MarkOffcPro-BookItalic.ttf in Resources */,
+				AD41FAEE237345B900E8EF75 /* MarkOffcPro-Light.ttf in Resources */,
+				AD41FADF237345B900E8EF75 /* Lato-RegularItalic.ttf in Resources */,
+				AD41FAE7237345B900E8EF75 /* MarkOffcPro-CondHeavy.ttf in Resources */,
+				AD41FAED237345B900E8EF75 /* MarkOffcPro-Book.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

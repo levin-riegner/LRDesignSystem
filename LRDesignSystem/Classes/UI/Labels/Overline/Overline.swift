@@ -12,12 +12,13 @@ import UIKit
 @IBDesignable
 public class Overline: UIView, NibLoadable {
     
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet public weak var label: UILabel!
     
     @IBInspectable
     public var text: String = "" {
         didSet{
-            label.text = text
+            label.font = .button
+            label.attributedText = NSAttributedString(string: text, attributes: [.kern: 0.5])
         }
     }
     
@@ -43,6 +44,7 @@ public class Overline: UIView, NibLoadable {
         case .right    :
             label.textAlignment = .right
         }
+        label.font = .overline
     }
     
     required init?(coder aDecoder: NSCoder) {
