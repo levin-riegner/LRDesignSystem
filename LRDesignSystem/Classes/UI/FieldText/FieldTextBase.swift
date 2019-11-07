@@ -39,7 +39,6 @@ public class FieldTextBase: UITextField {
     
     
     //Inactive
-    
     @IBInspectable
     public var placeholderColor:UIColor?{
         didSet{
@@ -71,17 +70,10 @@ public class FieldTextBase: UITextField {
     
     fileprivate var lblFloatPlaceholder:UILabel             = UILabel()
     fileprivate var lblError:UILabel                        = UILabel()
-    
     fileprivate let paddingX:CGFloat                        = 15.0
-    
-    fileprivate let paddingHeight:CGFloat                   = 16.0
-    
+    fileprivate let paddingHeight:CGFloat                   = 0
     public var dtLayer:CALayer                              = CALayer()
-    
     public var floatPlaceholderColor: CGColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1).cgColor
-    
-    
-    
     public var floatPlaceholderActiveColor:UIColor          = UIColor.black
     public var floatingLabelShowAnimationDuration           = 0.3
     public var floatingDisplayStatus:FloatingDisplayStatus  = .defaults
@@ -112,11 +104,11 @@ public class FieldTextBase: UITextField {
     public var animateFloatPlaceholder:Bool = true
     public var hideErrorWhenEditing:Bool   = true
     
-    public var errorFont = UIFont.systemFont(ofSize: 14.0){
+    public var errorFont = UIFont.bodySmall{
         didSet{ invalidateIntrinsicContentSize() }
     }
     
-    public var floatPlaceholderFont = UIFont.systemFont(ofSize: 10.0){
+    public var floatPlaceholderFont = UIFont.label{
         didSet{ invalidateIntrinsicContentSize() }
     }
     
@@ -128,8 +120,6 @@ public class FieldTextBase: UITextField {
         didSet{ invalidateIntrinsicContentSize() }
     }
     
-    
-    
     public var canShowBorder:Bool = true{
         didSet{ dtLayer.isHidden = !canShowBorder }
     }
@@ -140,7 +130,6 @@ public class FieldTextBase: UITextField {
         if let leftView = leftView {
             return leftView.frame.origin.x + leftView.bounds.size.width - paddingX
         }
-        
         return paddingX
     }
     
@@ -155,7 +144,6 @@ public class FieldTextBase: UITextField {
     fileprivate var floatLabelWidth:CGFloat{
         
         var width = bounds.size.width
-        
         if let leftViewWidth = leftView?.bounds.size.width{
             width -= leftViewWidth
         }
@@ -163,7 +151,6 @@ public class FieldTextBase: UITextField {
         if let rightViewWidth = rightView?.bounds.size.width {
             width -= rightViewWidth
         }
-        
         return width - (self.x * 2)
     }
     
@@ -201,7 +188,9 @@ public class FieldTextBase: UITextField {
     }
     
     public override var text: String?{
-        didSet{ self.textFieldTextChanged() }
+        didSet{
+            self.textFieldTextChanged()
+        }
     }
     
     override public var placeholder: String?{
@@ -252,6 +241,7 @@ public class FieldTextBase: UITextField {
         lblFloatPlaceholder.frame   = CGRect.zero
         lblFloatPlaceholder.alpha   = 0.0
         lblFloatPlaceholder.font    = floatPlaceholderFont
+        self.font                   = .bodyLarge
         lblFloatPlaceholder.text    = placeholderFinal
         
         dtLayer.borderColor = borderColorOff.cgColor

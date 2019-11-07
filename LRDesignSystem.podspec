@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.4.0'
-  s.summary          = '0.4.0 Improved BaseButton & Text Field '
+  s.version          = '0.4.1'
+  s.summary          = '0.4.1 Field text font configured '
 
   s.swift_version    = '5.0'
   
