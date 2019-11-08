@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.4.2'
-  s.summary          = '0.4.2 Field text font configured '
+  s.version          = '0.4.3'
+  s.summary          = '0.4.3 Base button support image when is left aligned'
 
   s.swift_version    = '5.0'
   

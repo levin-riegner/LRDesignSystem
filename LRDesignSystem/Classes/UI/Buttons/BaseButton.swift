@@ -6,7 +6,6 @@
 //  Copyright (c) 2016 Ruva. All rights reserved.
 //
 import UIKit
-
 @IBDesignable
 public class BaseButton: UIControl {
     
@@ -64,6 +63,7 @@ public class BaseButton: UIControl {
             guard let rightLabel = secondaryVisibleView as? UILabel else { return }
             rightLabel.font = .button
             rightLabel.attributedText = NSAttributedString(string: rightText, attributes: [.kern: 2])
+            updateUI(forState: buttonState)
         }
     }
     
@@ -190,7 +190,7 @@ public class BaseButton: UIControl {
         rightLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         rightLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -24 ).isActive = true
         rightLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        secondaryVisibleView = rightLabel 
+        secondaryVisibleView = rightLabel
         rightLabel.textAlignment = .right
         
 
@@ -350,7 +350,16 @@ extension BaseButton {
     
     private func showImage() -> Void {
         if (image != nil && (self.buttonState == .normal || buttonState == .disable)) {
-            imgView = UIImageView(frame: CGRect(x: 24, y: (self.bounds.size.height/2)-12, width: 24, height: 24))
+            imgView?.removeFromSuperview()
+            //When is left aligned and there is right label we move the image to the right
+            if let rightLabel = secondaryVisibleView as? UILabel, textAlignment == "left" {
+                imgView = UIImageView(frame: CGRect(x: self.bounds.size.width-48-4-self.rightText.widthOfString(usingFont: .button), y: (self.bounds.size.height/2)-12, width: 24, height: 24))
+                   // test.rightAnchor.constraint(equalTo: rightLabel.leftAnchor).isActive = true
+            } else {
+                imgView = UIImageView(frame: CGRect(x: 24, y: (self.bounds.size.height/2)-12, width: 24, height: 24))
+            }
+            
+            
             imgView!.contentMode = .scaleAspectFit
             imgView!.image = self.image
             addSubview(self.imgView!)

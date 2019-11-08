@@ -19,6 +19,7 @@
 		AD2F11E12373401A00B1E422 /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11DE2373401900B1E422 /* MarkOffcPro-Book.ttf */; };
 		AD2F11E22373401A00B1E422 /* MarkOffcPro-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11DF2373401900B1E422 /* MarkOffcPro-BookItalic.ttf */; };
 		AD2F11E32373401A00B1E422 /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11E02373401900B1E422 /* MarkOffcPro-HeavyItalic.ttf */; };
+		AD42A85723757277000E655C /* String+Width.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42A85623757277000E655C /* String+Width.swift */; };
 		AD76723A234CDCB300AE5620 /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */; };
 		AD76723B234CDCB300AE5620 /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671E3234CDCB300AE5620 /* SegmentedProgressBar.swift */; };
 		AD76723C234CDCB300AE5620 /* BaseButtonIssue.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7671E5234CDCB300AE5620 /* BaseButtonIssue.xib */; };
@@ -125,6 +126,7 @@
 		AD2F11DE2373401900B1E422 /* MarkOffcPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Book.ttf"; sourceTree = "<group>"; };
 		AD2F11DF2373401900B1E422 /* MarkOffcPro-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-BookItalic.ttf"; sourceTree = "<group>"; };
 		AD2F11E02373401900B1E422 /* MarkOffcPro-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		AD42A85623757277000E655C /* String+Width.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Width.swift"; sourceTree = "<group>"; };
 		AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeDisplayCard.swift; sourceTree = "<group>"; };
 		AD7671E3234CDCB300AE5620 /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
 		AD7671E5234CDCB300AE5620 /* BaseButtonIssue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseButtonIssue.xib; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				AD767227234CDCB300AE5620 /* TypeOfAlignment.swift */,
 				AD767228234CDCB300AE5620 /* Fonts */,
 				AD767238234CDCB300AE5620 /* FieldText */,
+				AD42A85623757277000E655C /* String+Width.swift */,
 			);
 			name = UI;
 			path = LRDesignSystem/Classes/UI;
@@ -719,6 +722,7 @@
 				AD76725B234CDCB300AE5620 /* RBody.swift in Sources */,
 				AD767285234CDCB300AE5620 /* FieldTextBase.swift in Sources */,
 				667FE032D993A5AE6170C75299099B10 /* LRDesignSystem-dummy.m in Sources */,
+				AD42A85723757277000E655C /* String+Width.swift in Sources */,
 				0CD63E752E602062FD5A7D3F3B39530D /* TestDesignableView.swift in Sources */,
 				AD76725D234CDCB300AE5620 /* SBody.swift in Sources */,
 				AD767266234CDCB300AE5620 /* XLHeadline.swift in Sources */,
