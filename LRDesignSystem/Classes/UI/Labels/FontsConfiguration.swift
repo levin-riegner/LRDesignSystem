@@ -9,37 +9,46 @@
 import Foundation
 extension UIFont {
     class var headlineXLarge: UIFont {
-        return UIFont(name: "MarkOffcPro-Bold", size: 30.0)!
+        return UIFont(name: "MarkOffcPro-Bold", size: 30.0) ?? UIFont.systemFont(ofSize: 30)
     }
     class var headlineLarge: UIFont {
-        return UIFont(name: "MarkOffcPro-Bold", size: 24.0)!
+        return UIFont(name: "MarkOffcPro-Bold", size: 24.0) ?? UIFont.systemFont(ofSize: 24)
     }
     class var headlineRegular: UIFont {
-        return UIFont(name: "MarkOffcPro-Bold", size: 20.0)!
+        return UIFont(name: "MarkOffcPro-Bold", size: 20.0) ??
+        UIFont.systemFont(ofSize: 20)
     }
     class var headlineSmall: UIFont {
-        return UIFont(name: "MarkOffcPro-Bold", size: 18.0)!
+        return UIFont(name: "MarkOffcPro-Bold", size: 18.0)! ??
+        UIFont.systemFont(ofSize: 18)
     }
     class var bodyLarge: UIFont {
-        return UIFont(name: "Lato-Regular", size: 18.0)!
+        return UIFont(name: "Lato-Regular", size: 18.0) ??
+        UIFont.systemFont(ofSize: 18)
     }
     class var bodyRegular: UIFont {
-        return UIFont(name: "Lato-Regular", size: 16.0)!
+        return UIFont(name: "Lato-Regular", size: 16.0) ??
+        UIFont.systemFont(ofSize: 16)
     }
     class var button: UIFont {
-        return UIFont(name: "MarkOffcPro-Heavy", size: 14.0)!
+        return UIFont(name: "MarkOffcPro-Heavy", size: 14.0) ??
+        UIFont.systemFont(ofSize: 16)
     }
     class var bodySmall: UIFont {
-        return UIFont(name: "Lato-Regular", size: 14.0)!
+        return UIFont(name: "Lato-Regular", size: 14.0) ??
+        UIFont.systemFont(ofSize: 14)
     }
     class var overline: UIFont {
-        return UIFont(name: "MarkOffcPro-Bold", size: 12.0)!
+        return UIFont(name: "MarkOffcPro-Bold", size: 12.0) ??
+        UIFont.systemFont(ofSize: 12)
     }
     class var caption: UIFont {
-        return UIFont(name: "Lato-Regular", size: 12.0)!
+        return UIFont(name: "Lato-Regular", size: 12.0) ??
+        UIFont.systemFont(ofSize: 12)
     }
     class var label: UIFont {
-        return UIFont(name: "MarkOffcPro-Bold", size: 9.0)!
+        return UIFont(name: "MarkOffcPro-Bold", size: 9.0) ??
+        UIFont.systemFont(ofSize: 9)
     }
 }
 

@@ -193,7 +193,6 @@ public class BaseButton: UIControl {
         secondaryVisibleView = rightLabel
         rightLabel.textAlignment = .right
         
-
     }
     
     /**
@@ -305,6 +304,15 @@ extension BaseButton {
             buttonState = .normal
         }
         sendActions(for: .touchUpInside)
+    }
+    
+    public func blurEffect(){
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.extraLight)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+       // self.addSubview(blurEffectView)
+        self.sendSubviewToBack(blurEffectView)
     }
 }
 
