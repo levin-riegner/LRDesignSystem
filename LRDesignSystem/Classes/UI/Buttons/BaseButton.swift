@@ -26,7 +26,7 @@ public class BaseButton: UIControl {
     var buttonBackgroundColor:UIColor = UIColor.primaryInactive
     var imgView: UIImageView?
     
-    
+    var blurEffectView = UIVisualEffectView()
     //MARK: - Private
     fileprivate var currentlyVisibleView:UIView?
     fileprivate var secondaryVisibleView:UIView?
@@ -39,22 +39,24 @@ public class BaseButton: UIControl {
     }
     
     /// Font for the title label (IB does not allow UIFont to be inspected therefore font must be set programmatically)
-    public var titleFont:UIFont = .button {
+    public var titleFont:UIFont = .button{
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
-            titleLabel.font = .button
+            titleLabel.font = titleFont
+            updateStyle()
         }
     }
     
     
     //MARK: - Inspectable / Designable properties
     
+    @IBInspectable public var kernSpace : Int = 0
+    
     /// Button title
     @IBInspectable public var title:String = NSLocalizedString("Button", comment:"Button") {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
-            titleLabel.font = .button
-            titleLabel.attributedText = NSAttributedString(string: title, attributes: [.kern: 2])
+            updateStyle()
         }
     }
     
@@ -62,7 +64,7 @@ public class BaseButton: UIControl {
         didSet {
             guard let rightLabel = secondaryVisibleView as? UILabel else { return }
             rightLabel.font = .button
-            rightLabel.attributedText = NSAttributedString(string: rightText, attributes: [.kern: 2])
+            rightLabel.attributedText = NSAttributedString(string: rightText, attributes: [.kern: kernSpace])
             updateUI(forState: buttonState)
         }
     }
@@ -193,6 +195,14 @@ public class BaseButton: UIControl {
         secondaryVisibleView = rightLabel
         rightLabel.textAlignment = .right
         
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+        blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.addSubview(blurEffectView)
+        self.sendSubviewToBack(blurEffectView)
+        blurEffectView.alpha = 1
+        blurEffectView.isHidden = true
     }
     
     /**
@@ -204,6 +214,9 @@ public class BaseButton: UIControl {
         layer.masksToBounds = cornerRadius > 0
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
+        guard let titleLabel = currentlyVisibleView as? UILabel else { return }
+        titleLabel.font = titleFont
+        titleLabel.attributedText = NSAttributedString(string: title, attributes: [.kern: kernSpace])
     }
     
     /**
@@ -307,12 +320,7 @@ extension BaseButton {
     }
     
     public func blurEffect(){
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.extraLight)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = self.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-       // self.addSubview(blurEffectView)
-        self.sendSubviewToBack(blurEffectView)
+        blurEffectView.isHidden = false
     }
 }
 
