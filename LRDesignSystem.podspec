@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.4.6'
-  s.summary          = '0.4.6 Fixes for GC'
+  s.version          = '0.4.7'
+  s.summary          = '0.4.7 Fix deploy target'
 
   s.swift_version    = '5.0'
   
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/levin-riegner/LRDesignSystem.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'LRDesignSystem/Classes/**/*'
   
