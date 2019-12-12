@@ -39,11 +39,10 @@ public class BaseButton: UIControl {
     }
     
     /// Font for the title label (IB does not allow UIFont to be inspected therefore font must be set programmatically)
-    public var titleFont:UIFont = .button{
+    public var titleFont:UIFont = .button {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
-            titleLabel.font = titleFont
-            updateStyle()
+            titleLabel.font = .button
         }
     }
     
@@ -57,6 +56,8 @@ public class BaseButton: UIControl {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             updateStyle()
+            titleLabel.font = .button
+            titleLabel.attributedText = NSAttributedString(string: title, attributes: [.kern: 2])
         }
     }
     
@@ -77,7 +78,7 @@ public class BaseButton: UIControl {
         }
     }
     
-    @IBInspectable public var textAlignment: String = "" {
+    @IBInspectable public var textAlignment: String = "left" {
         didSet{
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             switch textAlignment {
@@ -241,6 +242,8 @@ public class BaseButton: UIControl {
             //if (buttonBackgroundColor != normalBackgroundColor) {
             buttonBackgroundColor = UIColor.primaryInactive
             currentlyVisibleView?.isUserInteractionEnabled = false
+            currentlyVisibleView?.isHidden = true
+            secondaryVisibleView?.isHidden = true
             // }
             showImage()
         }
@@ -369,7 +372,8 @@ extension BaseButton {
             imgView?.removeFromSuperview()
             //When is left aligned and there is right label we move the image to the right
             if let rightLabel = secondaryVisibleView as? UILabel, textAlignment == "left" {
-                imgView = UIImageView(frame: CGRect(x: self.bounds.size.width-48-4-self.rightText.widthOfString(usingFont: .button), y: (self.bounds.size.height/2)-12, width: 24, height: 24))
+                imgView = UIImageView(frame: CGRect(x: self.bounds.size.width-48-4-self.rightText.widthOfString(usingFont: .button), y: (self.bounds.size.height/2)-6, width: 12, height: 12))
+                imgView?.isHidden = false
                    // test.rightAnchor.constraint(equalTo: rightLabel.leftAnchor).isActive = true
             } else {
                 imgView = UIImageView(frame: CGRect(x: 24, y: (self.bounds.size.height/2)-12, width: 24, height: 24))
@@ -380,7 +384,6 @@ extension BaseButton {
             imgView!.image = self.image
             addSubview(self.imgView!)
             imgView!.alpha = (self.buttonState == .normal) ? 1 : 0.3
-            print(self.imgView?.alpha)
         } else {
             imgView?.removeFromSuperview()
         }

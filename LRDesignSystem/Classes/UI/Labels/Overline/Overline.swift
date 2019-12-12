@@ -17,7 +17,7 @@ public class Overline: UIView, NibLoadable {
     @IBInspectable
     public var text: String = "" {
         didSet{
-            label.font = .button
+            label.font = .overline
             label.attributedText = NSAttributedString(string: text, attributes: [.kern: 0.5])
         }
     }

@@ -43,7 +43,7 @@ public class FieldTextBase: UITextField {
     public var placeholderColor:UIColor?{
         didSet{
             guard let color = placeholderColor else { return }
-            attributedPlaceholder = NSAttributedString(string: placeholderFinal,
+            attributedPlaceholder = NSAttributedString(string: placeholderFinal.capitalized,
                                                        attributes: [NSAttributedString.Key.foregroundColor:color])
         }
     }
@@ -138,7 +138,7 @@ public class FieldTextBase: UITextField {
     }
     
     fileprivate var dtLayerHeight:CGFloat{
-        return showErrorLabel ? floor(bounds.height - lblError.bounds.size.height - paddingYErrorLabel) : bounds.height
+        return 54
     }
     
     fileprivate var floatLabelWidth:CGFloat{
@@ -197,16 +197,16 @@ public class FieldTextBase: UITextField {
         didSet{
             
             guard let color = placeholderColor else {
-                lblFloatPlaceholder.text = placeholderFinal
+                lblFloatPlaceholder.text = placeholderFinal.capitalized
                 return
             }
-            attributedPlaceholder = NSAttributedString(string: placeholderFinal,
+            attributedPlaceholder = NSAttributedString(string: placeholderFinal.capitalized,
                                                        attributes: [NSAttributedString.Key.foregroundColor:color])
         }
     }
     
     override public var attributedPlaceholder: NSAttributedString?{
-        didSet{ lblFloatPlaceholder.text = placeholderFinal }
+        didSet{ lblFloatPlaceholder.text = placeholderFinal.uppercased() }
     }
     
     override public init(frame: CGRect) {
@@ -373,7 +373,7 @@ public class FieldTextBase: UITextField {
         let newX = x
         guard showErrorLabel else { return CGRect(x: newX, y: 0, width: rect.width - newX - paddingX, height: rect.height) }
         
-        let topInset = (rect.size.height - lblError.bounds.size.height - paddingYErrorLabel - fontHeight) / 2.0
+        let topInset = (rect.size.height - paddingYErrorLabel - fontHeight) / 2.0
         let textY = topInset - ((rect.height - fontHeight) / 2.0)
         
         return CGRect(x: newX, y: floor(textY), width: rect.size.width - newX - paddingX, height: rect.size.height)

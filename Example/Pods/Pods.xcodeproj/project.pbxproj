@@ -279,6 +279,7 @@
 		AD7671E1234CDCB300AE5620 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AD767225234CDCB300AE5620 /* LargeDisplayCard.xib */,
 				AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */,
 				AD7671E3234CDCB300AE5620 /* SegmentedProgressBar.swift */,
 				AD7671E4234CDCB300AE5620 /* Buttons */,
@@ -286,7 +287,6 @@
 				AD76721B234CDCB300AE5620 /* Spinner */,
 				AD76721D234CDCB300AE5620 /* Screens */,
 				AD767224234CDCB300AE5620 /* NIbLodeable.swift */,
-				AD767225234CDCB300AE5620 /* LargeDisplayCard.xib */,
 				AD767226234CDCB300AE5620 /* ColorExtension.swift */,
 				AD767227234CDCB300AE5620 /* TypeOfAlignment.swift */,
 				AD767228234CDCB300AE5620 /* Fonts */,

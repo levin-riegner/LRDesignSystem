@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.4.5'
-  s.summary          = '0.4.5 Fix on Base button'
+  s.version          = '0.4.6'
+  s.summary          = '0.4.6 Fixes for GC'
 
   s.swift_version    = '5.0'
   
