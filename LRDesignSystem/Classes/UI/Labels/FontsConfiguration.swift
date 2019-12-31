@@ -31,6 +31,11 @@ extension UIFont {
         UIFont.systemFont(ofSize: 16)
     }
     class var button: UIFont {
+        print(UIScreen.main.bounds.height, "asd")
+        if UIScreen.main.bounds.height < 570 {
+            return UIFont(name: "MarkOffcPro-Heavy", size: 11) ?? UIFont.systemFont(ofSize: 11)
+
+        }
         return UIFont(name: "MarkOffcPro-Heavy", size: 14.0) ??
         UIFont.systemFont(ofSize: 16)
     }

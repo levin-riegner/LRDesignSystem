@@ -20,6 +20,18 @@ public class FieldTextBase: UITextField {
     
     let imageError = UIImageView(image: #imageLiteral(resourceName: "S_Error"))
 
+    
+    
+    //Active
+    @IBInspectable
+    public var placeholderActiveColor: UIColor? {
+        didSet{
+            guard let color = placeholderActiveColor else { return }
+            floatPlaceholderActiveColor = color
+        }
+    }
+    
+    
     //Active
     @IBInspectable
     public var hintActiveColor: UIColor? {
@@ -40,9 +52,9 @@ public class FieldTextBase: UITextField {
     
     //Inactive
     @IBInspectable
-    public var placeholderColor:UIColor?{
+    public var placeHolderColor:UIColor?{
         didSet{
-            guard let color = placeholderColor else { return }
+            guard let color = placeHolderColor else { return }
             attributedPlaceholder = NSAttributedString(string: placeholderFinal.capitalized,
                                                        attributes: [NSAttributedString.Key.foregroundColor:color])
         }
@@ -73,7 +85,7 @@ public class FieldTextBase: UITextField {
     fileprivate let paddingX:CGFloat                        = 15.0
     fileprivate let paddingHeight:CGFloat                   = 0
     public var dtLayer:CALayer                              = CALayer()
-    public var floatPlaceholderColor: CGColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1).cgColor
+    public var floatplaceHolderColor: CGColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1).cgColor
     public var floatPlaceholderActiveColor:UIColor          = UIColor.black
     public var floatingLabelShowAnimationDuration           = 0.3
     public var floatingDisplayStatus:FloatingDisplayStatus  = .defaults
@@ -120,6 +132,7 @@ public class FieldTextBase: UITextField {
         didSet{ invalidateIntrinsicContentSize() }
     }
     
+    @IBInspectable
     public var canShowBorder:Bool = true{
         didSet{ dtLayer.isHidden = !canShowBorder }
     }
@@ -196,7 +209,7 @@ public class FieldTextBase: UITextField {
     override public var placeholder: String?{
         didSet{
             
-            guard let color = placeholderColor else {
+            guard let color = placeHolderColor else {
                 lblFloatPlaceholder.text = placeholderFinal.capitalized
                 return
             }
@@ -236,7 +249,7 @@ public class FieldTextBase: UITextField {
         dtborderStyle               = .rounded
         dtLayer.backgroundColor     = UIColor.white.cgColor
         
-        floatPlaceholderColor       = placeholderColor?.cgColor ?? UIColor.black.cgColor
+        floatplaceHolderColor       = placeHolderColor?.cgColor ?? UIColor.black.cgColor
         floatPlaceholderActiveColor = hintActiveColor ?? UIColor.red
         lblFloatPlaceholder.frame   = CGRect.zero
         lblFloatPlaceholder.alpha   = 0.0
@@ -488,7 +501,7 @@ public class FieldTextBase: UITextField {
         
         setErrorLabelAlignment()
         setFloatLabelAlignment()
-        lblFloatPlaceholder.textColor = isFirstResponder ? floatPlaceholderActiveColor : placeholderColor
+        lblFloatPlaceholder.textColor = isFirstResponder ? floatPlaceholderActiveColor : placeHolderColor
         
         dtLayer.borderColor = isFirstResponder ? borderColorOn.cgColor :
             self.imageError.isHidden ? borderColorOff.cgColor : UIColor.secondaryActive.cgColor

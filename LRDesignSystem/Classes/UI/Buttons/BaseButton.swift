@@ -12,9 +12,10 @@ public class BaseButton: UIControl {
     /**
      Button internal states
      
-     - Normal:      Title label is displayed, button background color is normalBackgroundColor
+     - Normal:       Title label is displayed, button background color is normalBackgroundColor
      - Highlighted: Title label is displayed, button background color changes to highlightedBackgroundColor
-     - Loading:     Loading animation is displayed, background color changes to normalBackgroundColor
+     - Loading:      Loading animation is displayed, background color changes to normalBackgroundColor
+     - Disable:       Loading animation is displayed, background color changes to normalBackgroundColor
      */
     fileprivate enum ButtonState {
         case normal
@@ -23,7 +24,7 @@ public class BaseButton: UIControl {
         case disable
     }
     
-    var buttonBackgroundColor:UIColor = UIColor.primaryInactive
+    var buttonBackgroundColor:UIColor = UIColor.primaryActive
     var imgView: UIImageView?
     
     var blurEffectView = UIVisualEffectView()
@@ -34,6 +35,7 @@ public class BaseButton: UIControl {
         if oldValue != buttonState {
             print(buttonState)
             updateUI(forState:buttonState)
+            updateStyle()
         }
         }
     }
@@ -43,13 +45,16 @@ public class BaseButton: UIControl {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             titleLabel.font = .button
+            updateStyle()
         }
     }
     
     
     //MARK: - Inspectable / Designable properties
     
-    @IBInspectable public var kernSpace : Int = 0
+    @IBInspectable public var kernSpace : Int = 2
+    @IBInspectable public var kernRightSpace : Int = 0
+
     
     /// Button title
     @IBInspectable public var title:String = NSLocalizedString("Button", comment:"Button") {
@@ -57,7 +62,7 @@ public class BaseButton: UIControl {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             updateStyle()
             titleLabel.font = .button
-            titleLabel.attributedText = NSAttributedString(string: title, attributes: [.kern: 2])
+            titleLabel.attributedText = NSAttributedString(string: title, attributes: [.kern: kernSpace])
         }
     }
     
@@ -65,7 +70,7 @@ public class BaseButton: UIControl {
         didSet {
             guard let rightLabel = secondaryVisibleView as? UILabel else { return }
             rightLabel.font = .button
-            rightLabel.attributedText = NSAttributedString(string: rightText, attributes: [.kern: kernSpace])
+            rightLabel.attributedText = NSAttributedString(string: rightText, attributes: [.kern: kernRightSpace])
             updateUI(forState: buttonState)
         }
     }
@@ -90,8 +95,7 @@ public class BaseButton: UIControl {
                 titleLabel.textAlignment = .center
             default:
                 titleLabel.textAlignment = .left
-                
-            }            //updateStyle()
+            }
         }
     }
     @IBInspectable public var currentState: String = "normal"{
@@ -113,10 +117,8 @@ public class BaseButton: UIControl {
     
     @IBInspectable public var nextState: String = "normal"
     
-    
     /// Loading indicator color
     @IBInspectable public var loadingIndicatorColor:UIColor = UIColor.white {
-        
         didSet{
             updateUI(forState: buttonState)
         }
@@ -164,12 +166,14 @@ public class BaseButton: UIControl {
         super.init(frame: frame)
         setupButton()
         updateStyle()
+        showImage()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupButton()
         updateStyle()
+        showImage()
     }
     
     /**
@@ -202,15 +206,15 @@ public class BaseButton: UIControl {
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(blurEffectView)
         self.sendSubviewToBack(blurEffectView)
-        blurEffectView.alpha = 1
+        blurEffectView.alpha = 0
         blurEffectView.isHidden = true
+        showImage()
     }
     
     /**
      Button style update
      */
     private func updateStyle() -> Void {
-        backgroundColor = normalBackgroundColor
         layer.cornerRadius = cornerRadius
         layer.masksToBounds = cornerRadius > 0
         layer.borderWidth = borderWidth
@@ -218,6 +222,7 @@ public class BaseButton: UIControl {
         guard let titleLabel = currentlyVisibleView as? UILabel else { return }
         titleLabel.font = titleFont
         titleLabel.attributedText = NSAttributedString(string: title, attributes: [.kern: kernSpace])
+        showImage()
     }
     
     /**
@@ -231,9 +236,13 @@ public class BaseButton: UIControl {
             buttonBackgroundColor = normalBackgroundColor
             showLabelView()
             showImage()
+            self.isUserInteractionEnabled = true
+
         case .highlighted:
             buttonBackgroundColor = highlightedBackgroundColor
             showImage()
+            self.isUserInteractionEnabled = true
+
         case .loading:
             buttonBackgroundColor = normalBackgroundColor
             showLoadingView()
@@ -242,8 +251,7 @@ public class BaseButton: UIControl {
             //if (buttonBackgroundColor != normalBackgroundColor) {
             buttonBackgroundColor = UIColor.primaryInactive
             currentlyVisibleView?.isUserInteractionEnabled = false
-            currentlyVisibleView?.isHidden = true
-            secondaryVisibleView?.isHidden = true
+            self.isUserInteractionEnabled = false
             // }
             showImage()
         }
@@ -302,33 +310,26 @@ extension BaseButton {
         guard buttonState == .highlighted,
             let touchLocation = touches.first?.location(in: self),
             bounds.contains(touchLocation) else {
+                buttonState = .normal
                 super.touchesEnded(touches, with: event)
                 return
         }
         //buttonState = .loading
         //self.enable()
-        switch nextState {
-        case "normal":
-            buttonState = .normal
-        case "highlighted":
-            buttonState = .highlighted
-        case "loading":
-            buttonState = .loading
-        case "disable":
-            buttonState = .disable
-        default:
-            buttonState = .normal
-        }
+        buttonState = .normal
         sendActions(for: .touchUpInside)
     }
+    // touchesCancelled
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        self.normal()
+    }
+
     
     public func blurEffect(){
         blurEffectView.isHidden = false
     }
 }
-
-
-
 
 extension BaseButton {
     
@@ -374,12 +375,11 @@ extension BaseButton {
             if let rightLabel = secondaryVisibleView as? UILabel, textAlignment == "left" {
                 imgView = UIImageView(frame: CGRect(x: self.bounds.size.width-48-4-self.rightText.widthOfString(usingFont: .button), y: (self.bounds.size.height/2)-6, width: 12, height: 12))
                 imgView?.isHidden = false
-                   // test.rightAnchor.constraint(equalTo: rightLabel.leftAnchor).isActive = true
+                // test.rightAnchor.constraint(equalTo: rightLabel.leftAnchor).isActive = true
             } else {
                 imgView = UIImageView(frame: CGRect(x: 24, y: (self.bounds.size.height/2)-12, width: 24, height: 24))
+                imgView?.isHidden = false
             }
-            
-            
             imgView!.contentMode = .scaleAspectFit
             imgView!.image = self.image
             addSubview(self.imgView!)
@@ -406,7 +406,7 @@ extension BaseButton {
         loadingView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         loadingView.startAnimation()
         
-        UIView.transition(from: titleLabel, to: loadingView, duration:0.15, options:.transitionCrossDissolve) { (_) in
+        UIView.transition(from: titleLabel, to: loadingView, duration: 0.15, options:.transitionCrossDissolve) { (_) in
             titleLabel.removeFromSuperview()
         }
     }

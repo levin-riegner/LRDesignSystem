@@ -7,32 +7,55 @@
 //
 
 import Foundation
+import UIKit
 
-class LargeDisplayCard: UICollectionViewCell, NibLoadable {
+public class LargeDisplayCard: UICollectionViewCell, NibLoadable {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet public weak var imageView: UIImageView!
     
-    @IBOutlet weak var overline: Overline!
-    @IBOutlet weak var headLine: RHeadline!
-    @IBOutlet weak var body: SBody!
-    @IBOutlet weak var counterViewersLabel: UILabel!
+    @IBOutlet public weak var infoContainer: UIView!
+    @IBOutlet public weak var overline: Overline!
+    @IBOutlet public weak var headLine: RHeadline!
+    @IBOutlet public weak var body: SBody!
+    @IBOutlet public weak var bottomLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override var isHighlighted: Bool {
-      didSet {
-        UIView.animate(withDuration: 0.5) {
-          let scale: CGFloat = 0.9
-          self.transform = self.isHighlighted ? CGAffineTransform(scaleX: scale, y: scale) : .identity
-        }
-      }
+       override init(frame: CGRect) {
+           super.init(frame: frame)
+           xibSetup()
+       }
+    
+       required init?(coder aDecoder: NSCoder) {
+           super.init(coder: aDecoder)
+           xibSetup()
+       }
+    
+       func xibSetup() {
+//           view = loadViewFromNib()
+//           view.frame = bounds
+//           view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//    
+//           addSubview(view)
+       }
+    func loadViewFromNib() -> UIView {
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: "LargeDisplayCard", bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+     
+        return view
     }
+    
+//    override public var isHighlighted: Bool {
+//      didSet {
+//        UIView.animate(withDuration: 0.5) {
+//          let scale: CGFloat = 0.9
+//          self.transform = self.isHighlighted ? CGAffineTransform(scaleX: scale, y: scale) : .identity
+//        }
+//      }
+//    }
     
     //Needed to get AUTORESIZED XIB
-    override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+    override public func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
         setNeedsLayout()
         layoutIfNeeded()
         let size = contentView.systemLayoutSizeFitting(layoutAttributes.size)
