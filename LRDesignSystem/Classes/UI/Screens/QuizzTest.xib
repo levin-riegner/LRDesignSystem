@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3p-yA-1Gf">
+                    <rect key="frame" x="16" y="190" width="382" height="526"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KHv-EX-Et8">
+                            <rect key="frame" x="16" y="32" width="350" height="479"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEr-xV-77A" customClass="LHeadline" customModule="LRDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="0.0" width="318" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Answer the following skill testing question before you can enter"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHF-K9-2Bm">
+                                    <rect key="frame" x="55" y="136" width="240" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="0BF-tR-nu9"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kiM-GW-Qbf" customClass="LBody" customModule="LRDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="145" width="318" height="128"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="As a Global Citizen, I can contribute to solving the world's biggest issues by"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-Kv-ERB">
+                                    <rect key="frame" x="55" y="281" width="240" height="12"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="12" id="LsF-0G-4uh"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L17-Ap-RLi">
+                                    <rect key="frame" x="16" y="301" width="318" height="54"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="ilc-Jz-fed"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEr-7G-Y3x" customClass="BaseButton" customModule="LRDesignSystem" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="363" width="318" height="54"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="CVR-S2-xyu"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Submit"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                            <color key="value" red="0.21176470588235294" green="0.60784313725490191" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="currentState" value="normal"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="rightText" value=" "/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="textAlignment" value="center"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="kernSpace">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFE-N4-gt5">
+                                    <rect key="frame" x="16" y="425" width="318" height="54"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="qDV-U4-FhY"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="IFE-N4-gt5" firstAttribute="leading" secondItem="KHv-EX-Et8" secondAttribute="leading" constant="16" id="AEJ-gD-cdx"/>
+                                <constraint firstItem="L17-Ap-RLi" firstAttribute="leading" secondItem="KHv-EX-Et8" secondAttribute="leading" constant="16" id="AXu-Qt-bVT"/>
+                                <constraint firstItem="kiM-GW-Qbf" firstAttribute="leading" secondItem="KHv-EX-Et8" secondAttribute="leading" constant="16" id="Ckh-Rd-2Bd"/>
+                                <constraint firstAttribute="trailing" secondItem="IFE-N4-gt5" secondAttribute="trailing" constant="16" id="D09-Cs-3vM"/>
+                                <constraint firstAttribute="trailing" secondItem="VEr-7G-Y3x" secondAttribute="trailing" constant="16" id="Q7d-6N-IRU"/>
+                                <constraint firstAttribute="trailing" secondItem="kiM-GW-Qbf" secondAttribute="trailing" constant="16" id="Qa4-9W-D1C"/>
+                                <constraint firstItem="VEr-7G-Y3x" firstAttribute="leading" secondItem="KHv-EX-Et8" secondAttribute="leading" constant="16" id="k5h-SZ-Pvy"/>
+                                <constraint firstAttribute="trailing" secondItem="L17-Ap-RLi" secondAttribute="trailing" constant="16" id="sIh-xb-iGk"/>
+                                <constraint firstAttribute="trailing" secondItem="kEr-xV-77A" secondAttribute="trailing" constant="16" id="sS6-DU-Zrg"/>
+                                <constraint firstItem="kEr-xV-77A" firstAttribute="leading" secondItem="KHv-EX-Et8" secondAttribute="leading" constant="16" id="vob-w9-7io"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="KHv-EX-Et8" firstAttribute="top" secondItem="E3p-yA-1Gf" secondAttribute="top" constant="32" id="A30-gC-l40"/>
+                        <constraint firstAttribute="trailing" secondItem="KHv-EX-Et8" secondAttribute="trailing" constant="16" id="XTL-8X-E9L"/>
+                        <constraint firstItem="KHv-EX-Et8" firstAttribute="leading" secondItem="E3p-yA-1Gf" secondAttribute="leading" constant="16" id="ZVb-zi-21z"/>
+                        <constraint firstAttribute="bottom" secondItem="KHv-EX-Et8" secondAttribute="bottom" constant="15" id="wOt-R0-NPq"/>
+                    </constraints>
+                </view>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRN-sJ-3Au" customClass="BaseButton" customModule="LRDesignSystem" customModuleProvider="target">
+                    <rect key="frame" x="16" y="155" width="382" height="18"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="diI-FW-PxO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="kernSpace">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="QUESTION"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="rightText" value=" "/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="textAlignment" value="center"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fRN-sJ-3Au" secondAttribute="trailing" constant="16" id="3wG-Lr-JMf"/>
+                <constraint firstItem="E3p-yA-1Gf" firstAttribute="top" secondItem="fRN-sJ-3Au" secondAttribute="bottom" constant="17" id="5NB-Do-PLY"/>
+                <constraint firstItem="fRN-sJ-3Au" firstAttribute="centerX" secondItem="E3p-yA-1Gf" secondAttribute="centerX" id="Fe3-8I-hFx"/>
+                <constraint firstItem="E3p-yA-1Gf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Og8-Na-LA1"/>
+                <constraint firstItem="E3p-yA-1Gf" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dgG-MY-ZaK"/>
+                <constraint firstItem="E3p-yA-1Gf" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="lft-rS-fP2"/>
+                <constraint firstAttribute="trailing" secondItem="E3p-yA-1Gf" secondAttribute="trailing" constant="16" id="u4A-WZ-X2D"/>
+                <constraint firstItem="fRN-sJ-3Au" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="yAA-ZY-4AB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="121"/>
+        </view>
+    </objects>
+</document>

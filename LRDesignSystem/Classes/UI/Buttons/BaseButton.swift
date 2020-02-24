@@ -24,7 +24,7 @@ public class BaseButton: UIControl {
         case disable
     }
     
-    var buttonBackgroundColor:UIColor = UIColor.primaryActive
+    var buttonBackgroundColor:UIColor = UIColor.gray
     var imgView: UIImageView?
     
     var blurEffectView = UIVisualEffectView()
@@ -147,7 +147,8 @@ public class BaseButton: UIControl {
     
     /// Background color for normal state
     @IBInspectable public var normalBackgroundColor:UIColor = UIColor.primaryActive {
-        didSet { updateStyle() }
+        didSet {
+            updateStyle() }
     }
     
     /// Background color for highlighted state
@@ -167,6 +168,8 @@ public class BaseButton: UIControl {
         setupButton()
         updateStyle()
         showImage()
+        updateUI(forState: buttonState)
+
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -174,6 +177,8 @@ public class BaseButton: UIControl {
         setupButton()
         updateStyle()
         showImage()
+        updateUI(forState: buttonState)
+
     }
     
     /**
@@ -209,6 +214,8 @@ public class BaseButton: UIControl {
         blurEffectView.alpha = 0
         blurEffectView.isHidden = true
         showImage()
+        updateUI(forState: buttonState)
+        backgroundColor = normalBackgroundColor
     }
     
     /**

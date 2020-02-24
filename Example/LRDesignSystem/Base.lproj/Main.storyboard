@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,75 +19,115 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70t-sB-47e" customClass="BaseButton" customModule="LRDesignSystem">
-                                <rect key="frame" x="67" y="167" width="240" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7d-e4-ui4">
+                                <rect key="frame" x="20" y="20" width="335" height="627"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="top" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NOC-PZ-Abr">
+                                        <rect key="frame" x="16" y="32" width="303" height="580"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNx-T7-STS" customClass="LHeadline" customModule="LRDesignSystem">
+                                                <rect key="frame" x="16" y="0.0" width="271" height="229"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Answer the following skill testing question before you can enter"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJf-mp-5F3">
+                                                <rect key="frame" x="31.5" y="237" width="240" height="1"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="f7Z-TN-wKw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hoy-oU-e3C" customClass="LBody" customModule="LRDesignSystem">
+                                                <rect key="frame" x="16" y="246" width="271" height="128"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="As a Global Citizen, I can contribute to solving the world's biggest issues by"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9u8-GY-2Em">
+                                                <rect key="frame" x="31.5" y="382" width="240" height="12"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="2x8-aN-WRv"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wfe-Gw-uen">
+                                                <rect key="frame" x="16" y="402" width="271" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="0lS-Ax-eTX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQI-7H-9kF" customClass="BaseButton" customModule="LRDesignSystem">
+                                                <rect key="frame" x="16" y="464" width="271" height="54"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="YqH-DV-fQi"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Submit"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="currentState" value="normal"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="rightText" value=" "/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="textAlignment" value="center"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kernSpace">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uku-9p-u49" customClass="BaseButton" customModule="LRDesignSystem">
+                                                <rect key="frame" x="16" y="526" width="271" height="54"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="n1K-AN-Ny2"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Hoy-oU-e3C" firstAttribute="leading" secondItem="NOC-PZ-Abr" secondAttribute="leading" constant="16" id="0CA-vD-dfm"/>
+                                            <constraint firstItem="FJf-mp-5F3" firstAttribute="leading" secondItem="9u8-GY-2Em" secondAttribute="leading" id="1tB-fb-kZr"/>
+                                            <constraint firstItem="Uku-9p-u49" firstAttribute="leading" secondItem="NOC-PZ-Abr" secondAttribute="leading" constant="16" id="8mm-Iu-fD7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uku-9p-u49" secondAttribute="trailing" constant="16" id="KXO-jO-sOt"/>
+                                            <constraint firstAttribute="trailing" secondItem="nNx-T7-STS" secondAttribute="trailing" constant="16" id="O63-NK-qvd"/>
+                                            <constraint firstItem="Wfe-Gw-uen" firstAttribute="leading" secondItem="NOC-PZ-Abr" secondAttribute="leading" constant="16" id="OLu-4E-WbR"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hoy-oU-e3C" secondAttribute="trailing" constant="16" id="QFD-eW-SJp"/>
+                                            <constraint firstAttribute="trailing" secondItem="gQI-7H-9kF" secondAttribute="trailing" constant="16" id="Qow-CE-07Z"/>
+                                            <constraint firstItem="nNx-T7-STS" firstAttribute="leading" secondItem="NOC-PZ-Abr" secondAttribute="leading" constant="16" id="bP8-BF-Vhy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wfe-Gw-uen" secondAttribute="trailing" constant="16" id="cY8-6A-78w"/>
+                                            <constraint firstItem="FJf-mp-5F3" firstAttribute="leading" secondItem="NOC-PZ-Abr" secondAttribute="leading" constant="31.5" id="fMe-ax-of1"/>
+                                            <constraint firstItem="gQI-7H-9kF" firstAttribute="leading" secondItem="NOC-PZ-Abr" secondAttribute="leading" constant="16" id="qD7-hE-yma"/>
+                                            <constraint firstItem="FJf-mp-5F3" firstAttribute="top" secondItem="NOC-PZ-Abr" secondAttribute="top" constant="237" id="reu-6P-K4n"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
-                                        <color key="value" red="0.21176470589999999" green="0.60784313729999995" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="currentState" value="normal"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="asd"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="rightText" value="qwe"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GvO-gs-dF5" customClass="Overline" customModule="LRDesignSystem">
-                                <rect key="frame" x="67" y="449" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="test"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL ADDRESS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c37-AM-qqI" customClass="FieldTextBase" customModule="LRDesignSystem">
-                                <rect key="frame" x="119" y="306.5" width="137" height="54"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="QSK-EH-tW1"/>
+                                    <constraint firstItem="NOC-PZ-Abr" firstAttribute="top" secondItem="d7d-e4-ui4" secondAttribute="top" constant="32" id="MQi-iD-iq1"/>
+                                    <constraint firstAttribute="trailing" secondItem="NOC-PZ-Abr" secondAttribute="trailing" constant="16" id="Q6d-0r-a3s"/>
+                                    <constraint firstAttribute="bottom" secondItem="NOC-PZ-Abr" secondAttribute="bottom" constant="15" id="TDb-bn-NOp"/>
+                                    <constraint firstItem="NOC-PZ-Abr" firstAttribute="leading" secondItem="d7d-e4-ui4" secondAttribute="leading" constant="16" id="hx2-Yb-3u6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="canShowBorder" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                        <color key="value" red="0.82352941180000006" green="0.14901960780000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderActiveColor">
-                                        <color key="value" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="hintActiveColor">
-                                        <color key="value" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorOn">
-                                        <color key="value" red="0.21176470589999999" green="0.60784313729999995" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorOff">
-                                        <color key="value" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QQ-mI-A2p">
-                                <rect key="frame" x="174" y="424" width="24" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="test">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="MarkOffcPro-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="charWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="c37-AM-qqI" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="3lM-l1-O2m"/>
-                            <constraint firstItem="c37-AM-qqI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lWr-SU-y9b"/>
+                            <constraint firstAttribute="trailing" secondItem="d7d-e4-ui4" secondAttribute="trailing" constant="20" symbolic="YES" id="464-kC-Ep8"/>
+                            <constraint firstItem="d7d-e4-ui4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="Ng8-t0-ChJ"/>
+                            <constraint firstItem="d7d-e4-ui4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="fq6-1z-FwW"/>
+                            <constraint firstAttribute="bottom" secondItem="d7d-e4-ui4" secondAttribute="bottom" constant="20" symbolic="YES" id="qZd-4Y-zmc"/>
                         </constraints>
                     </view>
                 </viewController>

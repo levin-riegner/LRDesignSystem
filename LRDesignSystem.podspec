@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.4.8'
-  s.summary          = '0.4.8 Fixes for GC'
+  s.version          = '0.5.0'
+  s.summary          = '0.5.0 Fixes for GC'
 
   s.swift_version    = '5.0'
   
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '- Fixed problems with names, if there is any problem review key compliant name - Fixed Button - Test for autoresize font depending size screen'
+  s.description      = 'Last update from january'
 
   s.homepage         = 'https://github.com/levin-riegner/LRDesignSystem'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
