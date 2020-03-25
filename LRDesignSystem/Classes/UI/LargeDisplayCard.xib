@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,17 +11,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LargeDisplayCard" customModule="LRDesignSystem" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="LargeDisplayCard" preservesSuperviewLayoutMargins="YES" reuseIdentifier="LargeDisplayCard" id="C6b-PU-Wfe" customClass="LargeDisplayCard" customModule="LRDesignSystem" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="438" height="619"/>
+            <rect key="frame" x="0.0" y="0.0" width="493" height="879"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Yd5-BU-0ya">
-                <rect key="frame" x="0.0" y="0.0" width="438" height="619"/>
+                <rect key="frame" x="0.0" y="0.0" width="493" height="879"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYW-Gp-Zks">
-                        <rect key="frame" x="0.0" y="0.0" width="438" height="619"/>
+                        <rect key="frame" x="0.0" y="0.0" width="493" height="879"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-Dg-NNc">
-                                <rect key="frame" x="0.0" y="0.0" width="438" height="470.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-Dg-NNc">
+                                <rect key="frame" x="0.0" y="0.0" width="493" height="729.5"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="8"/>
@@ -29,33 +29,33 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W39-tA-nw6">
-                                <rect key="frame" x="12" y="582.5" width="414" height="20.5"/>
+                                <rect key="frame" x="12" y="840.5" width="469" height="22.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEu-2v-cfs">
-                                <rect key="frame" x="12" y="370.5" width="414" height="200"/>
+                                <rect key="frame" x="12" y="630.5" width="469" height="198"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xlK-1k-Nuc">
-                                        <rect key="frame" x="12" y="20" width="390" height="160"/>
+                                        <rect key="frame" x="12" y="20" width="445" height="158"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5c-G4-7wc" customClass="Overline" customModule="LRDesignSystem" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="445" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-hD-x8W" customClass="RHeadline" customModule="LRDesignSystem" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="54" width="390" height="52"/>
+                                                <rect key="frame" x="0.0" y="54" width="445" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoK-Be-yhG" customClass="SBody" customModule="LRDesignSystem" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="110" width="390" height="50"/>
+                                                <rect key="frame" x="0.0" y="108" width="445" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="alignment" value="center"/>
@@ -96,7 +96,6 @@
                         <constraints>
                             <constraint firstItem="W39-tA-nw6" firstAttribute="leading" secondItem="PYW-Gp-Zks" secondAttribute="leading" constant="12" id="CMN-PI-xfz"/>
                             <constraint firstAttribute="bottom" secondItem="W39-tA-nw6" secondAttribute="bottom" constant="16" id="Qt7-Mn-uQC"/>
-                            <constraint firstItem="NEu-2v-cfs" firstAttribute="centerY" secondItem="TgT-Dg-NNc" secondAttribute="bottom" id="RwQ-GR-2Ig"/>
                             <constraint firstItem="NEu-2v-cfs" firstAttribute="centerY" secondItem="TgT-Dg-NNc" secondAttribute="bottom" id="Sdp-Cb-Bya"/>
                             <constraint firstItem="W39-tA-nw6" firstAttribute="top" secondItem="NEu-2v-cfs" secondAttribute="bottom" constant="12" id="XXe-6g-nuk"/>
                             <constraint firstItem="TgT-Dg-NNc" firstAttribute="top" secondItem="PYW-Gp-Zks" secondAttribute="top" id="aKx-hW-S6p"/>
@@ -113,9 +112,10 @@
                     <constraint firstAttribute="trailing" secondItem="PYW-Gp-Zks" secondAttribute="trailing" id="HYe-Mn-oLA"/>
                     <constraint firstAttribute="bottom" secondItem="PYW-Gp-Zks" secondAttribute="bottom" id="PvK-Lr-Pit"/>
                     <constraint firstItem="PYW-Gp-Zks" firstAttribute="top" secondItem="Yd5-BU-0ya" secondAttribute="top" id="UlX-pz-T1L"/>
+                    <constraint firstItem="TgT-Dg-NNc" firstAttribute="height" secondItem="Yd5-BU-0ya" secondAttribute="height" multiplier="0.83" id="hRv-xQ-LlC"/>
                 </constraints>
             </collectionViewCellContentView>
-            <size key="customSize" width="438" height="619"/>
+            <size key="customSize" width="493" height="879"/>
             <connections>
                 <outlet property="body" destination="UoK-Be-yhG" id="rh1-3k-lEm"/>
                 <outlet property="bottomLabel" destination="W39-tA-nw6" id="V7F-pO-Wg5"/>
@@ -124,7 +124,7 @@
                 <outlet property="infoContainer" destination="NEu-2v-cfs" id="Fv2-96-CmL"/>
                 <outlet property="overline" destination="y5c-G4-7wc" id="Yuh-9n-5UJ"/>
             </connections>
-            <point key="canvasLocation" x="-426.08695652173918" y="63.950892857142854"/>
+            <point key="canvasLocation" x="-386.23188405797106" y="150.33482142857142"/>
         </collectionViewCell>
     </objects>
 </document>

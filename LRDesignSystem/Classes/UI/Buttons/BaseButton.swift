@@ -70,6 +70,7 @@ public class BaseButton: UIControl {
         didSet {
             guard let rightLabel = secondaryVisibleView as? UILabel else { return }
             rightLabel.font = .button
+            rightLabel.textColor = rightTextColor
             rightLabel.attributedText = NSAttributedString(string: rightText, attributes: [.kern: kernRightSpace])
             updateUI(forState: buttonState)
         }
@@ -80,6 +81,13 @@ public class BaseButton: UIControl {
         didSet {
             guard let titleLabel = currentlyVisibleView as? UILabel else { return }
             titleLabel.textColor = titleColor
+        }
+    }
+    
+    @IBInspectable public var rightTextColor:UIColor = UIColor.white {
+        didSet {
+            guard let rightTextLabel = secondaryVisibleView as? UILabel else { return }
+            rightTextLabel.textColor = rightTextColor
         }
     }
     
@@ -384,7 +392,7 @@ extension BaseButton {
                 imgView?.isHidden = false
                 // test.rightAnchor.constraint(equalTo: rightLabel.leftAnchor).isActive = true
             } else {
-                imgView = UIImageView(frame: CGRect(x: 24, y: (self.bounds.size.height/2)-12, width: 24, height: 24))
+                imgView = UIImageView(frame: CGRect(x: 12, y: (self.bounds.size.height/2)-12, width: 24, height: 24))
                 imgView?.isHidden = false
             }
             imgView!.contentMode = .scaleAspectFit

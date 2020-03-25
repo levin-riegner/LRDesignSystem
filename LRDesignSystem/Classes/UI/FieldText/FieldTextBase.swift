@@ -512,7 +512,7 @@ public class FieldTextBase: UITextField {
         case .always:
             showFloatingLabel(isFirstResponder)
         default:
-            if let enteredText = text,!enteredText.isEmptyStr{
+            if let enteredText = text,!enteredText.isEmptyStr {
                 showFloatingLabel(isFirstResponder)
             }else{
                 hideFlotingLabel(isFirstResponder)
