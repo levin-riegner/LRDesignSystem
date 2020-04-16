@@ -21,6 +21,7 @@
 		AD2F11E32373401A00B1E422 /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11E02373401900B1E422 /* MarkOffcPro-HeavyItalic.ttf */; };
 		AD42A85723757277000E655C /* String+Width.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42A85623757277000E655C /* String+Width.swift */; };
 		AD4DFDE523BAE3DF00B53617 /* QuizzTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4DFDE423BAE3DF00B53617 /* QuizzTest.xib */; };
+		AD6A32D824487702001CB84F /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A32D724487702001CB84F /* BaseCollectionViewCell.swift */; };
 		AD76723A234CDCB300AE5620 /* LargeDisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */; };
 		AD76723C234CDCB300AE5620 /* BaseButtonIssue.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7671E5234CDCB300AE5620 /* BaseButtonIssue.xib */; };
 		AD76723D234CDCB300AE5620 /* PrimaryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7671E6234CDCB300AE5620 /* PrimaryButton.xib */; };
@@ -128,6 +129,7 @@
 		AD2F11E02373401900B1E422 /* MarkOffcPro-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-HeavyItalic.ttf"; sourceTree = "<group>"; };
 		AD42A85623757277000E655C /* String+Width.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Width.swift"; sourceTree = "<group>"; };
 		AD4DFDE423BAE3DF00B53617 /* QuizzTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizzTest.xib; sourceTree = "<group>"; };
+		AD6A32D724487702001CB84F /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD7671E2234CDCB300AE5620 /* LargeDisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeDisplayCard.swift; sourceTree = "<group>"; };
 		AD7671E5234CDCB300AE5620 /* BaseButtonIssue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseButtonIssue.xib; sourceTree = "<group>"; };
 		AD7671E6234CDCB300AE5620 /* PrimaryButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrimaryButton.xib; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				AD767228234CDCB300AE5620 /* Fonts */,
 				AD767238234CDCB300AE5620 /* FieldText */,
 				AD42A85623757277000E655C /* String+Width.swift */,
+				AD6A32D724487702001CB84F /* BaseCollectionViewCell.swift */,
 			);
 			name = UI;
 			path = LRDesignSystem/Classes/UI;
@@ -701,6 +704,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD767241234CDCB300AE5620 /* BaseButtonIssue.swift in Sources */,
+				AD6A32D824487702001CB84F /* BaseCollectionViewCell.swift in Sources */,
 				AD76723A234CDCB300AE5620 /* LargeDisplayCard.swift in Sources */,
 				AD76723E234CDCB300AE5620 /* SimpleLoadingView.swift in Sources */,
 				AD76725A234CDCB300AE5620 /* LBody.swift in Sources */,

@@ -248,12 +248,14 @@ public class BaseButton: UIControl {
         
         switch buttonState {
         case .normal:
+            secondaryVisibleView?.isHidden = false
             buttonBackgroundColor = normalBackgroundColor
             showLabelView()
             showImage()
             self.isUserInteractionEnabled = true
 
         case .highlighted:
+            secondaryVisibleView?.isHidden = false
             buttonBackgroundColor = highlightedBackgroundColor
             showImage()
             self.isUserInteractionEnabled = true
@@ -360,6 +362,7 @@ extension BaseButton {
         // titleLabel.layoutMargins = UIEdgeInsets(top: 20, left: 20, bottom: 8, right: 20)
         addSubview(titleLabel)
         currentlyVisibleView = titleLabel
+        secondaryVisibleView?.isHidden = false
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 24).isActive = true
@@ -384,7 +387,7 @@ extension BaseButton {
     }
     
     private func showImage() -> Void {
-        if (image != nil && (self.buttonState == .normal || buttonState == .disable)) {
+        if (image != nil && (self.buttonState == .normal || buttonState == .highlighted || buttonState == .disable)) {
             imgView?.removeFromSuperview()
             //When is left aligned and there is right label we move the image to the right
             if let rightLabel = secondaryVisibleView as? UILabel, textAlignment == "left" {
@@ -414,6 +417,7 @@ extension BaseButton {
         loadingView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(loadingView)
         currentlyVisibleView = loadingView
+        secondaryVisibleView?.isHidden = true
         
         loadingView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         loadingView.topAnchor.constraint(equalTo: topAnchor).isActive = true

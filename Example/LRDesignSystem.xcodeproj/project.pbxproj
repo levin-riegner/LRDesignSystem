@@ -31,8 +31,23 @@
 		AD41FAEE237345B900E8EF75 /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADB237345B900E8EF75 /* MarkOffcPro-Light.ttf */; };
 		AD41FAEF237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADC237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf */; };
 		AD41FAF0237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADD237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf */; };
-		D3F1DB6E7FFA60DB0E67C24D /* Pods_LRDesignSystem_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */; };
+		AD6A32D42448718B001CB84F /* Pods_LRDesignSystem_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */; };
+		AD6A32D52448718B001CB84F /* Pods_LRDesignSystem_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD6A32D62448718B001CB84F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD6A32D52448718B001CB84F /* Pods_LRDesignSystem_Example.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0BF5624656FD283D074F4247 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -79,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F1DB6E7FFA60DB0E67C24D /* Pods_LRDesignSystem_Example.framework in Frameworks */,
+				AD6A32D42448718B001CB84F /* Pods_LRDesignSystem_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +221,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				FEAF10EBB5022E3808CD8719 /* [CP] Embed Pods Frameworks */,
+				AD6A32D62448718B001CB84F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
