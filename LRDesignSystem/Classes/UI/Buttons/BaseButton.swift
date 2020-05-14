@@ -138,6 +138,13 @@ public class BaseButton: UIControl {
         }
     }
     
+     public var isImageOnRight : Bool? {
+        didSet{
+            updateUI(forState: buttonState)
+        }
+    }
+    
+    
     /// Border width
     @IBInspectable public var borderWidth:CGFloat = 0 {
         didSet { updateStyle() }
@@ -390,7 +397,7 @@ extension BaseButton {
         if (image != nil && (self.buttonState == .normal || buttonState == .highlighted || buttonState == .disable)) {
             imgView?.removeFromSuperview()
             //When is left aligned and there is right label we move the image to the right
-            if let rightLabel = secondaryVisibleView as? UILabel, textAlignment == "left" {
+            if let rightLabel = secondaryVisibleView as? UILabel, textAlignment == "left" || self.isImageOnRight == true {
                 imgView = UIImageView(frame: CGRect(x: self.bounds.size.width-48-4-self.rightText.widthOfString(usingFont: .button), y: (self.bounds.size.height/2)-6, width: 12, height: 12))
                 imgView?.isHidden = false
                 // test.rightAnchor.constraint(equalTo: rightLabel.leftAnchor).isActive = true

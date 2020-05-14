@@ -128,7 +128,7 @@ public class FieldTextBase: UITextField {
         didSet{ invalidateIntrinsicContentSize() }
     }
     
-    public var paddingYErrorLabel:CGFloat = 3.0{
+    public var paddingYErrorLabel:CGFloat = 5.0{
         didSet{ invalidateIntrinsicContentSize() }
     }
     
@@ -486,7 +486,7 @@ public class FieldTextBase: UITextField {
             lblErrorFrame.origin.y = dtLayer.frame.origin.y + dtLayer.frame.size.height + paddingYErrorLabel
             lblError.frame = lblErrorFrame
             
-            imageError.frame = CGRect(x: dtLayer.frame.origin.x, y: dtLayer.frame.origin.y + dtLayer.frame.size.height + paddingYErrorLabel, width: 20, height: 17)
+            imageError.frame = CGRect(x: dtLayer.frame.origin.x + 2, y: dtLayer.frame.origin.y + dtLayer.frame.size.height + paddingYErrorLabel + 1, width: 15, height: 15)
             imageError.contentMode = .scaleAspectFit
             addSubview(imageError)
         }

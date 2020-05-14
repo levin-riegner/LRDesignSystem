@@ -14,6 +14,7 @@
 		6C2935F792E9812675E721B8FCCBE9D1 /* LRDesignSystem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52090F9B51D37B7C7421C1C7B7F871D1 /* LRDesignSystem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A30D9625F69317B0D56A2E8CF96F31AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A4AF7FCAF21D254273EE47CD03217C9F /* Pods-LRDesignSystem_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C175B9D6560646B6DC58866D075FA854 /* Pods-LRDesignSystem_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD0EF4D5246DC097009C7226 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0EF4D4246DC097009C7226 /* BaseCollectionViewCell.swift */; };
 		AD2F11BD23733A3000B1E422 /* FontsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2F11BC23733A3000B1E422 /* FontsConfiguration.swift */; };
 		AD2F11DD23733FF800B1E422 /* MarkOffcPro-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11DC23733FF800B1E422 /* MarkOffcPro-Heavy.ttf */; };
 		AD2F11E12373401A00B1E422 /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2F11DE2373401900B1E422 /* MarkOffcPro-Book.ttf */; };
@@ -122,6 +123,7 @@
 		9E8884543E16C258A1A32A048CBCB44C /* LRDesignSystem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LRDesignSystem-dummy.m"; sourceTree = "<group>"; };
 		A269189E5BFC97A412B3D350C773360D /* Pods-LRDesignSystem_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LRDesignSystem_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A8E2933360C517F35A6FC06CE1A68071 /* Pods-LRDesignSystem_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LRDesignSystem_Tests-dummy.m"; sourceTree = "<group>"; };
+		AD0EF4D4246DC097009C7226 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD2F11BC23733A3000B1E422 /* FontsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsConfiguration.swift; sourceTree = "<group>"; };
 		AD2F11DC23733FF800B1E422 /* MarkOffcPro-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Heavy.ttf"; sourceTree = "<group>"; };
 		AD2F11DE2373401900B1E422 /* MarkOffcPro-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkOffcPro-Book.ttf"; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				AD767238234CDCB300AE5620 /* FieldText */,
 				AD42A85623757277000E655C /* String+Width.swift */,
 				AD6A32D724487702001CB84F /* BaseCollectionViewCell.swift */,
+				AD0EF4D4246DC097009C7226 /* BaseCollectionViewCell.swift */,
 			);
 			name = UI;
 			path = LRDesignSystem/Classes/UI;
@@ -724,6 +727,7 @@
 				AD767242234CDCB300AE5620 /* TextButton.swift in Sources */,
 				AD76726E234CDCB300AE5620 /* Page1Authentication.swift in Sources */,
 				AD76725B234CDCB300AE5620 /* RBody.swift in Sources */,
+				AD0EF4D5246DC097009C7226 /* BaseCollectionViewCell.swift in Sources */,
 				AD767285234CDCB300AE5620 /* FieldTextBase.swift in Sources */,
 				667FE032D993A5AE6170C75299099B10 /* LRDesignSystem-dummy.m in Sources */,
 				AD42A85723757277000E655C /* String+Width.swift in Sources */,

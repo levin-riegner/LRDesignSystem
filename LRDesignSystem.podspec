@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.5.3'
-  s.summary          = '0.5.3 BaseButton hide right text'
+  s.version          = '0.5.4'
+  s.summary          = '0.5.4 UI fixes'
 
   s.swift_version    = '5.0'
   
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'LRDesignSystem/Classes/**/*'
-  
+  Build input file cannot be found: '/Users/pedromanfredi/Developer/ios/LRDesignSystem/LRDesignSystem/Classes/UI/BaseCollectionViewCell.swift'
   # s.resource_bundles = {
   #   'LRDesignSystem' => ['LRDesignSystem/Assets/*.png']
   # }
