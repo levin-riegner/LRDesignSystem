@@ -490,8 +490,8 @@
 				C12E6F139D2ACF96C6A8AA6A9CCDFB87 /* Support Files */,
 			);
 			name = LRDesignSystem;
-			path = ../..;
-			sourceTree = "<group>";
+			path = /Users/pedromanfredi/Developer/ios/LRDesignSystem/Example/Pods/../..;
+			sourceTree = "<absolute>";
 		};
 		FF0AFC2AE45D65670D8812AC578F8390 /* Pods-LRDesignSystem_Example */ = {
 			isa = PBXGroup;

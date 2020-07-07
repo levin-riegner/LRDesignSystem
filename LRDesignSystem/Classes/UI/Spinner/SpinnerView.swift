@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class SpinnerView : UIView {
+public class SpinnerView : UIView {
     
     override public var layer: CAShapeLayer {
         get {
