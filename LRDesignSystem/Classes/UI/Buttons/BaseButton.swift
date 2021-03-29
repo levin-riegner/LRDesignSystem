@@ -17,7 +17,7 @@ public class BaseButton: UIControl {
      - Loading:      Loading animation is displayed, background color changes to normalBackgroundColor
      - Disable:       Loading animation is displayed, background color changes to normalBackgroundColor
      */
-    fileprivate enum ButtonState {
+    public enum ButtonState {
         case normal
         case highlighted
         case loading
@@ -29,11 +29,12 @@ public class BaseButton: UIControl {
     
     var blurEffectView = UIVisualEffectView()
     //MARK: - Private
+    public var numberOfLines: Int? = nil
     fileprivate var currentlyVisibleView:UIView?
     fileprivate var secondaryVisibleView:UIView?
-    private var buttonState:ButtonState = .normal { didSet {
+    public var buttonState: ButtonState = .normal { didSet {
         if oldValue != buttonState {
-            print(buttonState)
+            print(buttonState, oldValue, "button")
             updateUI(forState:buttonState)
             updateStyle()
         }
@@ -126,7 +127,7 @@ public class BaseButton: UIControl {
     @IBInspectable public var nextState: String = "normal"
     
     /// Loading indicator color
-    @IBInspectable public var loadingIndicatorColor:UIColor = UIColor.white {
+    @IBInspectable public var loadingIndicatorColor: UIColor = UIColor.white {
         didSet{
             updateUI(forState: buttonState)
         }
@@ -163,11 +164,12 @@ public class BaseButton: UIControl {
     /// Background color for normal state
     @IBInspectable public var normalBackgroundColor:UIColor = UIColor.primaryActive {
         didSet {
+            highlightedBackgroundColor = normalBackgroundColor.withAlphaComponent(0.75)
             updateStyle() }
     }
     
     /// Background color for highlighted state
-    @IBInspectable public var highlightedBackgroundColor:UIColor = UIColor.primaryActiveAlt {
+    @IBInspectable public var highlightedBackgroundColor:UIColor = UIColor.white.withAlphaComponent(0.3) {
         didSet { updateStyle() }
     }
     
@@ -281,6 +283,7 @@ public class BaseButton: UIControl {
             currentlyVisibleView?.isUserInteractionEnabled = false
             self.isUserInteractionEnabled = false
             // }
+            showLabelView()
             showImage()
         }
         
@@ -290,6 +293,9 @@ public class BaseButton: UIControl {
     fileprivate func createTitleLabel(withFrame frame:CGRect) -> UILabel {
         let titleLabel = UILabel(frame:frame)
         titleLabel.text = title
+        if let numberOfLines = numberOfLines {
+            titleLabel.numberOfLines = numberOfLines
+        }
         switch textAlignment {
         case "left":
             titleLabel.textAlignment = .left
@@ -312,7 +318,8 @@ extension BaseButton {
     
     //MARK: - Touch handling
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        guard buttonState != .loading else {return}
+
         guard buttonState == .normal,
             let touchLocation = touches.first?.location(in: self),
             bounds.contains(touchLocation) else {
@@ -323,34 +330,35 @@ extension BaseButton {
     }
     
     override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        guard buttonState != .loading else {return}
         guard buttonState != .loading,
             let touchLocation = touches.first?.location(in: self) else {
                 super.touchesMoved(touches, with: event)
                 return
         }
-        
         buttonState = bounds.contains(touchLocation) ? .highlighted : .normal
     }
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        guard buttonState != .loading else {return}
+
         guard buttonState == .highlighted,
             let touchLocation = touches.first?.location(in: self),
             bounds.contains(touchLocation) else {
-                buttonState = .normal
+            buttonState = buttonState == .loading ? .loading : .normal
                 super.touchesEnded(touches, with: event)
                 return
         }
-        //buttonState = .loading
+        buttonState = buttonState == .loading ? .loading : .normal
         //self.enable()
-        buttonState = .normal
+        //buttonState = .normal
         sendActions(for: .touchUpInside)
     }
     // touchesCancelled
     override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard buttonState != .loading else {return}
         super.touchesCancelled(touches, with: event)
-        self.normal()
+        buttonState = buttonState == .loading ? .loading : .normal
     }
 
     
@@ -429,6 +437,8 @@ extension BaseButton {
         addSubview(loadingView)
         currentlyVisibleView = loadingView
         secondaryVisibleView?.isHidden = true
+        currentlyVisibleView?.isUserInteractionEnabled = false
+        self.isUserInteractionEnabled = false
         
         loadingView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         loadingView.topAnchor.constraint(equalTo: topAnchor).isActive = true
