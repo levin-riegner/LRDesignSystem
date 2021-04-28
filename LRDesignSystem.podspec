@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LRDesignSystem'
-  s.version          = '0.8.0'
-  s.summary          = '0.8.0 import Foundation'
+  s.version          = '0.9.1'
+  s.summary          = '0.9.1 import Foundation'
   s.swift_version    = '5.0'
   
 # This description is used to generate tags and improve search results.
