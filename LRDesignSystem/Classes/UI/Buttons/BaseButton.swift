@@ -279,7 +279,7 @@ public class BaseButton: UIControl {
             showImage()
         case .disable:
             //if (buttonBackgroundColor != normalBackgroundColor) {
-            buttonBackgroundColor = UIColor.primaryInactive
+            buttonBackgroundColor = normalBackgroundColor.withAlphaComponent(0.18)
             currentlyVisibleView?.isUserInteractionEnabled = false
             self.isUserInteractionEnabled = false
             // }
