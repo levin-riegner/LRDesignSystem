@@ -38,7 +38,7 @@ public class LargeDisplayCard: UICollectionViewCell, NibLoadable {
 //           addSubview(view)
        }
     func loadViewFromNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
+        let bundle = Bundle(for: Self.self)
         let nib = UINib(nibName: "LargeDisplayCard", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
      
