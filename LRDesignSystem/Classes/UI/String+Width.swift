@@ -5,7 +5,7 @@
 //  Created by Pedro Manfredi on 08/11/2019.
 //
 
-import Foundation
+import UIKit
 extension String {
 
     func widthOfString(usingFont font: UIFont) -> CGFloat {

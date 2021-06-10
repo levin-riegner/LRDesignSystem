@@ -6,6 +6,7 @@
 //  Copyright © 2019 GlobalCitizen. All rights reserved.
 //
 
+import UIKit
 import Foundation
 extension UIFont {
     class var headlineXLarge: UIFont {
