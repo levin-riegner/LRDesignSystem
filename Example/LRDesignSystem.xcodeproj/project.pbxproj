@@ -12,25 +12,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		AD41FADE237345B900E8EF75 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACB237345B800E8EF75 /* Lato-LightItalic.ttf */; };
-		AD41FADF237345B900E8EF75 /* Lato-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACC237345B800E8EF75 /* Lato-RegularItalic.ttf */; };
-		AD41FAE0237345B900E8EF75 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACD237345B800E8EF75 /* Lato-Light.ttf */; };
-		AD41FAE1237345B900E8EF75 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACE237345B800E8EF75 /* Lato-BlackItalic.ttf */; };
-		AD41FAE2237345B900E8EF75 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FACF237345B800E8EF75 /* Lato-Regular.ttf */; };
-		AD41FAE3237345B900E8EF75 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD0237345B800E8EF75 /* Lato-Black.ttf */; };
-		AD41FAE4237345B900E8EF75 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD1237345B800E8EF75 /* Lato-ThinItalic.ttf */; };
-		AD41FAE5237345B900E8EF75 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD2237345B800E8EF75 /* Lato-Thin.ttf */; };
-		AD41FAE6237345B900E8EF75 /* MarkOffcPro-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD3237345B800E8EF75 /* MarkOffcPro-BookItalic.ttf */; };
-		AD41FAE7237345B900E8EF75 /* MarkOffcPro-CondHeavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD4237345B800E8EF75 /* MarkOffcPro-CondHeavy.ttf */; };
-		AD41FAE8237345B900E8EF75 /* MarkOffcPro-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD5237345B800E8EF75 /* MarkOffcPro-Heavy.ttf */; };
-		AD41FAE9237345B900E8EF75 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD6237345B900E8EF75 /* Lato-Bold.ttf */; };
-		AD41FAEA237345B900E8EF75 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD7237345B900E8EF75 /* Lato-BoldItalic.ttf */; };
-		AD41FAEB237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD8237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf */; };
-		AD41FAEC237345B900E8EF75 /* MarkOffcPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FAD9237345B900E8EF75 /* MarkOffcPro-Bold.ttf */; };
-		AD41FAED237345B900E8EF75 /* MarkOffcPro-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADA237345B900E8EF75 /* MarkOffcPro-Book.ttf */; };
-		AD41FAEE237345B900E8EF75 /* MarkOffcPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADB237345B900E8EF75 /* MarkOffcPro-Light.ttf */; };
-		AD41FAEF237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADC237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf */; };
-		AD41FAF0237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD41FADD237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf */; };
 		AD6A32D42448718B001CB84F /* Pods_LRDesignSystem_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */; };
 		AD6A32D52448718B001CB84F /* Pods_LRDesignSystem_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -62,8 +43,6 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8DED05AED07006E5C70A3C92 /* Pods_LRDesignSystem_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LRDesignSystem_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD41FACB237345B800E8EF75 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		AD41FACC237345B800E8EF75 /* Lato-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-RegularItalic.ttf"; path = "../../LRDesignSystem/Classes/UI/Fonts/Lato-RegularItalic.ttf"; sourceTree = "<group>"; };
@@ -117,7 +96,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for LRDesignSystem */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				38CBAE737C33FD027120E476 /* Pods */,
 				7D6C6AC4563E6FB2E6D86C05 /* Frameworks */,
@@ -173,23 +151,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,7 +181,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				FEAF10EBB5022E3808CD8719 /* [CP] Embed Pods Frameworks */,
 				AD6A32D62448718B001CB84F /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -273,27 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				AD41FAE9237345B900E8EF75 /* Lato-Bold.ttf in Resources */,
-				AD41FAE3237345B900E8EF75 /* Lato-Black.ttf in Resources */,
-				AD41FAEA237345B900E8EF75 /* Lato-BoldItalic.ttf in Resources */,
-				AD41FAEF237345B900E8EF75 /* MarkOffcPro-LightItalic.ttf in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				AD41FAE8237345B900E8EF75 /* MarkOffcPro-Heavy.ttf in Resources */,
-				AD41FAF0237345B900E8EF75 /* MarkOffcPro-HeavyItalic.ttf in Resources */,
-				AD41FAEC237345B900E8EF75 /* MarkOffcPro-Bold.ttf in Resources */,
-				AD41FAE1237345B900E8EF75 /* Lato-BlackItalic.ttf in Resources */,
-				AD41FAE5237345B900E8EF75 /* Lato-Thin.ttf in Resources */,
-				AD41FAE2237345B900E8EF75 /* Lato-Regular.ttf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				AD41FAEB237345B900E8EF75 /* MarkOffcPro-BoldItalic.ttf in Resources */,
-				AD41FAE0237345B900E8EF75 /* Lato-Light.ttf in Resources */,
-				AD41FAE4237345B900E8EF75 /* Lato-ThinItalic.ttf in Resources */,
-				AD41FADE237345B900E8EF75 /* Lato-LightItalic.ttf in Resources */,
-				AD41FAE6237345B900E8EF75 /* MarkOffcPro-BookItalic.ttf in Resources */,
-				AD41FAEE237345B900E8EF75 /* MarkOffcPro-Light.ttf in Resources */,
-				AD41FADF237345B900E8EF75 /* Lato-RegularItalic.ttf in Resources */,
-				AD41FAE7237345B900E8EF75 /* MarkOffcPro-CondHeavy.ttf in Resources */,
-				AD41FAED237345B900E8EF75 /* MarkOffcPro-Book.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,24 +261,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FEAF10EBB5022E3808CD8719 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LRDesignSystem_Example/Pods-LRDesignSystem_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LRDesignSystem/LRDesignSystem.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LRDesignSystem.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LRDesignSystem_Example/Pods-LRDesignSystem_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "LRDesignSystem",
     platforms: [
-        .iOS(.v11), .tvOS("999.0"), .macOS("999.0")
+        .iOS(.v11)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.

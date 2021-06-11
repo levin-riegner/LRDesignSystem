@@ -1,9 +1,10 @@
 {
   "name": "LRDesignSystem",
-  "version": "0.1.0",
-  "summary": "A short description of LRDesignSystem.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Oxean2014/LRDesignSystem",
+  "version": "0.9.1",
+  "summary": "0.9.1 import Foundation",
+  "swift_versions": "5.0",
+  "description": "Last update from 2021",
+  "homepage": "https://github.com/levin-riegner/LRDesignSystem",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,12 @@
     "Oxean2014": "ileider@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Oxean2014/LRDesignSystem.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/levin-riegner/LRDesignSystem.git",
+    "tag": "0.9.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "source_files": "LRDesignSystem/Classes/**/*"
+  "source_files": "LRDesignSystem/Classes/**/*",
+  "swift_version": "5.0"
 }

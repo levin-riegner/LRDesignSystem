@@ -1,5 +1,5 @@
 PODS:
-  - LRDesignSystem (0.1.0)
+  - LRDesignSystem (0.9.1)
 
 DEPENDENCIES:
   - LRDesignSystem (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LRDesignSystem: 1d2eb03df3afc0ce5a4004e791a76709999f93b8
+  LRDesignSystem: d3d6959320ad5464933ecb93fff536a39f2708b4
 
-PODFILE CHECKSUM: 52d6517b48f7a14eda5cf910700677bea706df57
+PODFILE CHECKSUM: 8a4fd5b29d106dfc8f5eaa164d5788ed1006e5cf
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.10.1
