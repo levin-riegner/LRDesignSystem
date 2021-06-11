@@ -1,5 +1,6 @@
 // swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
+// https://itnext.io/advanced-cross-platform-apps-using-local-swift-packages-and-uikit-appkit-2a478e8b05cd
 
 import PackageDescription
 
