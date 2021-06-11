@@ -46,8 +46,5 @@ let package = Package(
                 .process("Fonts/MarkOffcPro-LightItalic.ttf"),
             ]
         ),
-        .testTarget(
-            name: "LRDesignSystemTests",
-            dependencies: ["LRDesignSystem"]),
     ]
 )
