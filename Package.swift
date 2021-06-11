@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "LRDesignSystem",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v11), .tvOS("999.0"), .macOS("999.0")
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -27,25 +27,6 @@ let package = Package(
             resources: [
                 .process("Fonts"),
                 .process("XibViews"),
-//                .process("Fonts/Lato-Black.ttf"),
-//                .process("Fonts/Lato-BlackItalic.ttf"),
-//                .process("Fonts/Lato-Bold.ttf"),
-//                .process("Fonts/Lato-BoldItalic.ttf"),
-//                .process("Fonts/Lato-Light.ttf"),
-//                .process("Fonts/Lato-LightItalic.ttf"),
-//                .process("Fonts/Lato-Regular.ttf"),
-//                .process("Fonts/Lato-RegularItalic.ttf"),
-//                .process("Fonts/Lato-Thin.ttf"),
-//                .process("Fonts/Lato-ThinItalic.ttf"),
-//                .process("Fonts/MarkOffcPro-Bold.ttf"),
-//                .process("Fonts/MarkOffcPro-BoldItalic.ttf"),
-//                .process("Fonts/MarkOffcPro-Book.ttf"),
-//                .process("Fonts/MarkOffcPro-BookItalic.ttf"),
-//                .process("Fonts/MarkOffcPro-CondHeavy.ttf"),
-//                .process("Fonts/MarkOffcPro-Heavy.ttf"),
-//                .process("Fonts/MarkOffcPro-HeavyItalic.ttf"),
-//                .process("Fonts/MarkOffcPro-Light.ttf"),
-//                .process("Fonts/MarkOffcPro-LightItalic.ttf"),
             ]
         ),
     ]
